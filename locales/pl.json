@@ -1,0 +1,688 @@
+{
+  "cat": {
+    "cooldown": {
+      "title": "🐾 Czas czekania na Kotka",
+      "description": "Musisz poczekać **{{time}}** przed zebraniem kolejnego kota.",
+      "tip": "💡 *Wskazówka: Użyj `/galeria` żeby sprawdzić swoją kolekcję!*",
+      "footer": "Czas oczekiwania sprawia, że koty są wyjątkowe i sprawiedliwe dla wszystkich!"
+    },
+    "success": {
+      "title": "{{rarity_emoji}} Gratulacje, {{username}}!",
+      "collected": "🐱 **{{cat_name}}** dołączył do twojej kolekcji!",
+      "rarity": "✨ Rzadkość: **{{rarity_name}}** ({{chance}} szansy wypadnięcia)",
+      "streak": "{{streak_emoji}} **Codzienna Passa:** {{streak}} dni",
+      "description": "📝 {{rarity_description}}",
+      "footer": "MiauDex • Następny kot dostępny za 24 godziny • Najlepsza passa: {{best_streak}} dni"
+    },
+    "errors": {
+      "invalid_name_title": "Nieprawidłowa Nazwa Kota",
+      "invalid_name": "Nazwy kotów muszą mieć 1-32 znaki i zawierać prawidłowe znaki.\n\n❌ **Niedozwolone:** `<>@#&` i puste nazwy\n✅ **Dozwolone:** Litery, cyfry, spacje i większość symboli",
+      "reserved_pattern_title": "Zarezerwowany Wzór Nazwy!",
+      "reserved_pattern": "⚠️ Nazwy takie jak \"cat1\", \"cat30\" itp. są zarezerwowane przez system.\n\n🐱 **Zablokowany wzór:** \"cat\" po którym następują cyfry\n✨ Twój kot zasługuje na bardziej kreatywną i osobistą nazwę!",
+      "creative_alternatives": "🎨 **Kreatywne Alternatywy:**",
+      "examples": "• **Wąsik** - Klasyczne i słodkie\n• **Cień** - Tajemnicze i fajne\n• **Rękawiczka** - Urocze i przytulne\n• **Luna** - Niebiańskie i piękne\n• **Zygzak** - Zabawne i unikalne",
+      "creativity_tip": "💡 *Albo pozwól systemowi wygenerować unikalną nazwę!*",
+      "footer_creativity": "Niech twoja kreatywność zabłyśnie! ✨",
+      "api_failed_title": "Wyszukiwanie Kota Nie Powiodło Się",
+      "api_failed": "Nie można połączyć się z usługą obrazów kotów. To zwykle tymczasowe.\n\n🔧 **Możliwe przyczyny:**\n• Problemy z połączeniem internetowym\n• Konserwacja API kotów\n• Tymczasowe przeciążenie serwera",
+      "save_failed_title": "Zapisywanie Nie Powiodło Się",
+      "save_failed": "Twój kot został znaleziony, ale nie mógł być zapisany do kolekcji. Spróbuj ponownie.\n\nJeśli to się powtarza, baza danych może być tymczasowo niedostępna."
+    },
+    "streak": {
+      "new_record": "🏆 **Nowy rekord osobisty!**",
+      "legendary": "🌟 **Legendarne oddanie!**",
+      "on_fire": "🔥 **Jesteś w ogniu!**",
+      "great_consistency": "⚡ **Świetna konsekwencja!**",
+      "building_momentum": "🐱 **Budowanie rozpędu!**"
+    },
+    "command": {
+      "option_name": "nazwa",
+      "option_name_desc": "Nadaj swojemu nowemu kotu własną nazwę (1-32 znaki, opcjonalnie)"
+    }
+  },
+  "profile": {
+    "title": "👑 Panel {{username}}",
+    "subtitle": "*Witaj w swoim spersonalizowanym centrum kontroli*",
+    "information": "✨ Informacje Profilowe",
+    "user": "Użytkownik",
+    "member_since": "▶️ **Członek od:** {{date}}",
+    "streak": {
+      "title": "🐱 Passa Zbierania Kotów",
+      "current": "{{emoji}} **Aktualna Passa:** {{streak}} dni",
+      "best": "🏆 **Najlepsza Passa:** {{best}} dni",
+      "messages": {
+        "start": "*Rozpocznij passę zbierając kotka!*",
+        "amazing": "*Niesamowite oddanie! 🌟*",
+        "fire": "*Jesteś w ogniu! 🔥*",
+        "consistency": "*Świetna konsekwencja! ⚡*",
+        "momentum": "*Tak trzymaj! 🐱*"
+      }
+    },
+    "settings": {
+      "title": "⚙️ Aktualne Ustawienia",
+      "leaderboard": "Widoczność w Rankingu",
+      "trading": "Wymiany Włączone",
+      "reminders": "Przypomnienia o Kotach",
+      "enabled": "włączone",
+      "disabled": "wyłączone"
+    },
+    "premium": {
+      "status": "✨ Status Premium",
+      "member": "✅ **Członek Premium**",
+      "notifications": "Zaawansowane Powiadomienia",
+      "support": "Wsparcie Priorytetowe"
+    },
+    "buttons": {
+      "refresh": "Odśwież",
+      "help": "Pomoc"
+    },
+    "help": {
+      "title": "⚙️ Pomoc dotycząca ustawień profilu",
+      "description": "Oto co robi każde ustawienie:",
+      "leaderboard": "Kontroluje widoczność w rankingach",
+      "trading": "Pozwala innym użytkownikom wysyłać Ci propozycje wymiany",
+      "reminders": "Wysyła spersonalizowane powiadomienia o kotach i aktywnościach",
+      "footer": "Pomoc • Panel Profilu"
+    },
+    "common": {
+      "premium": "Premium",
+      "premium_only": "Tylko Premium",
+      "enabled": "włączone",
+      "disabled": "wyłączone",
+      "loading": "Ładowanie...",
+      "success": "Sukces!",
+      "error": "Błąd!"
+    },
+    "footer": {
+      "standard": "Standardowe Doświadczenie • Kliknij przyciski, aby dostosować",
+      "premium": "Doświadczenie Premium • Kliknij przyciski, aby dostosować",
+      "session_expired": "Sesja wygasła - użyj `/profil`, aby rozpocząć nową"
+    },
+    "premium_required": {
+      "title": "👑 Funkcja Premium",
+      "description": "**Przypomnienia o kotach** są dostępne tylko dla członków Premium!\n\n✨ **Co otrzymasz z Premium:**\n🔔 Inteligentne powiadomienia o kotach\n💎 Zaawansowane funkcje profilu\n👑 Status VIP\n\n*Gotowy, aby uaktualnić? Skontaktuj się z administratorem serwera!*",
+      "footer": "Premium • Ulepszone Doświadczenie Discord"
+    },
+    "errors": {
+      "generic": "Ups! Coś poszło nie tak. Spróbuj ponownie."
+    }
+  },
+  "serverinfo": {
+    "dm_only": "Ta komenda może być używana tylko na serwerze!",
+    "title": "🏰 Informacje o serwerze {{server_name}}",
+    "subtitle": "{{sparkles}} {{level}}",
+    "description": "Witaj na {{server_name}}! Tętniąca życiem społeczność.",
+    "members": "👥 Członkowie",
+    "members_value": "**Razem:** {{total}}\n**Ludzie:** {{humans}}\n**Boty:** {{bots}}",
+    "boosts": "{{boost_emoji}} Boosty serwera",
+    "boosts_value": "**Poziom:** {{level}}\n**Boosty:** {{count}}",
+    "timeline": "📅 Historia",
+    "timeline_value": "**Utworzony:** <t:{{created}}:R>\n**Dołączyłeś:** <t:{{joined}}:R>",
+    "footer": "ID serwera: {{id}} • Żądanie od {{username}}",
+    "level_mega": "🌟 MEGA SERWER",
+    "level_large": "🏆 DUŻY SERWER",
+    "level_big": "🚀 WIELKI SERWER",
+    "level_medium": "💎 ŚREDNI SERWER",
+    "level_growing": "✨ ROZWIJAJĄCY SIĘ SERWER",
+    "level_small": "🌱 MAŁY SERWER",
+    "join_miaudex": "💖 Dołącz do MiauDex",
+    "leave_review": "⭐ Zostaw opinię",
+    "vote_bot": "🚀 Zagłosuj na bota"
+  },
+  "stats": {
+    "title": "📈 Panel Statystyk MiauDex",
+    "subtitle": "**Statystyki w czasie rzeczywistym dla wszechświata zbierania kotów!**",
+    "status": "🚀 **Status:** Wszystkie systemy działają",
+    "performance": "⚡ **Wydajność:** {{status}}",
+    "scale": "🛡️ **Skala:** {{tier}}",
+    "network": "🌍 Zasięg Sieci",
+    "network_value": "**Serwery:** {{servers}}\n**Wszyscy:** {{users}}\n**Osoba/Serwer:** {{avg_users}}",
+    "collection": "🐱 Statystyki Kolekcji",
+    "collection_value": "**Wszystkie Koty:** {{cats}}\n**Kot/Użytkownik:** {{avg_cats}}\n**Tempo Zbierania:** {{rate}}",
+    "health": "⏱️ Zdrowie Systemu",
+    "health_value": "**Czas działania:** {{uptime}}\n**Ping:** {{ping}}\n**Status:** {{status}}",
+    "footer": "💡 Kliknij przyciski poniżej dla szczegółowych informacji • Ostatnio zaktualizowane",
+    "community_title": "💖 Wgląd w Społeczność",
+    "community_subtitle": "**Świętujemy naszą niesamowitą społeczność zbieraczy kotów!**",
+    "community_size": "👥 Rozmiar Społeczności",
+    "community_size_value": "**Wszyscy Kolekcjonerzy:** {{collectors}}\n**Aktywni Dziennie:** ~{{active}}\n**Wzrost Tygodniowy:** +{{growth}}%",
+    "milestones": "🐱 Kamienie Milowe Kolekcji",
+    "milestones_value": "**Wszystkie Zebrane Koty:** {{total}}\n**Średnia na Użytkownika:** {{average}} kotów\n**Najrzadsze Kolekcje:** {{rarest}}+ kotów",
+    "achievements": "🏆 Osiągnięcia",
+    "achievements_value": "**Najlepszy Kolekcjoner:** {{top}} kotów\n**Aktywne Gildie:** {{guilds}}\n**Ranking Globalny:** Aktywny",
+    "community_footer": "🌟 Dziękujemy za bycie częścią naszej społeczności!",
+    "error_title": "⚙️ Statystyki Tymczasowo Niedostępne",
+    "error_description": "Nie można pobrać statystyk w tej chwili. Spróbuj ponownie za chwilę!",
+    "error_footer": "🔧 Nasz zespół został powiadomiony o tym problemie",
+    "status_legendary": "LEGENDARNY",
+    "status_excellent": "DOSKONAŁY",
+    "status_great": "ŚWIETNY",
+    "status_good": "DOBRY",
+    "status_fresh": "ŚWIEŻY",
+    "tier_massive": "MASYWNY",
+    "tier_huge": "OGROMNY",
+    "tier_large": "DUŻY",
+    "tier_growing": "ROZWIJAJĄCY SIĘ",
+    "tier_small": "MAŁY",
+    "rate_high": "Wysokie",
+    "rate_medium": "Średnie",
+    "rate_growing": "Rosnące",
+    "conn_excellent": "Doskonały",
+    "conn_good": "Dobry",
+    "conn_fair": "Przeciętny",
+    "calculating": "Obliczanie...",
+    "community_button": "Społeczność",
+    "refresh_button": "Odśwież",
+    "support_button": "Wsparcie",
+    "back_to_main": "Powrót do głównej"
+  },
+  "leaderboard": {
+    "title": "🏆 Ranking Kotów",
+    "subtitle": "**Najlegendarniejsi zbieracze kotów!**",
+    "legends": "👑 Sala Legend",
+    "rising": "⭐ Wschodzący Kolekcjonerzy",
+    "your_rank": "🐾 Twój Ranking",
+    "your_rank_value": "**#{{rank}}** • **{{cats}}** kotów {{emoji}}\n{{progress}} `{{current}}/{{next}}`",
+    "footer": "🐾 Kontynuuj zbieranie aby wspiąć się wyżej! • Aktualizowane co chwilę",
+    "empty_title": "🐱 ✨ Ranking Kotów ✨",
+    "empty_description": "🐾 **Ranking jest pusty!**\n\n🚀 Bądź pierwszym legendarnym zbieraczem kotów!\n🔮 Zacznij zbierać koty i zdobądź swój tron!",
+    "empty_footer": "🐾 Rozpocznij swoją przygodę z kolekcjonowaniem dzisiaj!",
+    "error_title": "❌ Ups! Coś poszło nie tak",
+    "error_description": "🐾 Nie można pobrać rankingu w tej chwili. Spróbuj ponownie!",
+    "error_footer": "🐾 Błąd zapisany do debugowania",
+    "refresh_button": "🔄 Odśwież",
+    "my_stats_button": "📊 Moje Statystyki",
+    "stats_title": "💎 Statystyki kolekcji {{username}}",
+    "stats_description": "**Twoja przygoda z kolekcjonowaniem kotów**",
+    "stats_ranking": "🏆 Ranking",
+    "stats_ranking_value": "**Pozycja:** #{{rank}}\n**Koty:** {{cats}}\n**Status:** {{status}}",
+    "stats_no_data": "Jeszcze nie rozpocząłeś zbierania kotów!",
+    "stats_progress": "⭐ Postęp",
+    "stats_progress_value": "**Następny Kamień Milowy:** {{next}}\n**Postęp:** {{progress}} `{{current}}/100`\n**Efektywność:** {{efficiency}}",
+    "stats_progress_no_data": "Rozpocznij zbieranie, aby zobaczyć swój postęp!",
+    "stats_max_level": "MAKSYMALNY POZIOM!",
+    "stats_efficiency_legendary": "Legendarny",
+    "stats_efficiency_expert": "Ekspert",
+    "stats_efficiency_good": "Dobry",
+    "stats_efficiency_starting": "Początkujący",
+    "stats_footer": "Kontynuuj zbieranie aby wspiąć się wyżej! • {{date}}"
+  },
+  "vote": {
+    "title": "🗳️ Głosuj na MiauDex!",
+    "subtitle": "✨ Wspieraj bota i zdobywaj nagrody!",
+    "description": "Głosuj co 12 godzin, aby zdobywać koty i odblokowywać osiągnięcia!",
+    "footer": "Następny głos: {{next}}",
+    "reminder_status": "🔔 Status przypomnienia",
+    "reminder_enabled": "✅ Przypomnienia włączone",
+    "reminder_disabled": "❌ Przypomnienia wyłączone",
+    "voting_stats": "📊 Statystyki głosowania",
+    "voting_stats_value": "**Łączne głosy:** {{votes}}\n**Status:** {{status}}\n**Postęp:** {{progress}}",
+    "vote_rewards": "🎁 Nagrody za głos",
+    "vote_rewards_value": "Zdobywaj koty i specjalne odznaki za głosowanie!",
+    "enable_reminders": "🔔 Włącz przypomnienia",
+    "disable_reminders": "🔕 Wyłącz przypomnienia",
+    "view_leaderboard": "🏆 Zobacz ranking",
+    "vote_now": "🚀 Głosuj teraz",
+    "view_stats": "📈 Zobacz statystyki",
+    "time_remaining": "Pozostały czas: {{time}}",
+    "ready_to_vote": "Możesz teraz głosować!",
+    "leaderboard_title": "🏆 Ranking głosów",
+    "leaderboard_subtitle": "Sprawdź najlepszych głosujących!",
+    "voting_legends": "Top 3 Legendy",
+    "rising_voters": "Rosnący głosujący",
+    "no_legends": "Brak legend!",
+    "your_rank": "Twój ranking",
+    "your_rank_value": "{{emoji}} Pozycja: {{position}} • Głosy: {{votes}}\nPostęp: {{progress}} ({{current}}/{{max}})",
+    "leaderboard_footer": "Ranking zaktualizowany",
+    "leaderboard_error_title": "❌ Błąd ładowania rankingu",
+    "leaderboard_error_desc": "Coś poszło nie tak przy pobieraniu rankingu.",
+    "leaderboard_error_footer": "Spróbuj ponownie później.",
+    "unknown_user": "Nieznany użytkownik",
+    "votes": "głosy",
+    "reminder_enabled_title": "✅ Przypomnienia włączone!",
+    "reminder_enabled_desc": "🔔 Świetnie! Przypomnienia głosowania są teraz aktywne!\n\n➡ Otrzymasz wiadomość DM, gdy będziesz mógł ponownie głosować.\n🚀 Każde przypomnienie będzie zawierało bezpośrednie linki do głosowania.\n💖 Nie przegapisz głosu i zdobędziesz więcej kotów!\n\n✅ Wiadomość testowa wysłana pomyślnie - Sprawdź swoje DM!",
+    "reminder_enabled_footer": "Wiadomość testowa wysłana pomyślnie - Sprawdź swoje DM!",
+    "reminder_disabled_title": "❌ Przypomnienia wyłączone!",
+    "reminder_disabled_desc": "❌ Przypomnienia wyłączone. Możesz je włączyć w każdej chwili.",
+    "dm_error_title": "❌ Nie można włączyć przypomnień głosowania",
+    "dm_error_desc": "🔔 Ups! Nie możemy wysłać Ci powiadomień DM.\n\n➡ **Aby włączyć przypomnienia o głosowaniu:**\n✅ Przejdź do **Ustawień użytkownika** (ikona koła zębatego)\n✅ Przejdź do **Prywatność i bezpieczeństwo**\n✅ Włącz **Zezwalaj na wiadomości prywatne od członków serwera**\n✅ Lub dodaj MiauDex do znajomych\n\n✨ **Dlaczego DM?**\n💖 Unikaj spamu na serwerze\n🚀 Natychmiastowe powiadomienia\n💎 Spersonalizowane doświadczenie!",
+    "dm_error_footer": "💡 Gdy naprawisz ustawienia DM, spróbuj ponownie włączyć przypomnienia!",
+    "rank_legend": "LEGENDA GŁOSÓW",
+    "rank_master": "MISTRZ GŁOSÓW",
+    "rank_expert": "EKSPERT GŁOSÓW",
+    "rank_ace": "AS GŁOSÓW",
+    "rank_pro": "PRO GŁOSÓW",
+    "rank_voter": "GŁOSUJĄCY",
+    "streak_legendary": "LEGENDARNY",
+    "streak_champion": "MISTRZ",
+    "streak_on_fire": "W OGNIU",
+    "streak_rising_star": "WSCHODZĄCA GWIAZDA",
+    "streak_getting_started": "ZACZYNAJĄCY",
+    "streak_newcomer": "NOWICJUSZ",
+    "not_your_panel": "❌ To jest panel głosowania {{username}}!",
+    "settings_updated": "Ustawienia zaktualizowane pomyślnie!",
+    "reminder_success_title": "✅ Przypomnienia włączone pomyślnie!",
+    "reminder_success_desc": "🔔 Świetnie! Przypomnienia głosowania są teraz aktywne!\n\n✨ **Co się dzieje dalej?**\n➡ Otrzymasz przypomnienie DM, gdy będziesz mógł ponownie głosować\n🚀 Każde przypomnienie będzie zawierać bezpośrednie linki do głosowania\n💖 Nigdy nie przegapisz głosu i zdobędziesz więcej kotów!\n\n✅ **Wiadomość testowa wysłana pomyślnie** - Sprawdź swoje DM!",
+    "all_set_footer": "🔔 Wszystko gotowe! Miłego głosowania!",
+    "user_stats_title": "🏆 Statystyki głosowania {{username}}",
+    "stats_subtitle": "✨ Szczegółowe zestawienie Twojej podróży głosowania",
+    "overall_stats": "⭐ Ogólne statystyki",
+    "overall_stats_value": "**Łączne głosy:** {{votes}}\n**Aktualna passa:** {{streak}}\n**Ranga:** {{rank}}",
+    "cats_earned": "🐱 Zdobyte koty",
+    "cats_earned_value": "**Z głosów:** {{cats}}",
+    "reminder_info": "🔔 Info o przypomnieniach",
+    "reminder_info_value": "**Status:** {{status}}\n**Następny głos:** {{nextVote}}\n**Efektywność:** {{efficiency}}",
+    "status_active": "✅ Aktywne",
+    "status_disabled": "❌ Wyłączone",
+    "keep_voting_footer": "Głosuj dalej, aby odblokować więcej osiągnięć! • {{date}}",
+    "rank_master_voter": "Mistrz Głosowania",
+    "rank_expert_voter": "Ekspert Głosowania",
+    "rank_active_voter": "Aktywny Głosujący",
+    "rank_new_voter": "Nowy Głosujący",
+    "efficiency_excellent": "Doskonała",
+    "efficiency_good": "Dobra",
+    "efficiency_starting": "Rozpoczyna"
+  },
+  "trade": {
+    "proposal_title": "🔄 Propozycja Wymiany",
+    "completed_title": "🤝 Wymiana Zakończona!",
+    "rejected_title": "❌ Wymiana Odrzucona",
+    "cancelled_title": "⏰ Wymiana Anulowana",
+    "proposal_description": "{{target}}, {{username}} chce wymienić się z tobą kotami!\n\n⏳ **Wybierz swoją odpowiedź poniżej**\n⏰ Masz {{time}} sekund na decyzję",
+    "success_description": "✅ **Wymiana udana!**\nOba koty zostały przeniesione do nowych właścicieli.",
+    "rejected_description": "{{username}} odrzucił propozycję wymiany.",
+    "cancelled_description": "Nie otrzymano odpowiedzi w limicie czasu.",
+    "offering": "{{emoji}} {{username}} oferuje:",
+    "exchange": "⇄",
+    "errors": {
+      "invalid_initiator": "Nie możesz inicjować wymian jako bot",
+      "invalid_target": "Nie możesz handlować z botami",
+      "self_trade": "Nie możesz handlować sam ze sobą! 🤔\n\nSpróbuj znaleźć innego użytkownika do wymiany.",
+      "invalid_cat_name": "Nazwy kotów muszą mieć 1-{{max}} znaków i zawierać prawidłowe znaki.",
+      "settings_check_failed": "Nie można sprawdzić ustawień wymiany {{username}}. Mogą potrzebować najpierw użyć bota.",
+      "trades_disabled": "{{username}} wyłączył wymianę kotów.\n\nMogą ją włączyć używając: `/profil`",
+      "cat_not_found": "Nie masz kota o nazwie \"{{name}}\".\n\nUżyj `/galeria` aby zobaczyć dostępne koty.",
+      "target_cat_not_found": "{{username}} nie ma kota o nazwie \"{{name}}\".\n\nMożesz sprawdzić ich kolekcję używając `/galeria`",
+      "rarity_mismatch": "Koty muszą mieć tę samą rzadkość aby je wymienić!\n\n{{my_emoji}} Twój kot: **{{my_rarity}}**\n{{their_emoji}} Ich kot: **{{their_rarity}}**\n\n*To sprawia, że wymiany są uczciwe dla wszystkich.*",
+      "lookup_failed": "Nie można znaleźć kota w bazie danych. Spróbuj ponownie.",
+      "trade_failed": "Wystąpił błąd podczas przenoszenia kotów. Wymiana została anulowana.\n\nOba koty pozostają u pierwotnych właścicieli.",
+      "unexpected_error": "Coś nieoczekiwanego stało się podczas przetwarzania wymiany.\n\nSpróbuj ponownie za kilka chwil."
+    },
+    "command": {
+      "option_user": "użytkownik",
+      "option_user_desc": "Użytkownik z którym chcesz się wymienić",
+      "option_yourcat": "twoj-kot",
+      "option_yourcat_desc": "Nazwa twojego kota do wymiany",
+      "option_theircat": "ich-kot",
+      "option_theircat_desc": "Nazwa ich kota którego chcesz"
+    }
+  },
+  "rarity": {
+    "title": "✨ 🐱 Rzadkości Kotów 🐱 ✨",
+    "subtitle": "🌌 **Witaj w magicznym świecie rzadkości kotów!**",
+    "description": "ℹ️ Każdy kot ma unikalną rzadkość która określa jego kolor i jak wyjątkowy jest.\n🎲 Im rzadszy kot, tym trudniej go znaleźć!",
+    "total_cats": "📊 **Wszystkie Dostępne Koty:** {{count}}",
+    "common_rare": "📖 Zwykłe do Rzadkich",
+    "epic_legendary": "⭐ Epickie do Legendarnych",
+    "ultra_rare": "👑 Ultra Rzadkie",
+    "footer": "Rzadkość wpływa na kolor embeda • Użyj menu aby eksplorować poszczególne rzadkości",
+    "details_title": "{{emoji}} Rzadkość {{name}}",
+    "details_description": "✨ **\"{{description}}\"**",
+    "drop_info": "🎲 Informacje o Wypadnięciu",
+    "drop_info_value": "**Szansa:** {{chance}}\n**Proporcje:** 1 na {{odds}}\n**Trudność:** {{difficulty}}",
+    "availability": "📊 Dostępność",
+    "availability_value": "**Wszystkie Koty:** {{count}}\n**% Bazy Danych:** {{percentage}}%\n**Ranking:** #{{rank}} z {{total}}",
+    "collection_tip": "🪄 Porada Kolekcjonerska",
+    "tips": {
+      "easy": "💖 **Łatwe do zebrania!** Głosuj regularnie aby budować kolekcję.",
+      "moderate": "🎯 **Umiarkowane wyzwanie.** Codzienne głosowanie da ci je z czasem.",
+      "serious": "🔥 **Wymagane poważne oddanie.** Konsekwentne głosowanie to klucz!",
+      "ultra_rare": "👑 **Ultra rzadkie!** Wymagają niesamowitej cierpliwości i szczęścia.",
+      "legendary": "🌌 **Status legendarny!** Najrzadsze z rzadkich - prawdziwe nagrody kolekcjonerów!"
+    },
+    "details_footer": "Część systemu rzadkości MiauDex • Wybierz inną rzadkość aby odkryć więcej!",
+    "select_placeholder": "🔍 Wybierz rzadkość aby dowiedzieć się więcej..."
+  },
+  "help": {
+    "main": {
+      "title": "Centrum Komend MiauDex",
+      "description": "**Witaj w najlepszym doświadczeniu zbierania kotów!**\n\n{{sparkles}} **{{totalCommands}} komend** dostępnych aby ulepszyć twoją podróż\n{{cat}} Zbieraj rzadkie koty, współzawodniczj z przyjaciółmi i zostań legendą!\n\n**Wybierz kategorię poniżej aby poznać komendy:**",
+      "footer": "💡 Wskazówka: Użyj menu rozwijanego aby poznać konkretne kategorie!"
+    },
+    "categories": {
+      "collection": {
+        "name": "🐱 Kolekcja",
+        "description": "Zarządzaj i przeglądaj swoją kolekcję kotów"
+      },
+      "social": {
+        "name": "👥 Społeczność i Rywalizacja",
+        "description": "Rywalizuj i interakcjonuj z innymi kolekcjonerami"
+      },
+      "rewards": {
+        "name": "🎁 Nagrody i Głosowanie",
+        "description": "Otrzymuj nagrody i wspieraj bota"
+      },
+      "utility": {
+        "name": "⚙️ Narzędzia i Ustawienia",
+        "description": "Ustawienia bota i przydatne narzędzia"
+      }
+    },
+    "commands_count": "komend",
+    "category": {
+      "commands": "Komendy",
+      "count": "**{{count}} komend** w tej kategorii:",
+      "no_commands": "Nie znaleziono komend w tej kategorii.",
+      "footer": "🔍 Użyj menu aby poznać inne kategorie • {{count}} komend pokazanych"
+    },
+    "quickstart": {
+      "title": "Przewodnik Szybkiego Startu",
+      "subtitle": "**Nowy w MiauDex? Rozpocznij swoją legendarną podróż tutaj!**",
+      "step1": {
+        "title": "Krok 1: Zdobądź Pierwszego Kota",
+        "description": "Użyj `/kot` aby dostać darmowego losowego kota!"
+      },
+      "step2": {
+        "title": "Krok 2: Sprawdź Swoją Kolekcję",
+        "description": "Użyj `/galeria` aby zobaczyć wszystkie swoje zebrane koty i ich rzadkość."
+      },
+      "step3": {
+        "title": "Krok 3: Wspiąć się w Rankingu",
+        "description": "Użyj `/ranking` aby zobaczyć gdzie jesteś w rankingu względem innych kolekcjonerów."
+      },
+      "step4": {
+        "title": "Krok 4: Dostosuj Swoje Doświadczenie",
+        "description": "Użyj `/profil` aby zarządzać swoimi ustawieniami i preferencjami."
+      },
+      "tips": {
+        "title": "Porady Pro",
+        "content": "• Głosuj co 12 godzin dla stałych nagród\n• Rzadkie koty są bardziej wartościowe w rankingach\n• Dołącz do naszej społeczności dla ekskluzywnych eventów!"
+      },
+      "footer": "🎯 Gotowy zostać legendą kolekcjonowania kotów?"
+    },
+    "menu": {
+      "placeholder": "🔍 Wybierz kategorię komend do poznania..."
+    },
+    "buttons": {
+      "quickstart": "🚀 Szybki Start",
+      "support": "💖 Wspieraj Nas",
+      "refresh": "🔄 Odśwież"
+    },
+    "error": {
+      "title": "Ups! Coś poszło nie tak",
+      "description": "Nie można załadować menu pomocy w tej chwili. Spróbuj ponownie!",
+      "footer": "🐾 Błąd zapisany do debugowania"
+    },
+    "command_descriptions": {
+      "cat": "Odkryj i zbierz nowego kota do swojej kolekcji!",
+      "gallery": "Zobacz swoją lub innego użytkownika galerię kotów",
+      "rename": "Nadaj swojemu ukochanemu kotu nową nazwę!",
+      "top": "Pokaż ranking kotów",
+      "profile": "Pokaż i zarządzaj ustawieniami profilu",
+      "stats": "Pokaż statystyki bota",
+      "vote": "Głosuj na bota i otrzymuj nagrody",
+      "announcement": "Zobacz najnowsze aktualizacje i ogłoszenia MiauDex",
+      "invite": "Dołącz do oficjalnego serwera MiauDex i odblokuj ekskluzywne korzyści!",
+      "serverinfo": "Pokaż informacje o serwerze",
+      "rarity": "Poznaj rzadkości kotków",
+      "help": "Poznaj centrum pomocy i wszystkie komendy",
+      "trade": "Wymień się kotkami z innymi kolekcjonerami"
+    }
+  },
+  "invite": {
+    "main": {
+      "title": "Dołącz do Społeczności MiauDex!",
+      "description": "{{rainbow}} **Witaj w najlepszym raju dla kolekcjonerów kotów!**\n\n{{community}} Połącz się z innymi entuzjastami kotów\n{{support}} Otrzymuj natychmiastową pomoc i wsparcie od naszego niesamowitego zespołu\n{{gift}} Uczesticz w ekskluzywnych eventach i konkursach\n{{news}} Bądź na bieżąco z najnowszymi funkcjami MiauDex\n\n{{arrow}} [**Kliknij tutaj aby dołączyć do przygody!**]({{invite_link}})\n{{bot}} [**Dodaj MiauDex do swojego serwera!**]({{bot_invite_link}})",
+      "whats_inside": {
+        "title": "Co w Środku?",
+        "content": "{{chat}} **Aktywna Społeczność** - Rozmawiaj z miłośnikami kotów z całego świata\n{{trophy}} **Rankingi** - Zobacz kto jest najlepszym kolekcjonerem\n{{bell}} **Ogłoszenia** - Pierwszy dowiaduj się o aktualizacjach\n{{target}} **Eventy** - Specjalne konkursy i wyzwania"
+      },
+      "exclusive_perks": {
+        "title": "Ekskluzywne Korzyści",
+        "content": "{{gift}} **Codzienne Konkursy** - Darmowe koty codziennie\n{{gem}} **Kanały VIP** - Korzyści dla członków premium"
+      },
+      "footer": "{{heart}} Dołącz do {{users}}+ zarejestrowanych kolekcjonerów w naszej rosnącej społeczności!"
+    },
+    "giveaway": {
+      "title": "Codzienne Konkursy Kotów",
+      "description": "{{tada}} **Każdego dnia, jeden szczęśliwy członek wygrywa DARMOWEGO kota!**\n\n{{lightning}} Szybkie do wpisania, ekscytujące do wygrania i całkowicie DARMOWE!\n\n{{arrow}} **Dostępne tylko na [Serwerze MiauDex]({{invite_link}})!**",
+      "schedule": {
+        "title": "Harmonogram",
+        "content": "{{bell}} **Codziennie o 16:00 UTC**\n{{target}} Automatyczne powiadomienia dla członków"
+      },
+      "rewards": {
+        "title": "Nagrody",
+        "content": "{{cat}} **1 Losowy Kot**"
+      },
+      "how_to_enter": {
+        "title": "Jak Wziąć Udział",
+        "content": "{{check}} **Po prostu zareaguj!** To takie proste\n{{tada}} Zwycięzcy ogłaszani 24 godziny później!"
+      },
+      "footer": "{{wink}} Nie przegap swojej codziennej szansy - dołącz teraz i zacznij wygrywać!"
+    },
+    "features": {
+      "title": "Pokaz Funkcji Serwera",
+      "description": "**Odkryj co czyni naszą społeczność wyjątkową:**",
+      "community_channels": {
+        "title": "Kanały Społeczności",
+        "content": "{{paw}} **#cat-center** - Pochwal się swoją kolekcją\n{{heart}} **#english-general** - Zaprzyjaźnij się z innymi kolekcjonerami\n{{target}} **#trading** - Wymieniaj koty z innymi członkami"
+      },
+      "support_help": {
+        "title": "Wsparcie i Pomoc",
+        "content": "{{bell}} **#miaudex** - Najnowsze wiadomości i aktualizacje\n{{check}} **#support** - Otrzymaj pomoc od naszego zespołu\n{{crystal}} **#suggestions** - Kształtuj przyszłość bota"
+      },
+      "vip_benefits": {
+        "title": "Korzyści Członka VIP",
+        "content": "{{gem}} **Ekskluzywne kanały** z zaawansowanymi kolekcjonerami\n{{fire}} **Beta testy** dostęp do nowych funkcji\n{{rainbow}} **Specjalna rola** z unikalnymi korzyściami i uznaniem"
+      },
+      "footer": "{{globe}} Budujemy najlepszą społeczność kolekcjonerów kotów na świecie, po jednym członku na raz!"
+    },
+    "stats": {
+      "title": "Statystyki Społeczności",
+      "description": "**Nasza niesamowita społeczność w liczbach:**",
+      "registered_users": {
+        "title": "Zarejestrowani Użytkownicy",
+        "content": "**{{count}}** kolekcjonerów kotów"
+      },
+      "total_cats": {
+        "title": "Wszystkie Zebrane Koty",
+        "content": "**{{count}}** kotów w kolekcjach"
+      },
+      "active_voters": {
+        "title": "Aktywni Głosujący",
+        "content": "**{{count}}** codziennych uczestników"
+      },
+      "total_votes": {
+        "title": "Wszystkie Oddane Głosy",
+        "content": "**{{count}}** głosów na darmowe koty"
+      },
+      "premium_members": {
+        "title": "Członkowie Premium",
+        "content": "**{{count}}** kolekcjonerów VIP"
+      },
+      "giveaway_participants": {
+        "title": "Uczestnicy Konkursów",
+        "content": "**{{count}}** aktywnych w eventach"
+      },
+      "leaderboard_competitors": {
+        "title": "Konkurenci Rankingu",
+        "content": "**{{count}}** pokazujących swoje kolekcje"
+      },
+      "average_collection": {
+        "title": "Średni Rozmiar Kolekcji",
+        "content": "**{{count}}** kotów na użytkownika"
+      },
+      "engagement_rate": {
+        "title": "Wskaźnik Zaangażowania",
+        "content": "{{rate}}% codziennej aktywności"
+      },
+      "highlights": {
+        "title": "Prawdziwe Atrakcje Społeczności",
+        "content": "{{heart}} **{{totalVotes}}** głosów oddanych przez naszą niesamowitą społeczność\n{{sparkles}} **{{giveawayParticipants}}** członków aktywnie uczestniczących w eventach\n{{trophy}} **{{leaderboardUsers}}** dumnych kolekcjonerów pokazujących swoje osiągnięcia"
+      },
+      "footer": "{{wink}} To są prawdziwe liczby z naszej rzeczywistej bazy danych społeczności!"
+    },
+    "buttons": {
+      "join_server": "{{rocket}} Dołącz do Serwera MiauDex",
+      "add_bot": "{{plus}} Dodaj Bota MiauDex",
+      "review": "{{star}} Zostaw Recenzję",
+      "vote": "{{trophy}} Głosuj na MiauDex",
+      "features": "{{magic}} Funkcje Serwera",
+      "stats": "{{chart}} Statystyki Społeczności"
+    }
+  },
+  "errors": {
+    "unexpected_title": "Nieoczekiwany Błąd",
+    "unexpected": "Coś nieoczekiwanego się stało podczas zbierania kota.\n\nZespół programistów został powiadomiony. Spróbuj ponownie za kilka minut.",
+    "unknown_command": "❌ Nieznana komenda: `{{command}}`"
+  },
+  "rename": {
+    "nice_name": "ładniej",
+    "invalid_name_title": "❌ Nieprawidłowa Nazwa!",
+    "invalid_name_description": "⚠️ Wystąpił problem z nazwą \"{{name}}\".\n\n✨ Spróbuj innej nazwy dla swojego kota!",
+    "choose_loving_name": "Wybierz kochającą nazwę dla swojego futrzanego przyjaciela! 🐾",
+    "reserved_pattern_title": "❌ Zarezerwowany Wzór Nazwy!",
+    "reserved_pattern_description": "⚠️ Nazwy takie jak \"**{{name}}**\" są zarezerwowane przez system.\n\n🐱 **Zablokowany wzór:** \"cat\" po którym następują cyfry (jak cat1, cat30, itp.)\n✨ Twój kot zasługuje na bardziej kreatywną i osobistą nazwę!",
+    "creative_alternatives": "🎨 Kreatywne Alternatywy",
+    "alternative_examples": "• **Wąsik**\n• **Cień**\n• **Rękawiczka**\n• **Luna**\n• **{{oldName}}Pro**",
+    "let_creativity_shine": "Niech twoja kreatywność zabłyśnie! ✨",
+    "name_too_long_title": "⚠️ Nazwa Za Długa!",
+    "name_too_long_description": "😿 Nazwa twojego kota \"{{name}}\" ma **{{length}}** znaków.\n\n✏️ **Maksymalnie dozwolone:** 20 znaków\n✨ Spróbuj krótszej, słodszej nazwy!",
+    "suggestions": "🎨 Sugestie",
+    "choose_perfect_fit": "Wybierz nazwę która idealnie pasuje! 🐾",
+    "invalid_characters_title": "❌ Nieprawidłowe Znaki!",
+    "invalid_characters_description": "⚠️ Nazwa \"{{name}}\" zawiera nieprawidłowe znaki.\n\n✅ **Dozwolone znaki:**\n• Litery (A-Z, a-z)\n• Cyfry (0-9)\n• Spacje, myślniki (-), podkreślenia (_)\n\n❌ **Niedozwolone:** Emoji, specjalne symbole",
+    "valid_examples": "✨ Prawidłowe Przykłady",
+    "valid_examples_content": "• **Puszysty Kot**\n• **Cień-2024**\n• **Mój_Drogi_Jeden**",
+    "keep_simple_sweet": "Zachowaj prostotę i słodycz! 💫",
+    "cat_not_found_title": "😿 Kot Nie Znaleziony!",
+    "cat_not_found_description": "🐱 Nie mogę znaleźć kota o nazwie \"**{{name}}**\" w twojej kolekcji.\n\n✨ **Sprawdź pisownię** i spróbuj ponownie!",
+    "quick_tips": "🎨 Szybkie Wskazówki",
+    "quick_tips_content": "• Nazwy są **wrażliwe na wielkość liter**\n• Użyj `/galeria` aby zobaczyć wszystkie swoje koty\n• Upewnij się, że posiadasz tego kota",
+    "gallery_tip": "Wskazówka: Użyj /galeria aby zobaczyć wszystkich swoich futrzanych przyjaciół! 🐾",
+    "name_taken_title": "❌ Nazwa Już Zajęta!",
+    "name_taken_description": "🐱 Masz już kota o nazwie \"**{{name}}**\"!\n\n✨ Każdy kot w twojej kolekcji potrzebuje **unikalnej nazwy**.",
+    "unique_name_footer": "Uczyń każdego kota wyjątkowym z unikalną nazwą! ✨",
+    "success_title": "🎉 Kot Pomyślnie Przemianowany! 🎉",
+    "success_description": "✨ **Gratulacje!** Transformacja twojego kota została zakończona!\n\n🐱 **\"{{oldName}}\"** jest teraz dumnie nazywany **\"{{newName}}\"**!",
+    "cat_details": "{{emoji}} Szczegóły Kota",
+    "cat_details_content": "**Nowa Nazwa:** {{newName}}\n**Rzadkość:** {{rarity}}\n**Właściciel:** {{owner}}",
+    "fun_fact": "🎨 Ciekawostka",
+    "fun_fact_content": "Czy wiesz? Twój kot będzie pamiętał ten wyjątkowy moment na zawsze! {{newName}} jest teraz gotowy na nowe przygody! 💖",
+    "success_footer": "{{newName}} mówi \"Miau!\" • Przemianowany przez {{owner}}",
+    "celebration_message": "🌈 **{{newName}}** świetnie się przyzwyczaja do swojej nowej nazwy! 😻 Wygląda na to, że ją kocha!",
+    "celebration_footer": "Twoja kolekcja kotów stała się jeszcze bardziej wyjątkowa! 🌟",
+    "command": {
+      "option_old": "stara-nazwa",
+      "option_old_desc": "🔍 Obecna nazwa twojego kota",
+      "option_new": "nowa-nazwa",
+      "option_new_desc": "✨ Nowa błyszcząca nazwa dla twojego kota"
+    }
+  },
+  "gallery": {
+    "command": {
+      "name": "galeria",
+      "description": "Zobacz swoją lub innego użytkownika galerię kotów",
+      "option_user": "użytkownik",
+      "option_user_desc": "Użytkownik, którego galerię chcesz zobaczyć"
+    },
+    "empty": {
+      "title": "📭 Pusta Galeria",
+      "description": "**{{username}}** nie zebrał jeszcze żadnych kotów!\n\n🐱 Zacznij zbierać koty aby zbudować swoją galerię\n✨ Każdy kot jest wyjątkowy\n📚 Stwórz ostateczną kolekcję!",
+      "footer": "Pusta Galeria • Rozpocznij swoją kolekcję już dziś!"
+    },
+    "error": {
+      "title": "❌ Błąd Galerii",
+      "description": "Coś poszło nie tak podczas ładowania galerii. Spróbuj ponownie!",
+      "not_found": "❓ **Nie znaleziono kota lub dane uszkodzone**\n\nSpróbuj odświeżyć galerię lub skontaktuj się ze wsparciem."
+    },
+    "embed": {
+      "title": "🖼️ Galeria Kotów użytkownika {{username}}",
+      "collection_progress": "📚 **Postęp Kolekcji**\n`{{progressBar}}` {{current}}/{{total}}",
+      "rarity_details": "⭐ Szczegóły Rzadkości",
+      "collection_stats": "💎 Statystyki Kolekcji",
+      "footer": "💖 Kot {{current}} z {{total}} • Galeria {{username}} • Użyj przycisków aby nawigować"
+    },
+    "navigation": {
+      "previous": "Poprzedni",
+      "next": "Następny",
+      "jump": "Skocz"
+    },
+    "utility": {
+      "stats": "Statystyki",
+      "refresh": "Odśwież",
+      "help": "Pomoc"
+    },
+    "help": {
+      "title": "🔍 Pomoc i Komendy Galerii",
+      "description": "Dowiedz się, jak przeglądać swoją piękną kolekcję kotów!",
+      "navigation": "🎮 Sterowanie Nawigacją",
+      "navigation_details": {
+        "first": "⏮️ Pierwszy - Przejdź do pierwszego kota",
+        "previous": "⬅️ Poprzedni - Cofnij o jednego kota",
+        "jump": "🎯 Skocz - Przejdź do konkretnego numeru kota",
+        "next": "➡️ Następny - Przejdź do następnego kota",
+        "last": "⏭️ Ostatni - Przejdź do ostatniego kota"
+      },
+      "sorting": "📊 Opcje Sortowania",
+      "sorting_details": {
+        "date": "📅 Według Daty - Najnowsze koty na początku",
+        "rarity": "🌟 Według Rzadkości - Najrzadsze koty na początku",
+        "alpha": "🔤 Alfabetycznie - Sortuj według nazwy A-Z"
+      },
+      "utility": "🛠️ Funkcje Użytkowe",
+      "utility_details": {
+        "stats": "📊 Statystyki - Zobacz szczegółowe dane kolekcji",
+        "refresh": "🔄 Odśwież - Przeładuj dane galerii",
+        "help": "❓ Pomoc - Pokaż ten ekran pomocy"
+      },
+      "footer": "Pomoc Galerii • Ciesz się swoją kolekcją!"
+    },
+    "stats": {
+      "title": "💎 Statystyki Galerii użytkownika {{username}}",
+      "overview": "📚 Przegląd Kolekcji",
+      "rarity_breakdown": "⭐ Podział wg Rzadkości",
+      "footer": "Statystyki Galerii • Dane na żywo"
+    },
+    "labels": {
+      "type": "Typ",
+      "rarity": "Rzadkość",
+      "total_cats": "Łączna liczba kotów",
+      "completion": "Progres",
+      "enter_cat_number": "Wpisz numer kota (1 - {{max}})"
+    },
+    "jump_modal": {
+      "label": "Wpisz numer kota (1 - {{max}})",
+      "invalid": "❌ Nieprawidłowy numer kota. Wpisz liczbę od 1 do {{max}}."
+    }
+  },
+  "commands": {
+    "cat": { "name": "kot" },
+    "gallery": { "name": "galeria" },
+    "rename": { "name": "nazwij" },
+    "top": { "name": "ranking" },
+    "profile": { "name": "profil" },
+    "stats": { "name": "statystyki" },
+    "vote": { "name": "vote" },
+    "announcement": { "name": "ogloszenie" },
+    "invite": { "name": "zaproszenie" },
+    "serverinfo": { "name": "serwerinfo" },
+    "rarity": { "name": "rzadkosc" },
+    "help": { "name": "pomoc" },
+    "trade": { "name": "wymien" }
+  },
+  "profanity": {
+    "warning_title": "Meow... To nie jest ładna nazwa!",
+    "warning_description": "Nie mogę użyć tej nazwy dla Twojego kota. Nazwijmy go zamiast tego **{{newName}}**!",
+    "reminder": "🐱 **Pamiętaj:** Nasze koty zasługują na miłe i pełne miłości imiona!",
+    "tip": "💝 **Wskazówka:** Spróbuj imion takich jak Luna, Milo, Bella, lub pozwól mi wybrać numer!",
+    "footer": "MiauDex • Zachowaj pozytywny klimat! 🐾"
+  },
+  "announcement": {
+    "buttons": {
+      "tag": "🏷️ Zdobądź MIAU Tag"
+    }
+  },
+  "translations": {
+    "authors": [{ "ItsAlex": "551023598203043840" }]
+  }
+}

@@ -1,0 +1,688 @@
+{
+  "cat": {
+    "cooldown": {
+      "title": "🐾 Cat Collection Cooldown",
+      "description": "You need to wait **{{time}}** before collecting another cat.",
+      "tip": "💡 *Tip: Use `/gallery` to check your current collection while you wait!*",
+      "footer": "Cooldown helps keep cats special and fair for everyone!"
+    },
+    "success": {
+      "title": "{{rarity_emoji}} Congratulations, {{username}}!",
+      "collected": "🐱 **{{cat_name}}** has joined your collection!",
+      "rarity": "✨ Rarity: **{{rarity_name}}** ({{chance}} drop rate)",
+      "streak": "{{streak_emoji}} **Daily Streak:** {{streak}} days",
+      "description": "📝 {{rarity_description}}",
+      "footer": "MiauDex • Next cat available in 24 hours • Best streak: {{best_streak}} days"
+    },
+    "errors": {
+      "invalid_name_title": "Invalid Cat Name",
+      "invalid_name": "Cat names must be 1-32 characters long and contain valid characters.\n\n❌ **Not allowed:** `<>@#&` and empty names\n✅ **Allowed:** Letters, numbers, spaces, and most symbols",
+      "reserved_pattern_title": "Reserved Name Pattern!",
+      "reserved_pattern": "⚠️ Names like \"cat1\", \"cat30\", etc. are reserved by the system.\n\n🐱 **Pattern blocked:** \"cat\" followed by numbers\n✨ Your cat deserves a more creative and personal name!",
+      "creative_alternatives": "🎨 **Creative Alternatives:**",
+      "examples": "• **Whiskers** - Classic and cute\n• **Shadow** - Mysterious and cool\n• **Mittens** - Adorable and cozy\n• **Luna** - Celestial and beautiful\n• **Ziggy** - Playful and unique",
+      "creativity_tip": "💡 *Or let the system generate a unique name for you!*",
+      "footer_creativity": "Let your creativity shine! ✨",
+      "api_failed_title": "Cat Search Failed",
+      "api_failed": "Unable to connect to the cat image service. This is usually temporary.\n\n🔧 **Possible causes:**\n• Network connectivity issues\n• Cat API maintenance\n• Temporary server overload",
+      "save_failed_title": "Save Failed",
+      "save_failed": "Your cat was found but couldn't be saved to your collection. Please try again.\n\nIf this continues, the database might be temporarily unavailable."
+    },
+    "streak": {
+      "new_record": "🏆 **New personal record!**",
+      "legendary": "🌟 **Legendary dedication!**",
+      "on_fire": "🔥 **You're on fire!**",
+      "great_consistency": "⚡ **Great consistency!**",
+      "building_momentum": "🐱 **Building momentum!**"
+    },
+    "command": {
+      "option_name": "name",
+      "option_name_desc": "Give your new cat a custom name (1–32 characters, optional)"
+    }
+  },
+  "profile": {
+    "title": "👑 {{username}}'s Profile Dashboard",
+    "subtitle": "*Welcome to your personalized control center*",
+    "information": "✨ Profile Information",
+    "user": "User",
+    "member_since": "▶️ **Member since:** {{date}}",
+    "streak": {
+      "title": "🐱 Cat Collection Streak",
+      "current": "{{emoji}} **Current Streak:** {{streak}} days",
+      "best": "🏆 **Best Streak:** {{best}} days",
+      "messages": {
+        "start": "*Start your streak by collecting a cat!*",
+        "amazing": "*Amazing dedication! 🌟*",
+        "fire": "*You're on fire! 🔥*",
+        "consistency": "*Great consistency! ⚡*",
+        "momentum": "*Keep it going! 🐱*"
+      }
+    },
+    "settings": {
+      "title": "⚙️ Current Settings",
+      "leaderboard": "Leaderboard Visibility",
+      "trading": "Trading Enabled",
+      "reminders": "Cat Reminders",
+      "enabled": "enabled",
+      "disabled": "disabled"
+    },
+    "premium": {
+      "status": "✨ Premium Status",
+      "member": "✅ **Premium Member**",
+      "notifications": "🔔 Advanced Notifications",
+      "support": "⭐ Priority Support"
+    },
+    "buttons": {
+      "refresh": "Refresh",
+      "help": "Help"
+    },
+    "help": {
+      "title": "⚙️ Profile Settings Help",
+      "description": "Here's what each setting does:",
+      "leaderboard": "Controls whether you appear on server leaderboards and rankings",
+      "trading": "Allows other users to send you trade requests and offers",
+      "reminders": "Sends you personalized notifications about cats and activities",
+      "footer": "Help • Profile Dashboard"
+    },
+    "common": {
+      "premium": "Premium",
+      "premium_only": "Premium Only",
+      "enabled": "enabled",
+      "disabled": "disabled",
+      "loading": "Loading...",
+      "success": "Success!",
+      "error": "Error!"
+    },
+    "footer": {
+      "standard": "Standard Experience • Use the buttons to customize",
+      "premium": "Premium Experience • Use the buttons to customize",
+      "session_expired": "Session expired - use `/profile` to start a new one"
+    },
+    "premium_required": {
+      "title": "👑 Premium Feature",
+      "description": "**Cat Reminders** are only available for Premium members!\n\n✨ **What you get with Premium:**\n🔔 Smart cat notifications\n💎 Advanced profile features\n👑 VIP Status\n\n*Ready to upgrade? Contact your server administrator!*",
+      "footer": "Premium • Enhanced Discord Experience"
+    },
+    "errors": {
+      "generic": "Oops! Something went wrong. Please try again."
+    }
+  },
+  "serverinfo": {
+    "dm_only": "This command can only be used in a server!",
+    "title": "🏰 {{server_name}} Server Info",
+    "subtitle": "{{sparkles}} {{level}}",
+    "description": "Welcome to {{server_name}}! A vibrant community server.",
+    "members": "👥 Members",
+    "members_value": "**Total:** {{total}}\n**Humans:** {{humans}}\n**Bots:** {{bots}}",
+    "boosts": "{{boost_emoji}} Server Boosts",
+    "boosts_value": "**Level:** {{level}}\n**Boosts:** {{count}}",
+    "timeline": "📅 Timeline",
+    "timeline_value": "**Created:** <t:{{created}}:R>\n**You joined:** <t:{{joined}}:R>",
+    "footer": "Server ID: {{id}} • Requested by {{username}}",
+    "level_mega": "🌟 MEGA SERVER",
+    "level_large": "🏆 LARGE SERVER",
+    "level_big": "🚀 BIG SERVER",
+    "level_medium": "💎 MEDIUM SERVER",
+    "level_growing": "✨ GROWING SERVER",
+    "level_small": "🌱 SMALL SERVER",
+    "join_miaudex": "💖 Join MiauDex",
+    "leave_review": "⭐ Leave a Review",
+    "vote_bot": "🚀 Vote for Bot"
+  },
+  "stats": {
+    "title": "📈 MiauDex Statistics Dashboard",
+    "subtitle": "**Real-time insights into the cat collection universe!**",
+    "status": "🚀 **Status:** All systems operational",
+    "performance": "⚡ **Performance:** {{status}}",
+    "scale": "🛡️ **Scale:** {{tier}}",
+    "network": "🌍 Network Reach",
+    "network_value": "**Servers:** {{servers}}\n**Total Users:** {{users}}\n**Avg Users/Server:** {{avg_users}}",
+    "collection": "🐱 Collection Stats",
+    "collection_value": "**Total Cats:** {{cats}}\n**Avg Cats/User:** {{avg_cats}}\n**Collection Rate:** {{rate}}",
+    "health": "⏱️ System Health",
+    "health_value": "**Uptime:** {{uptime}}\n**Ping:** {{ping}}\n**Status:** {{status}}",
+    "footer": "💡 Click buttons below for detailed insights • Last updated",
+    "community_title": "💖 Community Insights",
+    "community_subtitle": "**Celebrating our amazing cat collecting community!**",
+    "community_size": "👥 Community Size",
+    "community_size_value": "**Total Collectors:** {{collectors}}\n**Daily Active:** ~{{active}}\n**Weekly Growth:** +{{growth}}%",
+    "milestones": "🐱 Collection Milestones",
+    "milestones_value": "**Total Cats Collected:** {{total}}\n**Average per User:** {{average}} cats\n**Rarest Collections:** {{rarest}}+ cats",
+    "achievements": "🏆 Achievements",
+    "achievements_value": "**Top Collector:** {{top}} cats\n**Active Guilds:** {{guilds}}\n**Global Ranking:** Active",
+    "community_footer": "🌟 Thank you for being part of our community!",
+    "error_title": "⚙️ Stats Temporarily Unavailable",
+    "error_description": "Unable to fetch statistics right now. Please try again in a moment!",
+    "error_footer": "🔧 Our team has been notified of this issue",
+    "status_legendary": "LEGENDARY",
+    "status_excellent": "EXCELLENT",
+    "status_great": "GREAT",
+    "status_good": "GOOD",
+    "status_fresh": "FRESH",
+    "tier_massive": "MASSIVE",
+    "tier_huge": "HUGE",
+    "tier_large": "LARGE",
+    "tier_growing": "GROWING",
+    "tier_small": "SMALL",
+    "rate_high": "High",
+    "rate_medium": "Medium",
+    "rate_growing": "Growing",
+    "conn_excellent": "Excellent",
+    "conn_good": "Good",
+    "conn_fair": "Fair",
+    "calculating": "Calculating...",
+    "community_button": "Community",
+    "refresh_button": "Refresh",
+    "support_button": "Support",
+    "back_to_main": "Back to Main"
+  },
+  "leaderboard": {
+    "title": "🏆 Cat Leaderboard",
+    "subtitle": "**The most legendary cat collectors!**",
+    "legends": "👑 Hall of Legends",
+    "rising": "⭐ Rising Collectors",
+    "your_rank": "🐾 Your Rank",
+    "your_rank_value": "**#{{rank}}** • **{{cats}}** cats {{emoji}}\n{{progress}} `{{current}}/{{next}}`",
+    "footer": "🐾 Keep collecting to climb the ranks! • Updated every moment",
+    "empty_title": "🐱 ✨ Cat Leaderboard ✨",
+    "empty_description": "🐾 **The leaderboard is empty!**\n\n🚀 Be the first legendary cat collector!\n🔮 Start collecting cats and claim your throne!",
+    "empty_footer": "🐾 Start your collection journey today!",
+    "error_title": "❌ Oops! Something went wrong",
+    "error_description": "🐾 Unable to fetch the leaderboard right now. Please try again!",
+    "error_footer": "🐾 Error logged for debugging",
+    "refresh_button": "🔄 Refresh",
+    "my_stats_button": "📊 My Stats",
+    "stats_title": "💎 {{username}}'s Collection Stats",
+    "stats_description": "**Your cat collection journey**",
+    "stats_ranking": "🏆 Ranking",
+    "stats_ranking_value": "**Rank:** #{{rank}}\n**Cats:** {{cats}}\n**Status:** {{status}}",
+    "stats_no_data": "You haven't started collecting yet!",
+    "stats_progress": "⭐ Progress",
+    "stats_progress_value": "**Next Milestone:** {{next}}\n**Progress:** {{progress}} `{{current}}/100`\n**Efficiency:** {{efficiency}}",
+    "stats_progress_no_data": "Start collecting to see your progress!",
+    "stats_max_level": "MAX LEVEL!",
+    "stats_efficiency_legendary": "Legendary",
+    "stats_efficiency_expert": "Expert",
+    "stats_efficiency_good": "Good",
+    "stats_efficiency_starting": "Starting",
+    "stats_footer": "Keep collecting to climb higher! • {{date}}"
+  },
+  "vote": {
+    "title": "🗳️ Vote for MiauDex!",
+    "subtitle": "✨ Support the bot and earn rewards!",
+    "description": "Vote every 12 hours to earn cats and unlock achievements!",
+    "footer": "Next vote: {{next}}",
+    "reminder_status": "🔔 Reminder Status",
+    "reminder_enabled": "✅ Reminders Enabled",
+    "reminder_disabled": "❌ Reminders Disabled",
+    "voting_stats": "📊 Voting Stats",
+    "voting_stats_value": "**Total Votes:** {{votes}}\n**Status:** {{status}}\n**Progress:** {{progress}}",
+    "vote_rewards": "🎁 Vote Rewards",
+    "vote_rewards_value": "Earn cats and special badges for voting!",
+    "enable_reminders": "🔔 Enable Reminders",
+    "disable_reminders": "🔕 Disable Reminders",
+    "view_leaderboard": "🏆 View Leaderboard",
+    "vote_now": "🚀 Vote Now",
+    "view_stats": "📈 View Stats",
+    "time_remaining": "Time remaining: {{time}}",
+    "ready_to_vote": "You can vote now!",
+    "leaderboard_title": "🏆 Vote Leaderboard",
+    "leaderboard_subtitle": "Check out the top voters!",
+    "voting_legends": "Top 3 Legends",
+    "rising_voters": "Rising Voters",
+    "no_legends": "No legends yet!",
+    "your_rank": "Your Rank",
+    "your_rank_value": "{{emoji}} Position: {{position}} • Votes: {{votes}}\nProgress: {{progress}} ({{current}}/{{max}})",
+    "leaderboard_footer": "Leaderboard updated",
+    "leaderboard_error_title": "❌ Error Loading Leaderboard",
+    "leaderboard_error_desc": "Something went wrong while fetching the leaderboard.",
+    "leaderboard_error_footer": "Please try again later.",
+    "unknown_user": "Unknown User",
+    "votes": "votes",
+    "reminder_enabled_title": "✅ Reminders Enabled!",
+    "reminder_enabled_desc": "🔔 Perfect! Vote reminders are now active!\n\n➡ You'll get a DM when you can vote again.\n🚀 Each reminder includes direct voting links.\n💖 Never miss a vote and earn more cats!\n\n✅ Test message sent successfully - Check your DMs!",
+    "reminder_enabled_footer": "Test message sent successfully - Check your DMs!",
+    "reminder_disabled_title": "❌ Reminders Disabled!",
+    "reminder_disabled_desc": "❌ Reminders disabled. You can re-enable anytime.",
+    "dm_error_title": "❌ Cannot Enable Vote Reminders",
+    "dm_error_desc": "🔔 Oops! We can't send you DM notifications.\n\n➡ **To enable vote reminders:**\n✅ Go to **User Settings** (gear icon)\n✅ Navigate to **Privacy & Safety**\n✅ Enable **Allow DMs from server members**\n✅ Or add MiauDex as a friend\n\n✨ **Why DMs?**\n💖 Avoid spam in the server\n🚀 Instant notifications\n💎 Personalized experience!",
+    "dm_error_footer": "💡 Once you fix your DM settings, try enabling reminders again!",
+    "rank_legend": "VOTE LEGEND",
+    "rank_master": "VOTE MASTER",
+    "rank_expert": "VOTE EXPERT",
+    "rank_ace": "VOTE ACE",
+    "rank_pro": "VOTE PRO",
+    "rank_voter": "VOTER",
+    "streak_legendary": "LEGENDARY",
+    "streak_champion": "CHAMPION",
+    "streak_on_fire": "ON FIRE",
+    "streak_rising_star": "RISING STAR",
+    "streak_getting_started": "GETTING STARTED",
+    "streak_newcomer": "NEWCOMER",
+    "not_your_panel": "❌ This is {{username}}'s voting panel!",
+    "settings_updated": "Settings updated successfully!",
+    "reminder_success_title": "✅ Reminders Enabled Successfully!",
+    "reminder_success_desc": "🔔 Perfect! Vote reminders are now active!\n\n✨ **What happens next?**\n➡ You'll receive a DM reminder when you can vote again\n🚀 Each reminder will include direct voting links\n💖 Never miss a vote and earn more cats!\n\n✅ **Test message sent successfully** - Check your DMs!",
+    "all_set_footer": "🔔 You're all set! Happy voting!",
+    "user_stats_title": "🏆 {{username}}'s Voting Statistics",
+    "stats_subtitle": "✨ Detailed breakdown of your voting journey",
+    "overall_stats": "⭐ Overall Stats",
+    "overall_stats_value": "**Total Votes:** {{votes}}\n**Current Streak:** {{streak}}\n**Rank:** {{rank}}",
+    "cats_earned": "🐱 Cats Earned",
+    "cats_earned_value": "**From Votes:** {{cats}}",
+    "reminder_info": "🔔 Reminder Info",
+    "reminder_info_value": "**Status:** {{status}}\n**Next Vote:** {{nextVote}}\n**Efficiency:** {{efficiency}}",
+    "status_active": "✅ Active",
+    "status_disabled": "❌ Disabled",
+    "keep_voting_footer": "Keep voting to unlock more achievements! • {{date}}",
+    "rank_master_voter": "Master Voter",
+    "rank_expert_voter": "Expert Voter",
+    "rank_active_voter": "Active Voter",
+    "rank_new_voter": "New Voter",
+    "efficiency_excellent": "Excellent",
+    "efficiency_good": "Good",
+    "efficiency_starting": "Getting Started"
+  },
+  "trade": {
+    "proposal_title": "🔄 Trade Proposal",
+    "completed_title": "🤝 Trade Completed!",
+    "rejected_title": "❌ Trade Rejected",
+    "cancelled_title": "⏰ Trade Cancelled",
+    "proposal_description": "{{target}}, {{username}} wants to trade cats with you!\n\n⏳ **Choose your response below**\n⏰ You have {{time}} seconds to decide",
+    "success_description": "✅ **Trade successful!**\nBoth cats have been transferred to their new owners.",
+    "rejected_description": "{{username}} declined the trade proposal.",
+    "cancelled_description": "No response received within the time limit.",
+    "offering": "{{emoji}} {{username}} offers:",
+    "exchange": "⇄",
+    "errors": {
+      "invalid_initiator": "You cannot initiate trades as a bot",
+      "invalid_target": "You cannot trade with bots",
+      "self_trade": "You cannot trade with yourself! 🤔\n\nTry finding another user to trade with instead.",
+      "invalid_cat_name": "Cat names must be 1-{{max}} characters long and contain valid characters.",
+      "settings_check_failed": "Unable to verify {{username}}'s trade settings. They may need to use the bot first.",
+      "trades_disabled": "{{username}} has disabled cat trading.\n\nThey can enable it using: `/profile`",
+      "cat_not_found": "You don't have a cat named \"{{name}}\".\n\nUse `/gallery` to see your available cats.",
+      "target_cat_not_found": "{{username}} doesn't have a cat named \"{{name}}\".\n\nYou can check their collection with `/gallery`",
+      "rarity_mismatch": "Cats must be the same rarity to trade!\n\n{{my_emoji}} Your cat: **{{my_rarity}}**\n{{their_emoji}} Their cat: **{{their_rarity}}**\n\n*This keeps trades fair for everyone.*",
+      "lookup_failed": "Unable to find cat in the database. Please try again.",
+      "trade_failed": "An error occurred while transferring the cats. The trade has been cancelled.\n\nBoth cats remain with their original owners.",
+      "unexpected_error": "Something unexpected happened while processing your trade.\n\nPlease try again in a few moments."
+    },
+    "command": {
+      "option_user": "user",
+      "option_user_desc": "The user you want to trade with",
+      "option_yourcat": "your-cat",
+      "option_yourcat_desc": "The name of your cat for the trade",
+      "option_theircat": "their-cat",
+      "option_theircat_desc": "The name of their cat you want"
+    }
+  },
+  "rarity": {
+    "title": "✨ 🐱 Cat Rarities 🐱 ✨",
+    "subtitle": "🌌 **Welcome to the magical world of cat rarities!**",
+    "description": "ℹ️ Each cat has a unique rarity that determines its color and how special it is.\n🎲 The rarer the cat, the harder it is to find!",
+    "total_cats": "📊 **Total Cats Available:** {{count}}",
+    "common_rare": "📖 Common to Rare",
+    "epic_legendary": "⭐ Epic to Legendary",
+    "ultra_rare": "👑 Ultra Rare",
+    "footer": "🪄 Rarity affects embed color • Use dropdown to explore individual rarities",
+    "details_title": "{{emoji}} {{name}} Rarity",
+    "details_description": "✨ **\"{{description}}\"**",
+    "drop_info": "🎲 Drop Information",
+    "drop_info_value": "**Chance:** {{chance}}\n**Odds:** 1 in {{odds}}\n**Difficulty:** {{difficulty}}",
+    "availability": "📊 Availability",
+    "availability_value": "**Total Cats:** {{count}}\n**Database %:** {{percentage}}%\n**Rank:** #{{rank}} of {{total}}",
+    "collection_tip": "🪄 Collection Tip",
+    "tips": {
+      "easy": "💖 **Easy to collect!** Vote regularly to build up your collection.",
+      "moderate": "🎯 **Moderate challenge.** Daily voting will get you these over time.",
+      "serious": "🔥 **Serious dedication required.** Consistent voting is key!",
+      "ultra_rare": "👑 **Ultra rare!** These require incredible patience and luck.",
+      "legendary": "🌌 **Legendary status!** The absolute rarest - true collector's prizes!"
+    },
+    "details_footer": "Part of the MiauDex rarity system • Select another rarity to explore more!",
+    "select_placeholder": "🔍 Select a rarity to learn more..."
+  },
+  "help": {
+    "main": {
+      "title": "MiauDex Command Center",
+      "description": "**Welcome to the ultimate cat collection experience!**\n\n{{sparkles}} **{{totalCommands}} commands** available to enhance your journey\n{{cat}} Collect rare cats, compete with friends, and become a legend!\n\n**Choose a category below to explore commands:**",
+      "footer": "💡 Pro tip: Use the dropdown menu to explore specific categories!"
+    },
+    "categories": {
+      "collection": {
+        "name": "🐱 Collection",
+        "description": "Manage and view your cat collection"
+      },
+      "social": {
+        "name": "👥 Social & Competition",
+        "description": "Compete and interact with other collectors"
+      },
+      "rewards": {
+        "name": "🎁 Rewards & Voting",
+        "description": "Get rewards and support the bot"
+      },
+      "utility": {
+        "name": "⚙️ Utility & Settings",
+        "description": "Bot settings and useful tools"
+      }
+    },
+    "commands_count": "commands",
+    "category": {
+      "commands": "Commands",
+      "count": "**{{count}} commands** in this category:",
+      "no_commands": "No commands found in this category.",
+      "footer": "🔍 Use the menu to explore other categories • {{count}} commands shown"
+    },
+    "quickstart": {
+      "title": "Quick Start Guide",
+      "subtitle": "**New to MiauDex? Start your legendary journey here!**",
+      "step1": {
+        "title": "Step 1: Get Your First Cat",
+        "description": "Use `/cat` to get a free random cat!"
+      },
+      "step2": {
+        "title": "Step 2: Check Your Collection",
+        "description": "Use `/gallery` to view all your collected cats and their rarity."
+      },
+      "step3": {
+        "title": "Step 3: Climb the Leaderboard",
+        "description": "Use `/top` to see where you rank among other collectors."
+      },
+      "step4": {
+        "title": "Step 4: Customize Your Experience",
+        "description": "Use `/profile` to manage your settings and preferences."
+      },
+      "tips": {
+        "title": "Pro Tips",
+        "content": "• Vote every 12 hours for consistent rewards\n• Rare cats are more valuable for rankings\n• Join our community for exclusive events!"
+      },
+      "footer": "🎯 Ready to become a cat collection legend?"
+    },
+    "menu": {
+      "placeholder": "🔍 Choose a command category to explore..."
+    },
+    "buttons": {
+      "quickstart": "🚀 Quick Start",
+      "support": "💖 Support Us",
+      "refresh": "🔄 Refresh"
+    },
+    "error": {
+      "title": "Oops! Something went wrong",
+      "description": "Unable to load the help menu right now. Please try again!",
+      "footer": "🐾 Error logged for debugging"
+    },
+    "command_descriptions": {
+      "cat": "Discover and collect a new cat for your collection!",
+      "gallery": "View your or another user's cat gallery",
+      "rename": "Give your beloved cat a brand new name!",
+      "top": "Show the cat leaderboard",
+      "profile": "Show and manage your profile settings",
+      "stats": "Show bot statistics",
+      "vote": "Vote for the bot and get rewards",
+      "announcement": "View the latest MiauDex updates and announcements",
+      "invite": "Join the official MiauDex server and unlock exclusive perks!",
+      "serverinfo": "Show server information",
+      "rarity": "Show all cat rarities and their chances",
+      "help": "Explore all MiauDex commands and features",
+      "trade": "Trade cats with other users"
+    }
+  },
+  "invite": {
+    "main": {
+      "title": "Join the MiauDex Community!",
+      "description": "{{rainbow}} **Welcome to the ultimate cat collector's paradise!**\n\n{{community}} Connect with other cat enthusiasts\n{{support}} Get instant help and support from our amazing team\n{{gift}} Participate in exclusive events and giveaways\n{{news}} Stay updated with the latest MiauDex features\n\n{{arrow}} [**Click here to join the adventure!**]({{invite_link}})\n{{bot}} [**Add MiauDex to your server!**]({{bot_invite_link}})",
+      "whats_inside": {
+        "title": "What's Inside?",
+        "content": "{{chat}} **Active Community** - Chat with cat lovers worldwide\n{{trophy}} **Leaderboards** - See who's the top collector\n{{bell}} **Announcements** - First to know about updates\n{{target}} **Events** - Special contests and challenges"
+      },
+      "exclusive_perks": {
+        "title": "Exclusive Perks",
+        "content": "{{gift}} **Daily Giveaways** - Free cats every day\n{{gem}} **VIP Channels** - Premium member benefits"
+      },
+      "footer": "{{heart}} Join {{users}}+ registered collectors in our growing community!"
+    },
+    "giveaway": {
+      "title": "Daily Cat Giveaways",
+      "description": "{{tada}} **Every single day, one lucky member wins a FREE cat!**\n\n{{lightning}} Quick to enter, exciting to win, and completely FREE!\n\n{{arrow}} **Only available in the [MiauDex Server]({{invite_link}})!**",
+      "schedule": {
+        "title": "Schedule",
+        "content": "{{bell}} **Daily at 4 PM UTC**\n{{target}} Auto-notifications for members"
+      },
+      "rewards": {
+        "title": "Rewards",
+        "content": "{{cat}} **1 Random Cat**"
+      },
+      "how_to_enter": {
+        "title": "How to Enter",
+        "content": "{{check}} **Just react!** It's that simple\n{{tada}} Winners announced 24 hours later!"
+      },
+      "footer": "{{wink}} Don't miss your daily chance - join now and start winning!"
+    },
+    "features": {
+      "title": "Server Features Showcase",
+      "description": "**Discover what makes our community special:**",
+      "community_channels": {
+        "title": "Community Channels",
+        "content": "{{paw}} **#cat-center** - Show off your collection\n{{heart}} **#english-general** - Make friends with fellow collectors\n{{target}} **#trading** - Trade cats with other members"
+      },
+      "support_help": {
+        "title": "Support & Help",
+        "content": "{{bell}} **#miaudex** - Latest news and updates\n{{check}} **#support** - Get help from our team\n{{crystal}} **#suggestions** - Shape the bot's future"
+      },
+      "vip_benefits": {
+        "title": "VIP Member Benefits",
+        "content": "{{gem}} **Exclusive channels** with advanced collectors\n{{fire}} **Beta testing** access to new features\n{{rainbow}} **Special role** with unique perks and recognition"
+      },
+      "footer": "{{globe}} Building the world's best cat collecting community, one member at a time!"
+    },
+    "stats": {
+      "title": "Community Statistics",
+      "description": "**Our amazing community by the numbers:**",
+      "registered_users": {
+        "title": "Registered Users",
+        "content": "**{{count}}** cat collectors"
+      },
+      "total_cats": {
+        "title": "Total Cats Collected",
+        "content": "**{{count}}** cats in collections"
+      },
+      "active_voters": {
+        "title": "Active Voters",
+        "content": "**{{count}}** daily participants"
+      },
+      "total_votes": {
+        "title": "Total Votes Cast",
+        "content": "**{{count}}** votes for free cats"
+      },
+      "premium_members": {
+        "title": "Premium Members",
+        "content": "**{{count}}** VIP collectors"
+      },
+      "giveaway_participants": {
+        "title": "Giveaway Participants",
+        "content": "**{{count}}** active in events"
+      },
+      "leaderboard_competitors": {
+        "title": "Leaderboard Competitors",
+        "content": "**{{count}}** showing off collections"
+      },
+      "average_collection": {
+        "title": "Average Collection Size",
+        "content": "**{{count}}** cats per user"
+      },
+      "engagement_rate": {
+        "title": "Engagement Rate",
+        "content": "{{rate}}% daily activity"
+      },
+      "highlights": {
+        "title": "Real Community Highlights",
+        "content": "{{heart}} **{{totalVotes}}** votes cast by our amazing community\n{{sparkles}} **{{giveawayParticipants}}** members actively participating in events\n{{trophy}} **{{leaderboardUsers}}** proud collectors showing their achievements"
+      },
+      "footer": "{{wink}} These are real numbers from our actual community database!"
+    },
+    "buttons": {
+      "join_server": "{{rocket}} Join MiauDex Server",
+      "add_bot": "{{plus}} Add MiauDex Bot",
+      "review": "{{star}} Leave a Review",
+      "vote": "{{trophy}} Vote for MiauDex",
+      "features": "{{magic}} Server Features",
+      "stats": "{{chart}} Community Stats"
+    }
+  },
+  "errors": {
+    "unexpected_title": "Unexpected Error",
+    "unexpected": "Something unexpected happened while collecting your cat.\n\nThe development team has been notified. Please try again in a few minutes.",
+    "unknown_command": "❌ Unknown command: `{{command}}`"
+  },
+  "rename": {
+    "nice_name": "a nice name",
+    "invalid_name_title": "❌ Invalid Name!",
+    "invalid_name_description": "⚠️ There was an issue with the name \"{{name}}\".\n\n✨ Please try a different name for your cat!",
+    "choose_loving_name": "Choose a loving name for your furry friend! 🐾",
+    "reserved_pattern_title": "❌ Reserved Name Pattern!",
+    "reserved_pattern_description": "⚠️ Names like \"**{{name}}**\" are reserved by the system.\n\n🐱 **Pattern blocked:** \"cat\" followed by numbers (like cat1, cat30, etc.)\n✨ Your cat deserves a more creative and personal name!",
+    "creative_alternatives": "🎨 Creative Alternatives",
+    "alternative_examples": "• **Whiskers**\n• **Shadow**\n• **Mittens**\n• **Luna**\n• **{{oldName}}Pro**",
+    "let_creativity_shine": "Let your creativity shine! ✨",
+    "name_too_long_title": "⚠️ Name Too Long!",
+    "name_too_long_description": "😿 Your cat's name \"{{name}}\" is **{{length}}** characters long.\n\n✏️ **Maximum allowed:** 20 characters\n✨ Try a shorter, cuter name!",
+    "suggestions": "🎨 Suggestions",
+    "choose_perfect_fit": "Choose a name that fits perfectly! 🐾",
+    "invalid_characters_title": "❌ Invalid Characters!",
+    "invalid_characters_description": "⚠️ The name \"{{name}}\" contains invalid characters.\n\n✅ **Allowed characters:**\n• Letters (A-Z, a-z)\n• Numbers (0-9)\n• Spaces, hyphens (-), underscores (_)\n\n❌ **Not allowed:** Emojis, special symbols",
+    "valid_examples": "✨ Valid Examples",
+    "valid_examples_content": "• **Fluffy Cat**\n• **Shadow-2024**\n• **My_Precious_One**",
+    "keep_simple_sweet": "Keep it simple and sweet! 💫",
+    "cat_not_found_title": "😿 Cat Not Found!",
+    "cat_not_found_description": "🐱 I couldn't find a cat named \"**{{name}}**\" in your collection.\n\n✨ **Double-check the spelling** and try again!",
+    "quick_tips": "🎨 Quick Tips",
+    "quick_tips_content": "• Names are **case-sensitive**\n• Use `/gallery` to see all your cats\n• Make sure you own this cat",
+    "gallery_tip": "Tip: Use /gallery to see all your furry friends! 🐾",
+    "name_taken_title": "❌ Name Already Taken!",
+    "name_taken_description": "🐱 You already have a cat named \"**{{name}}**\"!\n\n✨ Each cat in your collection needs a **unique name**.",
+    "unique_name_footer": "Make each cat special with a unique name! ✨",
+    "success_title": "🎉 Cat Successfully Renamed! 🎉",
+    "success_description": "✨ **Congratulations!** Your cat transformation is complete!\n\n🐱 **\"{{oldName}}\"** is now proudly called **\"{{newName}}\"**!",
+    "cat_details": "{{emoji}} Cat Details",
+    "cat_details_content": "**New Name:** {{newName}}\n**Rarity:** {{rarity}}\n**Owner:** {{owner}}",
+    "fun_fact": "🎨 Fun Fact",
+    "fun_fact_content": "Did you know? Your cat will remember this special moment forever! {{newName}} is now ready for new adventures! 💖",
+    "success_footer": "{{newName}} says \"Meow!\" • Renamed by {{owner}}",
+    "celebration_message": "🌈 **{{newName}}** is settling into their new name beautifully! 😻 They seem to love it!",
+    "celebration_footer": "Your cat collection just got even more special! 🌟",
+    "command": {
+      "option_old": "old-name",
+      "option_old_desc": "🔍 Your cat's current name",
+      "option_new": "new-name",
+      "option_new_desc": "✨ A shiny new name for your cat"
+    }
+  },
+  "gallery": {
+    "command": {
+      "name": "gallery",
+      "description": "View your or another user's stunning cat gallery",
+      "option_user": "user",
+      "option_user_desc": "User whose gallery to view"
+    },
+    "empty": {
+      "title": "📭 Empty Gallery",
+      "description": "**{{username}}** hasn't collected any cats yet!\n\n🐱 Start collecting cats to build your gallery\n✨ Each cat is unique and special\n📚 Build the ultimate collection!",
+      "footer": "Empty Gallery • Start your collection today!"
+    },
+    "error": {
+      "title": "❌ Gallery Error",
+      "description": "Something went wrong while loading the gallery. Please try again!",
+      "not_found": "❓ **Cat not found or data corrupted**\n\nTry refreshing the gallery or contact support."
+    },
+    "embed": {
+      "title": "🖼️ {{username}}'s Cat Gallery",
+      "collection_progress": "📚 **Collection Progress**\n`{{progressBar}}` {{current}}/{{total}}",
+      "rarity_details": "⭐ Rarity Details",
+      "collection_stats": "💎 Collection Stats",
+      "footer": "💖 Cat {{current}} of {{total}} • {{username}}'s Gallery • Use buttons to navigate"
+    },
+    "navigation": {
+      "previous": "Previous",
+      "next": "Next",
+      "jump": "Jump"
+    },
+    "utility": {
+      "stats": "Statistics",
+      "refresh": "Refresh",
+      "help": "Help"
+    },
+    "help": {
+      "title": "🔍 Gallery Help & Commands",
+      "description": "Learn how to navigate your beautiful cat gallery!",
+      "navigation": "🎮 Navigation Controls",
+      "navigation_details": {
+        "first": "⏮️ First - Jump to first cat",
+        "previous": "⬅️ Previous - Go back one cat",
+        "jump": "🎯 Jump - Jump to specific cat number",
+        "next": "➡️ Next - Go forward one cat",
+        "last": "⏭️ Last - Jump to last cat"
+      },
+      "sorting": "📊 Sorting Options",
+      "sorting_details": {
+        "date": "📅 By Date - Newest cats first",
+        "rarity": "🌟 By Rarity - Rarest cats first",
+        "alpha": "🔤 Alphabetical - Sort by name A-Z"
+      },
+      "utility": "🛠️ Utility Features",
+      "utility_details": {
+        "stats": "📊 Statistics - View detailed collection stats",
+        "refresh": "🔄 Refresh - Reload gallery data",
+        "help": "❓ Help - Show this help menu"
+      },
+      "footer": "Gallery Help • Enjoy your collection!"
+    },
+    "stats": {
+      "title": "💎 {{username}}'s Gallery Statistics",
+      "overview": "📚 Collection Overview",
+      "rarity_breakdown": "⭐ Rarity Breakdown",
+      "footer": "Gallery Statistics • Live Data"
+    },
+    "labels": {
+      "type": "Typ",
+      "rarity": "Rzadkość",
+      "total_cats": "Łącznie Kotów",
+      "completion": "Progres",
+      "enter_cat_number": "Wprowadź numer kota (1 - {{max}})"
+    },
+    "jump_modal": {
+      "label": "Enter cat number (1 - {{max}})",
+      "invalid": "❌ Invalid cat number. Enter a number between 1 and {{max}}."
+    }
+  },
+  "commands": {
+    "cat": { "name": "cat" },
+    "gallery": { "name": "gallery" },
+    "rename": { "name": "rename" },
+    "top": { "name": "top" },
+    "profile": { "name": "profile" },
+    "stats": { "name": "stats" },
+    "vote": { "name": "vote" },
+    "announcement": { "name": "announcement" },
+    "invite": { "name": "invite" },
+    "serverinfo": { "name": "serverinfo" },
+    "rarity": { "name": "rarity" },
+    "help": { "name": "help" },
+    "trade": { "name": "trade" }
+  },
+  "profanity": {
+    "warning_title": "Meow... That's not a nice name!",
+    "warning_description": "I can't use that name for your kitty. Let's call them **{{newName}}** instead!",
+    "reminder": "🐱 **Remember:** Our cats deserve loving, kind names!",
+    "tip": "💝 **Tip:** Try names like Luna, Milo, Bella, or just let me pick a number!",
+    "footer": "MiauDex • Keep it wholesome! 🐾"
+  },
+  "announcement": {
+    "buttons": {
+      "tag": "🏷️ Get MIAU Tag"
+    }
+  },
+  "translations": {
+    "authors": [{ "ItsAlex": "551023598203043840" }]
+  }
+}

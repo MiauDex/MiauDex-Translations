@@ -1,0 +1,688 @@
+{
+  "cat": {
+    "cooldown": {
+      "title": "🐾 Cooldown Felino",
+      "description": "Devi aspettare **{{time}}** prima di collezionare un'altro gatto.",
+      "tip": "💡 *Consiglio: Usa `/galleria`  per controllare la tua collezione nel mentre aspetti!*",
+      "footer": "Cooldown mantiene i gatti speciali ed equo per tutti!"
+    },
+    "success": {
+      "title": "{{rarity_emoji}} Congratulazione, {{username}}!",
+      "collected": "🐱 **{{cat_name}}** è entrato a far parte della tua collezione!",
+      "rarity": "✨ Rarita: **{{rarity_name}}** ({{chance}} drop rate)",
+      "streak": "{{streak_emoji}} **Streak Giornaliera:** {{streak}} days",
+      "description": "📝 {{rarity_description}}",
+      "footer": "MiauDex • Prossimo gatto disponibile in 24 ore • Best streak: {{best_streak}} giorno/i"
+    },
+    "errors": {
+      "invalid_name_title": "Nome del gatto invalido",
+      "invalid_name": "Il nome del gatto deve essere di 1-32 caratteri e contenere caratteri validi.\n\n❌ **Non sono ammessi:** `<>@#&` ed nomi vuoti\n✅ **Permessi:** Lettere, numeri, spazi, ed quasi tutti i simboli",
+      "reserved_pattern_title": "Nome riservato!",
+      "reserved_pattern": "⚠️ Nomi tipo \"cat1\", \"cat30\", etc. sono riservati dal sistema.\n\n🐱 **Pattern bloccati:** \"cat\" seguito da numeri\n✨ Il tuo gatto merita un nome migliore!",
+      "creative_alternatives": "🎨 **Alternative migliori:**",
+      "examples": "• **Whiskers** - Classico ed carino\n• **Shadow** - Misterioso ed figo\n• **Mittens** - Adorabile e cute\n• **Luna** - Celestiale e bellissimo\n• **Ziggy** - Giocherellone ed unico",
+      "creativity_tip": "💡 *Oppure fai generare al sistema un nome!*",
+      "footer_creativity": "Fai emergere la tua creatività! ✨",
+      "api_failed_title": "Ricerca gatto fallità",
+      "api_failed": "Impossibile collegarsi al sistema per le immagini dei gatti. é solitamente temporaneo.\n\n🔧 **Cause Possibili:**\n• Problemi di connettività\n• Cat API è in manutenzione\n• Server sono in overload",
+      "save_failed_title": "Salvataggio fallito",
+      "save_failed": "Il tuo gatto è stato trovato ma non è stato possibile salvarlo. Riprova di nuovo.\n\nSe continua, il database potrebbe non essere disponibile."
+    },
+    "streak": {
+      "new_record": "🏆 **Nuovo record personale!**",
+      "legendary": "🌟 **Dedizione Leggendaria!**",
+      "on_fire": "🔥 **Sei on fire!**",
+      "great_consistency": "⚡ **Grande Constanza!**",
+      "building_momentum": "🐱 **Stai migliorando!**"
+    },
+    "command": {
+      "option_name": "nome",
+      "option_name_desc": "Dai al tuo nuovo gatto un nome personalizzato (1–32 caratteri, opzionale)"
+    }
+  },
+  "profile": {
+    "title": "👑 Dashboard di {{username}}",
+    "subtitle": "*Benvenuto nel tuo centro di controllo personale*",
+    "information": "✨ Informazione profilo",
+    "user": "Membro",
+    "member_since": "▶️ **Membro da:** {{date}}",
+    "streak": {
+      "title": "🐱 Collezione Felina",
+      "current": "{{emoji}} **La tua Streak:** {{streak}} giorno/i",
+      "best": "🏆 **Migliore Streak:** {{best}} giorno/i",
+      "messages": {
+        "start": "*Inzia la tua streak collezionando gatti!*",
+        "amazing": "*Dedizione Fantastica! 🌟*",
+        "fire": "*Sei on fire! 🔥*",
+        "consistency": "*Grande Constanza! ⚡*",
+        "momentum": "*Continua Cosi! 🐱*"
+      }
+    },
+    "settings": {
+      "title": "⚙️ Settings Attuali",
+      "leaderboard": "Visibilità nella Leaderboard",
+      "trading": "Scambi Abilitati",
+      "reminders": "Promemoria Felino",
+      "enabled": "abilitato",
+      "disabled": "disabilitato"
+    },
+    "premium": {
+      "status": "✨ Status Premium",
+      "member": "✅ **Membro Premium**",
+      "notifications": "🔔 Notifiche avanzate",
+      "support": "⭐ Supporto Prioritario"
+    },
+    "buttons": {
+      "refresh": "Aggiorna",
+      "help": "Aiuto"
+    },
+    "help": {
+      "title": "⚙️ Sezione di Aiuto profilo",
+      "description": "Ecco cosa fa ogni setting:",
+      "leaderboard": "Controlla se apparirai nella leaderboard",
+      "trading": "Consente agli altri utenti di mandare offerte di scambio oppure offerte",
+      "reminders": "Ti manda notifiche personalizzate, informazione sui gatti oppure attività",
+      "footer": "Aiuto • Dashboard Profilo"
+    },
+    "common": {
+      "premium": "Premium",
+      "premium_only": "Solo Premium",
+      "enabled": "abilitato",
+      "disabled": "disabilitato",
+      "loading": "Caricamento...",
+      "success": "Successo!",
+      "error": "Errore!"
+    },
+    "footer": {
+      "standard": "Esperienza Standard • Usa il bottone per personalizzare",
+      "premium": "Esperienza Premium • Usa il bottone per personalizzare",
+      "session_expired": "Sessione scaduta - usa `/profilo` per iniziarne un'altra"
+    },
+    "premium_required": {
+      "title": "👑 Feature Premium",
+      "description": "**Promemoria Felini** sono solo disponibili per i membri Premium!\n\n✨ **Cosa ottieni se diventi premium:**\n🔔 Notifiche intelligenti dei gatti\n💎 Features avanzate per il tuo profilo\n👑 Status Vip\n\n*Pronto a diventare un Membro Premium? Contatta il tuo amministratore del Server!*",
+      "footer": "Premium • Esperienza Discord migliorata"
+    },
+    "errors": {
+      "generic": "Oops! Qualcosa è andato storto. Riprova di nuovo."
+    }
+  },
+  "serverinfo": {
+    "dm_only": "Questo commando può essere usato solo in un server!",
+    "title": "🏰 {{server_name}} Informazioni Server",
+    "subtitle": "{{sparkles}} {{level}}",
+    "description": "Benvenuto su {{server_name}}! Un Community molto vivace.",
+    "members": "👥 Membri",
+    "members_value": "**Totale:** {{total}}\n**Umani:** {{humans}}\n**Bots:** {{bots}}",
+    "boosts": "{{boost_emoji}} Server Boosts",
+    "boosts_value": "**Livelli:** {{level}}\n**Boosts:** {{count}}",
+    "timeline": "📅 Cronologia",
+    "timeline_value": "**Creato:** <t:{{created}}:R>\n**Sei entrato:** <t:{{joined}}:R>",
+    "footer": "Server ID: {{id}} • Richiesto da {{username}}",
+    "level_mega": "🌟 SERVER MEGA",
+    "level_large": "🏆 SERVER GRANDISSIMO",
+    "level_big": "🚀 SERVER GRANDE",
+    "level_medium": "💎 SERVER MEDIO",
+    "level_growing": "✨ SERVER EMERGENTE",
+    "level_small": "🌱 SERVER PICCOLO",
+    "join_miaudex": "💖 Entra su MiauDex",
+    "leave_review": "⭐ Lascia una recensione",
+    "vote_bot": "🚀 Vota per il Bot"
+  },
+  "stats": {
+    "title": "📈 MiauDex Statistica Dashboard",
+    "subtitle": "**Informazioni in tempo reale sull'universo delle collezioni di gatti!**",
+    "status": "🚀 **Status:** Tutti i sistemi sono funzionanti",
+    "performance": "⚡ **Performance:** {{status}}",
+    "scale": "🛡️ **Scale:** {{tier}}",
+    "network": "🌍 Copertura della rete",
+    "network_value": "**Server:** {{servers}}\n**Membri totali:** {{users}}\n**Utenti/Server Media:** {{avg_users}}",
+    "collection": "🐱 Statistiche Collezione",
+    "collection_value": "**Numero di Gatti:** {{cats}}\n**Gatti/Utenti Media:** {{avg_cats}}\n**Tasso di raccolta:** {{rate}}",
+    "health": "⏱️ Salute del Sistema",
+    "health_value": "**Uptime:** {{uptime}}\n**Ping:** {{ping}}\n**Status:** {{status}}",
+    "footer": "💡 Clicca sui pulsanti sottostanti per approfondimenti dettagliati • Ultimo aggiornamento",
+    "community_title": "💖 Approfondimenti sulla comunità",
+    "community_subtitle": "**Celebriamo la nostra fantastica comunità di collezionisti di gatti!**",
+    "community_size": "👥 Dimensione della community",
+    "community_size_value": "**Collezionisti totali:** {{collectors}}\n**Collezionisti Giornalieri:** ~{{active}}\n**Crescita Settimanale:** +{{growth}}%",
+    "milestones": "🐱 Traguardi della raccolta",
+    "milestones_value": "**Totale gatti raccolti:** {{total}}\n**Media per utente:** {{average}} gatti\n**Collezioni più rare:** {{rarest}}+ gatti",
+    "achievements": "🏆 Traguardi",
+    "achievements_value": "**Miglior collezionista:** {{top}} gatti\n**Server più Attivi:** {{guilds}}\n**Classifica globale:** Active",
+    "community_footer": "🌟 Grazie per far parte della nostra community!",
+    "error_title": "⚙️ Statistiche temporaneamente non disponibili",
+    "error_description": "Impossibile recuperare le statistiche al momento. Riprova tra un attimo!",
+    "error_footer": "🔧 Il nostro team è stato informato di questo problema",
+    "status_legendary": "LEGGENDARIO",
+    "status_excellent": "ECCELENTE",
+    "status_great": "GRANDIOSO",
+    "status_good": "BUONO",
+    "status_fresh": "NUOVO",
+    "tier_massive": "GRANDISSIMO",
+    "tier_huge": "ENORME",
+    "tier_large": "GRANDE",
+    "tier_growing": "CRESCENDO",
+    "tier_small": "PICCOLO",
+    "rate_high": "Velocemente",
+    "rate_medium": "Mediamente",
+    "rate_growing": "Crescendo",
+    "conn_excellent": "Eccelente",
+    "conn_good": "Buona",
+    "conn_fair": "Giusta",
+    "calculating": "Calcolo...",
+    "community_button": "Community",
+    "refresh_button": "Aggiorna",
+    "support_button": "Supporto",
+    "back_to_main": "Ritorna alla schermata principale"
+  },
+  "leaderboard": {
+    "title": "🏆 Leaderboard Gatti",
+    "subtitle": "**I collezionisti di gatti più leggendari!**",
+    "legends": "👑 Sala delle leggende",
+    "rising": "⭐ Collezionisti in ascesa",
+    "your_rank": "🐾 Il tuo grado",
+    "your_rank_value": "**#{{rank}}** • **{{cats}}** gatti {{emoji}}\n{{progress}} `{{current}}/{{next}}`",
+    "footer": "🐾 Continua a collezionare per scalare la classifica! • Aggiornato ogni momento",
+    "empty_title": "🐱 ✨ Classifica dei gatti ✨",
+    "empty_description": "🐾 **La classifica è vuota!**\n\n🚀 Diventa il primo collezionista di gatti leggendari!\n🔮 Inizia a collezionare gatti e rivendica il tuo trono!",
+    "empty_footer": "🐾 Inizia oggi il tuo percorso di raccolta!",
+    "error_title": "❌ Oops! Qualcosa è andato storto",
+    "error_description": "🐾 Impossibile recuperare la classifica in questo momento. Riprova!",
+    "error_footer": "🐾 Errore registrato per il debug",
+    "refresh_button": "🔄 Aggiorna",
+    "my_stats_button": "📊 Le Mie Stats",
+    "stats_title": "💎 Statistiche di {{username}}",
+    "stats_description": "**Il tuo viaggio nella raccolta dei gatti**",
+    "stats_ranking": "🏆 Rank",
+    "stats_ranking_value": "**Rank:** #{{rank}}\n**Gatti:** {{cats}}\n**Status:** {{status}}",
+    "stats_no_data": "Non hai ancora iniziato a collezionare!",
+    "stats_progress": "⭐ Progressi",
+    "stats_progress_value": "**Prossima pietra miliare:** {{next}}\n**Progressi:** {{progress}} `{{current}}/100`\n**Efficenza:** {{efficiency}}",
+    "stats_progress_no_data": "Inzia a collezionare per vedere i tuoi progressi!",
+    "stats_max_level": "LIVELLO MASSIMO!",
+    "stats_efficiency_legendary": "Leggendario",
+    "stats_efficiency_expert": "Esperto",
+    "stats_efficiency_good": "Buono",
+    "stats_efficiency_starting": "Novizio",
+    "stats_footer": "Continua a collezionare per salire più in alto! • {{date}}"
+  },
+  "vote": {
+    "title": "🗳️ Vota per MiauDex!",
+    "subtitle": "✨ Supporta il bot e guadagna ricompense!",
+    "description": "Vota ogni 12 ore per guadagnare gatti e sbloccare obiettivi!",
+    "footer": "Prossimo Voto: {{next}}",
+    "reminder_status": "🔔 Stato del promemoria",
+    "reminder_enabled": "✅ Promemoria Abilitato",
+    "reminder_disabled": "❌ Promemoria Disabilitato",
+    "voting_stats": "📊 Stato Voto",
+    "voting_stats_value": "**Voti Totali:** {{votes}}\n**Stato:** {{status}}\n**Progressi:** {{progress}}",
+    "vote_rewards": "🎁 Ricompense Voto",
+    "vote_rewards_value": "Guadagna gatti e badge speciali votando!",
+    "enable_reminders": "🔔 Abilita Promemoria",
+    "disable_reminders": "🔕 Disabilita Promemoria",
+    "view_leaderboard": "🏆 Vedi Classifica",
+    "vote_now": "🚀 Vota Ora",
+    "view_stats": "📈 Vedi Statistiche",
+    "time_remaining": "Tempo rimanente: {{time}}",
+    "ready_to_vote": "Puoi votare ora!",
+    "leaderboard_title": "🏆 Classifica Voti",
+    "leaderboard_subtitle": "Guarda i migliori votanti!",
+    "voting_legends": "Top 3 Leggende",
+    "rising_voters": "Votanti in Crescita",
+    "no_legends": "Nessuna leggenda ancora!",
+    "your_rank": "Il Tuo Posizionamento",
+    "your_rank_value": "{{emoji}} Posizione: {{position}} • Voti: {{votes}}\nProgressi: {{progress}} ({{current}}/{{max}})",
+    "leaderboard_footer": "Classifica aggiornata",
+    "leaderboard_error_title": "❌ Errore nel Caricamento della Classifica",
+    "leaderboard_error_desc": "Qualcosa è andato storto durante il recupero della classifica.",
+    "leaderboard_error_footer": "Riprova più tardi.",
+    "unknown_user": "Utente Sconosciuto",
+    "votes": "voti",
+    "reminder_enabled_title": "✅ Promemoria Abilitati!",
+    "reminder_enabled_desc": "🔔 Perfetto! I promemoria voto sono ora attivi!\n\n➡ Riceverai un DM quando potrai votare di nuovo.\n🚀 Ogni promemoria include link diretti per votare.\n💖 Non perdere mai un voto e guadagna più gatti!\n\n✅ Messaggio di test inviato con successo - Controlla i tuoi DM!",
+    "reminder_enabled_footer": "Messaggio di test inviato con successo - Controlla i tuoi DM!",
+    "reminder_disabled_title": "❌ Promemoria Disabilitati!",
+    "reminder_disabled_desc": "❌ Promemoria disabilitati. Puoi riattivarli in qualsiasi momento.",
+    "dm_error_title": "❌ Impossibile Abilitare i Promemoria di Voto",
+    "dm_error_desc": "🔔 Ops! Non possiamo inviarti notifiche DM.\n\n➡ **Per abilitare i promemoria di voto:**\n✅ Vai su **Impostazioni Utente** (icona ingranaggio)\n✅ Vai a **Privacy e Sicurezza**\n✅ Attiva **Consenti DM dai membri del server**\n✅ Oppure aggiungi MiauDex come amico\n\n✨ **Perché i DM?**\n💖 Evitiamo spam nel server\n🚀 Notifiche istantanee\n💎 Esperienza personalizzata!",
+    "dm_error_footer": "💡 Una volta corrette le impostazioni DM, prova a riattivare i promemoria!",
+    "rank_legend": "LEGGENDA DEL VOTO",
+    "rank_master": "MAESTRO DEL VOTO",
+    "rank_expert": "ESPERTO DEL VOTO",
+    "rank_ace": "ASSO DEL VOTO",
+    "rank_pro": "PRO DEL VOTO",
+    "rank_voter": "VOTANTE",
+    "streak_legendary": "LEGGENDARIO",
+    "streak_champion": "CAMPIONE",
+    "streak_on_fire": "IN FUOCO",
+    "streak_rising_star": "STELLA NASCENTE",
+    "streak_getting_started": "ALLE PRIME ARMI",
+    "streak_newcomer": "NUOVO ARRIVATO",
+    "not_your_panel": "❌ Questo è il pannello di voto di {{username}}!",
+    "settings_updated": "Impostazioni aggiornate con successo!",
+    "reminder_success_title": "✅ Promemoria Abilitati con Successo!",
+    "reminder_success_desc": "🔔 Perfetto! I promemoria di voto sono ora attivi!\n\n✨ **Cosa succede ora?**\n➡ Riceverai un DM di promemoria quando potrai votare di nuovo\n🚀 Ogni promemoria includerà link diretti per votare\n💖 Non perdere mai un voto e guadagna più gatti!\n\n✅ **Messaggio di test inviato con successo** - Controlla i tuoi DM!",
+    "all_set_footer": "🔔 Tutto pronto! Buon voto!",
+    "user_stats_title": "🏆 Statistiche di Voto di {{username}}",
+    "stats_subtitle": "✨ Analisi dettagliata del tuo percorso di voto",
+    "overall_stats": "⭐ Statistiche Generali",
+    "overall_stats_value": "**Voti Totali:** {{votes}}\n**Streak Attuale:** {{streak}}\n**Rank:** {{rank}}",
+    "cats_earned": "🐱 Gatti Guadagnati",
+    "cats_earned_value": "**Dai Voti:** {{cats}}",
+    "reminder_info": "🔔 Info Promemoria",
+    "reminder_info_value": "**Stato:** {{status}}\n**Prossimo Voto:** {{nextVote}}\n**Efficienza:** {{efficiency}}",
+    "status_active": "✅ Attivo",
+    "status_disabled": "❌ Disabilitato",
+    "keep_voting_footer": "Continua a votare per sbloccare altri obiettivi! • {{date}}",
+    "rank_master_voter": "Maestro Votante",
+    "rank_expert_voter": "Esperto Votante",
+    "rank_active_voter": "Votante Attivo",
+    "rank_new_voter": "Nuovo Votante",
+    "efficiency_excellent": "Eccellente",
+    "efficiency_good": "Buona",
+    "efficiency_starting": "Alle Prime Armi"
+  },
+  "trade": {
+    "proposal_title": "🔄 Proposta di Scambio",
+    "completed_title": "🤝 Scambio Completato!",
+    "rejected_title": "❌ Scambio Rifiutato",
+    "cancelled_title": "⏰ Scambio Annullato",
+    "proposal_description": "{{target}}, {{username}} vuole scambiare gatti con te!\n\n⏳ **Scegli la tua risposta qui sotto**\n⏰ Hai {{time}} secondi per decidere",
+    "success_description": "✅ **Scambio riuscito!**\nEntrambi i gatti sono stati trasferiti ai nuovi proprietari.",
+    "rejected_description": "{{username}} ha rifiutato la proposta di scambio.",
+    "cancelled_description": "Nessuna risposta ricevuta entro il tempo limite.",
+    "offering": "{{emoji}} {{username}} offre:",
+    "exchange": "⇄",
+    "errors": {
+      "invalid_initiator": "Non puoi avviare scambi come bot",
+      "invalid_target": "Non puoi scambiare con i bot",
+      "self_trade": "Non puoi scambiare con te stesso! 🤔\n\nProva a trovare un altro utente con cui scambiare.",
+      "invalid_cat_name": "I nomi dei gatti devono essere lunghi da 1 a {{max}} caratteri e contenere caratteri validi.",
+      "settings_check_failed": "Impossibile verificare le impostazioni di scambio di {{username}}. Potrebbe essere necessario che usino il bot prima.",
+      "trades_disabled": "{{username}} ha disabilitato lo scambio di gatti.\n\nPossono abilitarlo usando: `/profilo`",
+      "cat_not_found": "Non hai un gatto chiamato \"{{name}}\".\n\nUsa `/galleria` per vedere i tuoi gatti disponibili.",
+      "target_cat_not_found": "{{username}} non ha un gatto chiamato \"{{name}}\".\n\nPuoi controllare la loro collezione con `/galleria`",
+      "rarity_mismatch": "I gatti devono avere la stessa rarità per essere scambiati!\n\n{{my_emoji}} Il tuo gatto: **{{my_rarity}}**\n{{their_emoji}} Il loro gatto: **{{their_rarity}}**\n\n*Questo mantiene gli scambi equi per tutti.*",
+      "lookup_failed": "Impossibile trovare il gatto nel database. Riprova.",
+      "trade_failed": "Si è verificato un errore durante il trasferimento dei gatti. Lo scambio è stato annullato.\n\nEntrambi i gatti rimangono ai proprietari originali.",
+      "unexpected_error": "Qualcosa di inaspettato è successo durante l'elaborazione dello scambio.\n\nRiprova tra qualche istante."
+    },
+    "command": {
+      "option_user": "utente",
+      "option_user_desc": "L'utente con cui vuoi scambiare",
+      "option_yourcat": "tuo-gatto",
+      "option_yourcat_desc": "Il nome del tuo gatto per lo scambio",
+      "option_theircat": "loro-gatto",
+      "option_theircat_desc": "Il nome del loro gatto che desideri"
+    }
+  },
+  "rarity": {
+    "title": "✨ 🐱 Rarità dei Gatti 🐱 ✨",
+    "subtitle": "🌌 **Benvenuto nel magico mondo delle rarità dei gatti!**",
+    "description": "ℹ️ Ogni gatto ha una rarità unica che ne determina il colore e quanto è speciale.\n🎲 Più un gatto è raro, più è difficile da trovare!",
+    "total_cats": "📊 **Totale Gatti Disponibili:** {{count}}",
+    "common_rare": "📖 Comune a Raro",
+    "epic_legendary": "⭐ Epico a Leggendario",
+    "ultra_rare": "👑 Ultra Raro",
+    "footer": "🪄 La rarità influisce sul colore dell’embed • Usa il menu a tendina per esplorare le singole rarità",
+    "details_title": "{{emoji}} Rarità {{name}}",
+    "details_description": "✨ **\"{{description}}\"**",
+    "drop_info": "🎲 Informazioni di Drop",
+    "drop_info_value": "**Probabilità:** {{chance}}\n**Odds:** 1 su {{odds}}\n**Difficoltà:** {{difficulty}}",
+    "availability": "📊 Disponibilità",
+    "availability_value": "**Totale Gatti:** {{count}}\n**% nel Database:** {{percentage}}%\n**Rank:** #{{rank}} di {{total}}",
+    "collection_tip": "🪄 Suggerimento Collezione",
+    "tips": {
+      "easy": "💖 **Facili da collezionare!** Vota regolarmente per costruire la tua collezione.",
+      "moderate": "🎯 **Sfida moderata.** Votando ogni giorno li otterrai nel tempo.",
+      "serious": "🔥 **Richiede dedizione seria.** La costanza nel voto è la chiave!",
+      "ultra_rare": "👑 **Ultra rari!** Servono incredibile pazienza e fortuna.",
+      "legendary": "🌌 **Status leggendario!** I più rari in assoluto - veri premi da collezionista!"
+    },
+    "details_footer": "Parte del sistema di rarità di MiauDex • Seleziona un'altra rarità per esplorarne altre!",
+    "select_placeholder": "🔍 Seleziona una rarità per saperne di più..."
+  },
+  "help": {
+    "main": {
+      "title": "MiauDex Command Center",
+      "description": "**Benvenuto nell’esperienza definitiva di collezione di gatti!**\n\n{{sparkles}} **{{totalCommands}} comandi** disponibili per migliorare la tua avventura\n{{cat}} Colleziona gatti rari, competi con gli amici e diventa una leggenda!\n\n**Scegli una categoria qui sotto per esplorare i comandi:**",
+      "footer": "💡 Suggerimento: Usa il menu a tendina per esplorare le categorie specifiche!"
+    },
+    "categories": {
+      "collection": {
+        "name": "🐱 Collezione",
+        "description": "Gestisci e visualizza la tua collezione di gatti"
+      },
+      "social": {
+        "name": "👥 Sociale & Competizione",
+        "description": "Competi e interagisci con altri collezionisti"
+      },
+      "rewards": {
+        "name": "🎁 Ricompense & Voto",
+        "description": "Ottieni ricompense e supporta il bot"
+      },
+      "utility": {
+        "name": "⚙️ Utilità & Impostazioni",
+        "description": "Impostazioni del bot e strumenti utili"
+      }
+    },
+    "commands_count": "comandi",
+    "category": {
+      "commands": "Comandi",
+      "count": "**{{count}} comandi** in questa categoria:",
+      "no_commands": "Nessun comando trovato in questa categoria.",
+      "footer": "🔍 Usa il menu per esplorare altre categorie • {{count}} comandi mostrati"
+    },
+    "quickstart": {
+      "title": "Guida Rapida",
+      "subtitle": "**Nuovo su MiauDex? Inizia qui il tuo viaggio leggendario!**",
+      "step1": {
+        "title": "Passo 1: Ottieni il Tuo Primo Gatto",
+        "description": "Usa `/gatto` per ottenere un gatto casuale gratuito!"
+      },
+      "step2": {
+        "title": "Passo 2: Controlla la Tua Collezione",
+        "description": "Usa `/galleria` per vedere tutti i tuoi gatti collezionati e la loro rarità."
+      },
+      "step3": {
+        "title": "Passo 3: Scala la Classifica",
+        "description": "Usa `/top` per vedere la tua posizione tra gli altri collezionisti."
+      },
+      "step4": {
+        "title": "Passo 4: Personalizza la Tua Esperienza",
+        "description": "Usa `/profilo` per gestire le tue impostazioni e preferenze."
+      },
+      "tips": {
+        "title": "Consigli Utili",
+        "content": "• Vota ogni 12 ore per ottenere ricompense costanti\n• I gatti rari sono più preziosi per le classifiche\n• Unisciti alla nostra community per eventi esclusivi!"
+      },
+      "footer": "🎯 Pronto a diventare una leggenda della collezione di gatti?"
+    },
+    "menu": {
+      "placeholder": "🔍 Scegli una categoria di comandi da esplorare..."
+    },
+    "buttons": {
+      "quickstart": "🚀 Inizia Subito",
+      "support": "💖 Supportaci",
+      "refresh": "🔄 Aggiorna"
+    },
+    "error": {
+      "title": "Oops! Qualcosa è andato storto",
+      "description": "Impossibile caricare il menu di aiuto in questo momento. Riprova!",
+      "footer": "🐾 Errore registrato per il debugging"
+    },
+    "command_descriptions": {
+      "cat": "Scopri e colleziona un nuovo gatto per la tua collezione!",
+      "gallery": "Visualizza la tua galleria o quella di un altro utente",
+      "rename": "Dai al tuo amato gatto un nuovo nome!",
+      "top": "Mostra la classifica dei gatti",
+      "profile": "Mostra e gestisci le impostazioni del tuo profilo",
+      "stats": "Mostra le statistiche del bot",
+      "vote": "Vota per il bot e ottieni ricompense",
+      "announcement": "Visualizza gli ultimi aggiornamenti e annunci di MiauDex",
+      "invite": "Unisciti al server ufficiale di MiauDex e sblocca vantaggi esclusivi!",
+      "serverinfo": "Mostra informazioni sul server",
+      "rarity": "Mostra tutte le rarità dei gatti e le loro probabilità",
+      "help": "Esplora tutti i comandi e le funzionalità di MiauDex",
+      "trade": "Scambia gatti con altri utenti"
+    }
+  },
+  "invite": {
+    "main": {
+      "title": "Unisciti alla Community di MiauDex!",
+      "description": "{{rainbow}} **Benvenuto nel paradiso definitivo dei collezionisti di gatti!**\n\n{{community}} Connettiti con altri appassionati di gatti\n{{support}} Ottieni aiuto e supporto immediato dal nostro fantastico team\n{{gift}} Partecipa a eventi ed estrazioni esclusive\n{{news}} Rimani aggiornato con le ultime novità di MiauDex\n\n{{arrow}} [**Clicca qui per unirti all’avventura!**]({{invite_link}})\n{{bot}} [**Aggiungi MiauDex al tuo server!**]({{bot_invite_link}})",
+      "whats_inside": {
+        "title": "Cosa Troverai?",
+        "content": "{{chat}} **Community Attiva** - Chatta con amanti dei gatti da tutto il mondo\n{{trophy}} **Classifiche** - Vedi chi è il miglior collezionista\n{{bell}} **Annunci** - Scopri per primo gli aggiornamenti\n{{target}} **Eventi** - Contest e sfide speciali"
+      },
+      "exclusive_perks": {
+        "title": "Vantaggi Esclusivi",
+        "content": "{{gift}} **Giveaway Giornalieri** - Gatti gratis ogni giorno\n{{gem}} **Canali VIP** - Benefici premium per i membri"
+      },
+      "footer": "{{heart}} Unisciti a {{users}}+ collezionisti registrati nella nostra community in crescita!"
+    },
+    "giveaway": {
+      "title": "Giveaway Giornalieri di Gatti",
+      "description": "{{tada}} **Ogni singolo giorno, un fortunato membro vince un gatto GRATIS!**\n\n{{lightning}} Entrare è facile, vincere è emozionante, ed è completamente GRATIS!\n\n{{arrow}} **Disponibile solo nel [Server MiauDex]({{invite_link}})!**",
+      "schedule": {
+        "title": "Programma",
+        "content": "{{bell}} **Ogni giorno alle 16:00 UTC**\n{{target}} Notifiche automatiche per i membri"
+      },
+      "rewards": {
+        "title": "Ricompense",
+        "content": "{{cat}} **1 Gatto Casuale**"
+      },
+      "how_to_enter": {
+        "title": "Come Partecipare",
+        "content": "{{check}} **Basta reagire!** È semplicissimo\n{{tada}} Vincitori annunciati dopo 24 ore!"
+      },
+      "footer": "{{wink}} Non perdere la tua occasione quotidiana - unisciti ora e inizia a vincere!"
+    },
+    "features": {
+      "title": "Funzionalità del Server",
+      "description": "**Scopri cosa rende speciale la nostra community:**",
+      "community_channels": {
+        "title": "Canali della Community",
+        "content": "{{paw}} **#cat-center** - Mostra la tua collezione\n{{heart}} **#english-general** - Fai amicizia con altri collezionisti\n{{target}} **#trading** - Scambia gatti con altri membri"
+      },
+      "support_help": {
+        "title": "Supporto & Aiuto",
+        "content": "{{bell}} **#miaudex** - Ultime notizie e aggiornamenti\n{{check}} **#support** - Ottieni aiuto dal nostro team\n{{crystal}} **#suggestions** - Contribuisci al futuro del bot"
+      },
+      "vip_benefits": {
+        "title": "Vantaggi Membri VIP",
+        "content": "{{gem}} **Canali esclusivi** con collezionisti avanzati\n{{fire}} **Accesso beta** alle nuove funzionalità\n{{rainbow}} **Ruolo speciale** con vantaggi e riconoscimenti unici"
+      },
+      "footer": "{{globe}} Costruiamo la migliore community di collezione di gatti al mondo, un membro alla volta!"
+    },
+    "stats": {
+      "title": "Statistiche della Community",
+      "description": "**La nostra fantastica community in numeri:**",
+      "registered_users": {
+        "title": "Utenti Registrati",
+        "content": "**{{count}}** collezionisti di gatti"
+      },
+      "total_cats": {
+        "title": "Totale Gatti Collezionati",
+        "content": "**{{count}}** gatti nelle collezioni"
+      },
+      "active_voters": {
+        "title": "Votanti Attivi",
+        "content": "**{{count}}** partecipanti giornalieri"
+      },
+      "total_votes": {
+        "title": "Voti Totali",
+        "content": "**{{count}}** voti per gatti gratis"
+      },
+      "premium_members": {
+        "title": "Membri Premium",
+        "content": "**{{count}}** collezionisti VIP"
+      },
+      "giveaway_participants": {
+        "title": "Partecipanti ai Giveaway",
+        "content": "**{{count}}** attivi negli eventi"
+      },
+      "leaderboard_competitors": {
+        "title": "Competitori in Classifica",
+        "content": "**{{count}}** che mostrano le loro collezioni"
+      },
+      "average_collection": {
+        "title": "Dimensione Media Collezione",
+        "content": "**{{count}}** gatti per utente"
+      },
+      "engagement_rate": {
+        "title": "Tasso di Coinvolgimento",
+        "content": "{{rate}}% attività giornaliera"
+      },
+      "highlights": {
+        "title": "Momenti Salienti della Community",
+        "content": "{{heart}} **{{totalVotes}}** voti espressi dalla nostra fantastica community\n{{sparkles}} **{{giveawayParticipants}}** membri partecipano attivamente agli eventi\n{{trophy}} **{{leaderboardUsers}}** collezionisti orgogliosi che mostrano i loro successi"
+      },
+      "footer": "{{wink}} Questi sono numeri reali dal nostro database della community!"
+    },
+    "buttons": {
+      "join_server": "{{rocket}} Unisciti al Server MiauDex",
+      "add_bot": "{{plus}} Aggiungi MiauDex Bot",
+      "review": "{{star}} Lascia una Recensione",
+      "vote": "{{trophy}} Vota per MiauDex",
+      "features": "{{magic}} Funzionalità del Server",
+      "stats": "{{chart}} Statistiche della Community"
+    }
+  },
+  "errors": {
+    "unexpected_title": "Errore Inaspettato",
+    "unexpected": "Qualcosa di inaspettato è successo durante la raccolta del tuo gatto.\n\nIl team di sviluppo è stato notificato. Riprova tra qualche minuto.",
+    "unknown_command": "❌ Comando sconosciuto: `{{command}}`"
+  },
+  "rename": {
+    "nice_name": "un bel nome",
+    "invalid_name_title": "❌ Nome Non Valido!",
+    "invalid_name_description": "⚠️ C’è stato un problema con il nome \"{{name}}\".\n\n✨ Per favore, prova un nome diverso per il tuo gatto!",
+    "choose_loving_name": "Scegli un nome affettuoso per il tuo amico peloso! 🐾",
+    "reserved_pattern_title": "❌ Modello di Nome Riservato!",
+    "reserved_pattern_description": "⚠️ Nomi come \"**{{name}}**\" sono riservati dal sistema.\n\n🐱 **Modello bloccato:** \"cat\" seguito da numeri (es. cat1, cat30, ecc.)\n✨ Il tuo gatto merita un nome più creativo e personale!",
+    "creative_alternatives": "🎨 Alternative Creative",
+    "alternative_examples": "• **Whiskers**\n• **Shadow**\n• **Mittens**\n• **Luna**\n• **{{oldName}}Pro**",
+    "let_creativity_shine": "Lascia brillare la tua creatività! ✨",
+    "name_too_long_title": "⚠️ Nome Troppo Lungo!",
+    "name_too_long_description": "😿 Il nome del tuo gatto \"{{name}}\" è lungo **{{length}}** caratteri.\n\n✏️ **Massimo consentito:** 20 caratteri\n✨ Prova un nome più corto e carino!",
+    "suggestions": "🎨 Suggerimenti",
+    "choose_perfect_fit": "Scegli un nome che calzi a pennello! 🐾",
+    "invalid_characters_title": "❌ Caratteri Non Validi!",
+    "invalid_characters_description": "⚠️ Il nome \"{{name}}\" contiene caratteri non validi.\n\n✅ **Caratteri consentiti:**\n• Lettere (A-Z, a-z)\n• Numeri (0-9)\n• Spazi, trattini (-), underscore (_)\n\n❌ **Non consentiti:** Emoji, simboli speciali",
+    "valid_examples": "✨ Esempi Validi",
+    "valid_examples_content": "• **Fluffy Cat**\n• **Shadow-2024**\n• **My_Precious_One**",
+    "keep_simple_sweet": "Mantienilo semplice e dolce! 💫",
+    "cat_not_found_title": "😿 Gatto Non Trovato!",
+    "cat_not_found_description": "🐱 Non sono riuscito a trovare un gatto chiamato \"**{{name}}**\" nella tua collezione.\n\n✨ **Ricontrolla l’ortografia** e riprova!",
+    "quick_tips": "🎨 Consigli Rapidi",
+    "quick_tips_content": "• I nomi fanno distinzione tra maiuscole/minuscole\n• Usa `/galleria` per vedere tutti i tuoi gatti\n• Assicurati di possedere questo gatto",
+    "gallery_tip": "Suggerimento: Usa /galleria per vedere tutti i tuoi amici pelosi! 🐾",
+    "name_taken_title": "❌ Nome Già Preso!",
+    "name_taken_description": "🐱 Hai già un gatto chiamato \"**{{name}}**\"!\n\n✨ Ogni gatto della tua collezione deve avere un **nome unico**.",
+    "unique_name_footer": "Rendi ogni gatto speciale con un nome unico! ✨",
+    "success_title": "🎉 Gatto Rinomato con Successo! 🎉",
+    "success_description": "✨ **Congratulazioni!** La trasformazione del tuo gatto è completa!\n\n🐱 **\"{{oldName}}\"** ora si chiama con orgoglio **\"{{newName}}\"**!",
+    "cat_details": "{{emoji}} Dettagli del Gatto",
+    "cat_details_content": "**Nuovo Nome:** {{newName}}\n**Rarità:** {{rarity}}\n**Proprietario:** {{owner}}",
+    "fun_fact": "🎨 Curiosità",
+    "fun_fact_content": "Lo sapevi? Il tuo gatto ricorderà per sempre questo momento speciale! {{newName}} è ora pronto per nuove avventure! 💖",
+    "success_footer": "{{newName}} dice \"Meow!\" • Rinomato da {{owner}}",
+    "celebration_message": "🌈 **{{newName}}** si sta abituando magnificamente al suo nuovo nome! 😻 Sembra adorarlo!",
+    "celebration_footer": "La tua collezione di gatti è appena diventata ancora più speciale! 🌟",
+    "command": {
+      "option_old": "vecchio-nome",
+      "option_old_desc": ":mag: Il nome attuale del tuo gatto",
+      "option_new": "nuovo-nome",
+      "option_new_desc": ":sparkles: Un nuovo nome splendente per il tuo gatto"
+    }
+  },
+  "gallery": {
+    "command": {
+      "name": "gallery",
+      "description": "Visualizza la tua o un’altra splendida galleria di gatti",
+      "option_user": "utente",
+      "option_user_desc": "Utente di cui visualizzare la galleria"
+    },
+    "empty": {
+      "title": "📭 Galleria Vuota",
+      "description": "**{{username}}** non ha ancora collezionato alcun gatto!\n\n🐱 Inizia a collezionare gatti per costruire la tua galleria\n✨ Ogni gatto è unico e speciale\n📚 Crea la collezione definitiva!",
+      "footer": "Galleria Vuota • Inizia la tua collezione oggi stesso!"
+    },
+    "error": {
+      "title": "❌ Errore Galleria",
+      "description": "Qualcosa è andato storto durante il caricamento della galleria. Riprova!",
+      "not_found": "❓ **Gatto non trovato o dati corrotti**\n\nProva ad aggiornare la galleria o contatta il supporto."
+    },
+    "embed": {
+      "title": "🖼️ Galleria di Gatti di {{username}}",
+      "collection_progress": "📚 **Progresso Collezione**\n`{{progressBar}}` {{current}}/{{total}}",
+      "rarity_details": "⭐ Dettagli Rarità",
+      "collection_stats": "💎 Statistiche Collezione",
+      "footer": "💖 Gatto {{current}} di {{total}} • Galleria di {{username}} • Usa i pulsanti per navigare"
+    },
+    "navigation": {
+      "previous": "Precedente",
+      "next": "Successivo",
+      "jump": "Vai a"
+    },
+    "utility": {
+      "stats": "Statistiche",
+      "refresh": "Aggiorna",
+      "help": "Aiuto"
+    },
+    "help": {
+      "title": "🔍 Aiuto & Comandi Galleria",
+      "description": "Scopri come navigare nella tua splendida galleria di gatti!",
+      "navigation": "🎮 Controlli di Navigazione",
+      "navigation_details": {
+        "first": "⏮️ Primo - Vai al primo gatto",
+        "previous": "⬅️ Precedente - Torna indietro di un gatto",
+        "jump": "🎯 Vai a - Vai a un numero specifico di gatto",
+        "next": "➡️ Successivo - Avanza di un gatto",
+        "last": "⏭️ Ultimo - Vai all’ultimo gatto"
+      },
+      "sorting": "📊 Opzioni di Ordinamento",
+      "sorting_details": {
+        "date": "📅 Per Data - Prima i gatti più recenti",
+        "rarity": "🌟 Per Rarità - Prima i più rari",
+        "alpha": "🔤 Alfabetico - Ordina per nome A-Z"
+      },
+      "utility": "🛠️ Funzionalità Utili",
+      "utility_details": {
+        "stats": "📊 Statistiche - Vedi statistiche dettagliate della collezione",
+        "refresh": "🔄 Aggiorna - Ricarica i dati della galleria",
+        "help": "❓ Aiuto - Mostra questo menu di aiuto"
+      },
+      "footer": "Aiuto Galleria • Goditi la tua collezione!"
+    },
+    "stats": {
+      "title": "💎 Statistiche Galleria di {{username}}",
+      "overview": "📚 Panoramica Collezione",
+      "rarity_breakdown": "⭐ Suddivisione per Rarità",
+      "footer": "Statistiche Galleria • Dati in Tempo Reale"
+    },
+    "labels": {
+      "type": "Tipo",
+      "rarity": "Rarità",
+      "total_cats": "Totale Gatti",
+      "completion": "Progresso",
+      "enter_cat_number": "Inserisci numero gatto (1 - {{max}})"
+    },
+    "jump_modal": {
+      "label": "Inserisci numero gatto (1 - {{max}})",
+      "invalid": "❌ Numero di gatto non valido. Inserisci un numero tra 1 e {{max}}."
+    }
+  },
+  "commands": {
+    "cat": { "name": "gatto" },
+    "gallery": { "name": "galleria" },
+    "rename": { "name": "rinomina" },
+    "top": { "name": "top" },
+    "profile": { "name": "profilo" },
+    "stats": { "name": "stats" },
+    "vote": { "name": "vota" },
+    "announcement": { "name": "annunci" },
+    "invite": { "name": "invita" },
+    "serverinfo": { "name": "serverinfo" },
+    "rarity": { "name": "rarita" },
+    "help": { "name": "aiuto" },
+    "trade": { "name": "scambio" }
+  },
+  "profanity": {
+    "warning_title": "Meow... Non è un bel nome!",
+    "warning_description": "Non posso usare quel nome per il tuo micetto. Chiamiamolo invece **{{newName}}**!",
+    "reminder": "🐱 **Ricorda:** I nostri gatti meritano nomi gentili e affettuosi!",
+    "tip": "💝 **Suggerimento:** Prova con nomi come Luna, Milo, Bella, o lascia che scelga io un numero!",
+    "footer": "MiauDex • Mantienilo adorabile! 🐾"
+  },
+  "announcement": {
+    "buttons": {
+      "tag": "🏷️ Ottieni la tag MIAU"
+    }
+  },
+  "translations": {
+    "authors": [{ "Zer0Two": "642642727237845041" }]
+  }
+}

@@ -1,0 +1,690 @@
+{
+  "cat": {
+    "cooldown": {
+      "title": "🐾 Temps d'Attente pour Chat",
+      "description": "Vous devez attendre **{{time}}** avant de collecter un autre chat.",
+      "tip": "💡 *Astuce : Utilisez `/galerie` pour vérifier votre collection actuelle en attendant !*",
+      "footer": "Le temps d'attente rend les chats spéciaux et équitables pour tous !"
+    },
+    "success": {
+      "title": "{{rarity_emoji}} Félicitations, {{username}} !",
+      "collected": "🐱 **{{cat_name}}** a rejoint votre collection !",
+      "rarity": "✨ Rareté : **{{rarity_name}}** ({{chance}} de taux de drop)",
+      "streak": "{{streak_emoji}} **Série Quotidienne :** {{streak}} jours",
+      "description": "📝 {{rarity_description}}",
+      "footer": "MiauDex • Prochain chat disponible dans 24 heures • Meilleure série : {{best_streak}} jours"
+    },
+    "errors": {
+      "invalid_name_title": "Nom de Chat Invalide",
+      "invalid_name": "Les noms de chats doivent faire 1-32 caractères et contenir des caractères valides.\n\n❌ **Non autorisé :** `<>@#&` et noms vides\n✅ **Autorisé :** Lettres, chiffres, espaces et la plupart des symboles",
+      "reserved_pattern_title": "Modèle de Nom Réservé !",
+      "reserved_pattern": "⚠️ Les noms comme \"cat1\", \"cat30\", etc. sont réservés par le système.\n\n🐱 **Modèle bloqué :** \"cat\" suivi de chiffres\n✨ Votre chat mérite un nom plus créatif et personnel !",
+      "creative_alternatives": "🎨 **Alternatives Créatives :**",
+      "examples": "• **Moustaches** - Classique et mignon\n• **Ombre** - Mystérieux et cool\n• **Mitaines** - Adorable et cosy\n• **Luna** - Céleste et beau\n• **Zigzag** - Joueur et unique",
+      "creativity_tip": "💡 *Ou laissez le système générer un nom unique pour vous !*",
+      "footer_creativity": "Laissez votre créativité briller ! ✨",
+      "api_failed_title": "Recherche de Chat Échouée",
+      "api_failed": "Impossible de se connecter au service d'images de chats. C'est généralement temporaire.\n\n🔧 **Causes possibles :**\n• Problèmes de connectivité réseau\n• Maintenance de l'API des chats\n• Surcharge temporaire du serveur",
+      "save_failed_title": "Échec de Sauvegarde",
+      "save_failed": "Votre chat a été trouvé mais n'a pas pu être sauvegardé dans votre collection. Veuillez réessayer.\n\nSi cela continue, la base de données pourrait être temporairement indisponible."
+    },
+    "streak": {
+      "new_record": "🏆 **Nouveau record personnel !**",
+      "legendary": "🌟 **Dévouement légendaire !**",
+      "on_fire": "🔥 **Vous êtes en feu !**",
+      "great_consistency": "⚡ **Très bonne constance !**",
+      "building_momentum": "🐱 **Construction d'élan !**"
+    },
+    "command": {
+      "option_name": "nom",
+      "option_name_desc": "Donnez à votre nouveau chat un nom personnalisé (1–32 caractères, facultatif)"
+    }
+  },
+  "profile": {
+    "title": "👑 Tableau de Bord de {{username}}",
+    "subtitle": "*Bienvenue dans votre centre de contrôle personnalisé*",
+    "information": "✨ Informations du Profil",
+    "user": "Utilisateur",
+    "member_since": "▶️ **Membre depuis :** {{date}}",
+    "streak": {
+      "title": "🐱 Série de Collection de Chats",
+      "current": "{{emoji}} **Série Actuelle :** {{streak}} jours",
+      "best": "🏆 **Meilleure Série :** {{best}} jours",
+      "messages": {
+        "start": "*Commencez votre série en collectant un chat !*",
+        "amazing": "*Dévouement incroyable ! 🌟*",
+        "fire": "*Vous êtes en feu ! 🔥*",
+        "consistency": "*Excellente constance ! ⚡*",
+        "momentum": "*Continuez sur cette lancée ! 🐱*"
+      }
+    },
+    "settings": {
+      "title": "⚙️ Paramètres Actuels",
+      "leaderboard": "Visibilité dans le classement",
+      "trading": "Échanges Activés",
+      "reminders": "Rappels de Chat",
+      "enabled": "activé",
+      "disabled": "désactivé"
+    },
+    "premium": {
+      "status": "✨ Statut Premium",
+      "member": "✅ **Membre Premium**",
+      "notifications": "🔔 Notifications avancées",
+      "support": "⭐ Support prioritaire"
+    },
+    "buttons": {
+      "refresh": "Actualiser",
+      "help": "Aide"
+    },
+    "help": {
+      "title": "⚙️ Aide des Paramètres de Profil",
+      "description": "Voici ce que fait chaque paramètre :",
+      "leaderboard": "Contrôle si vous apparaissez dans les classements et rankings du serveur",
+      "trading": "Permet aux autres utilisateurs de vous envoyer des demandes et offres d'échange",
+      "reminders": "Vous envoie des notifications personnalisées sur les chats et activités",
+      "footer": "Aide • Tableau de Bord du Profil"
+    },
+    "common": {
+      "premium": "Premium",
+      "premium_only": "Premium Seulement",
+      "enabled": "activé",
+      "disabled": "désactivé",
+      "loading": "Chargement...",
+      "success": "Succès !",
+      "error": "Erreur !"
+    },
+    "footer": {
+      "standard": "Expérience Standard • Utilisez les boutons pour personnaliser",
+      "premium": "Expérience Premium • Utilisez les boutons pour personnaliser",
+      "session_expired": "Session expirée - utilisez `/profil` pour en commencer une nouvelle"
+    },
+    "premium_required": {
+      "title": "👑 Fonctionnalité Premium",
+      "description": "**Les Rappels de Chat** ne sont disponibles que pour les membres Premium !\n\n✨ **Ce que vous obtenez avec Premium :**\n🔔 Notifications intelligentes de chats\n💎 Fonctionnalités avancées de profil\n👑 Statut VIP\n\n*Prêt à upgrader ? Contactez votre administrateur de serveur !*",
+      "footer": "Premium • Expérience Discord Améliorée"
+    },
+    "errors": {
+      "generic": "Oups ! Quelque chose s'est mal passé. Veuillez réessayer."
+    }
+  },
+  "serverinfo": {
+    "dm_only": "Cette commande ne peut être utilisée que dans un serveur !",
+    "title": "🏰 Informations sur le serveur {{server_name}}",
+    "subtitle": "{{sparkles}} {{level}}",
+    "description": "Bienvenue sur {{server_name}} ! Un serveur communautaire dynamique.",
+    "members": "👥 Membres",
+    "members_value": "**Total :** {{total}}\n**Humains :** {{humans}}\n**Bots :** {{bots}}",
+    "boosts": "{{boost_emoji}} Boosts Serveur",
+    "boosts_value": "**Niveau :** {{level}}\n**Boosts :** {{count}}",
+    "timeline": "📅 Chronologie",
+    "timeline_value": "**Créé :** <t:{{created}}:R>\n**Vous avez rejoint :** <t:{{joined}}:R>",
+    "footer": "ID Serveur : {{id}} • Demandé par {{username}}",
+    "level_mega": "🌟 MÉGA SERVEUR",
+    "level_large": "🏆 GRAND SERVEUR",
+    "level_big": "🚀 IMMENSE SERVEUR",
+    "level_medium": "💎 SERVEUR MOYEN",
+    "level_growing": "✨ SERVEUR EN CROISSANCE",
+    "level_small": "🌱 PETIT SERVEUR",
+    "join_miaudex": "💖 Rejoindre MiauDex",
+    "leave_review": "⭐ Laisser un Avis",
+    "vote_bot": "🚀 Voter pour le Bot"
+  },
+  "stats": {
+    "title": "📈 Tableau de Bord Statistiques MiauDex",
+    "subtitle": "**Aperçus en temps réel dans l'univers de collection de chats !**",
+    "status": "🚀 **Statut :** Tous les systèmes opérationnels",
+    "performance": "⚡ **Performance :** {{status}}",
+    "scale": "🛡️ **Échelle :** {{tier}}",
+    "network": "🌍 Portée Réseau",
+    "network_value": "**Serveurs :** {{servers}}\n**Total Utilisateurs :** {{users}}\n**Moy Utilisateurs/Serveur :** {{avg_users}}",
+    "collection": "🐱 Stats Collection",
+    "collection_value": "**Total Chats :** {{cats}}\n**Moy Chats/Utilisateur :** {{avg_cats}}\n**Taux Collection :** {{rate}}",
+    "health": "⏱️ Santé Système",
+    "health_value": "**Uptime :** {{uptime}}\n**Ping :** {{ping}}\n**Statut :** {{status}}",
+    "footer": "💡 Cliquez sur les boutons ci-dessous pour des aperçus détaillés • Dernière mise à jour",
+    "community_title": "💖 Aperçus Communautaires",
+    "community_subtitle": "**Célébrant notre incroyable communauté de collecteurs de chats !**",
+    "community_size": "👥 Taille Communauté",
+    "community_size_value": "**Total Collecteurs :** {{collectors}}\n**Actifs Quotidiens :** ~{{active}}\n**Croissance Hebdomadaire :** +{{growth}}%",
+    "milestones": "🐱 Jalons Collection",
+    "milestones_value": "**Total Chats Collectés :** {{total}}\n**Moyenne par Utilisateur :** {{average}} chats\n**Collections Rares :** {{rarest}}+ chats",
+    "achievements": "🏆 Accomplissements",
+    "achievements_value": "**Top Collecteur :** {{top}} chats\n**Guildes Actives :** {{guilds}}\n**Classement Global :** Actif",
+    "community_footer": "🌟 Merci de faire partie de notre communauté !",
+    "error_title": "⚙️ Stats Temporairement Indisponibles",
+    "error_description": "Impossible de récupérer les statistiques maintenant. Veuillez réessayer dans un moment !",
+    "error_footer": "🔧 Notre équipe a été notifiée de ce problème",
+    "status_legendary": "LÉGENDAIRE",
+    "status_excellent": "EXCELLENT",
+    "status_great": "TRÈS BON",
+    "status_good": "BON",
+    "status_fresh": "RÉCENT",
+    "tier_massive": "MASSIF",
+    "tier_huge": "ÉNORME",
+    "tier_large": "LARGE",
+    "tier_growing": "EN CROISSANCE",
+    "tier_small": "PETIT",
+    "rate_high": "Élevé",
+    "rate_medium": "Moyen",
+    "rate_growing": "En croissance",
+    "conn_excellent": "Excellent",
+    "conn_good": "Bon",
+    "conn_fair": "Moyen",
+    "calculating": "Calcul en cours...",
+    "community_button": "Communauté",
+    "refresh_button": "Actualiser",
+    "support_button": "Support",
+    "back_to_main": "Retour Principal"
+  },
+  "leaderboard": {
+    "title": "🏆 Classement des Chats",
+    "subtitle": "**Les collecteurs de chats les plus légendaires !**",
+    "legends": "👑 Hall des Légendes",
+    "rising": "⭐ Collecteurs Montants",
+    "your_rank": "🐾 Votre Rang",
+    "your_rank_value": "**#{{rank}}** • **{{cats}}** chats {{emoji}}\n{{progress}} `{{current}}/{{next}}`",
+    "footer": "🐾 Continuez à collecter pour grimper dans les rangs ! • Mis à jour à chaque instant",
+    "empty_title": "🐱 ✨ Classement des Chats ✨",
+    "empty_description": "🐾 **Le classement est vide !**\n\n🚀 Soyez le premier collecteur de chats légendaire !\n🔮 Commencez à collecter des chats et revendiquez votre trône !",
+    "empty_footer": "🐾 Commencez votre voyage de collection aujourd'hui !",
+    "error_title": "❌ Oups ! Quelque chose s'est mal passé",
+    "error_description": "🐾 Impossible de récupérer le classement maintenant. Veuillez réessayer !",
+    "error_footer": "🐾 Erreur enregistrée pour débogage",
+    "refresh_button": "🔄 Actualiser",
+    "my_stats_button": "📊 Mes Stats",
+    "stats_title": "💎 Stats Collection de {{username}}",
+    "stats_description": "**Votre voyage de collection de chats**",
+    "stats_ranking": "🏆 Classement",
+    "stats_ranking_value": "**Rang :** #{{rank}}\n**Chats :** {{cats}}\n**Statut :** {{status}}",
+    "stats_no_data": "Vous n'avez pas encore commencé à collecter !",
+    "stats_progress": "⭐ Progrès",
+    "stats_progress_value": "**Prochain Jalon :** {{next}}\n**Progrès :** {{progress}} `{{current}}/100`\n**Efficacité :** {{efficiency}}",
+    "stats_progress_no_data": "Commencez à collecter pour voir votre progrès !",
+    "stats_max_level": "NIVEAU MAX !",
+    "stats_efficiency_legendary": "Légendaire",
+    "stats_efficiency_expert": "Expert",
+    "stats_efficiency_good": "Bon",
+    "stats_efficiency_starting": "Début",
+    "stats_footer": "Continuez à collecter pour grimper plus haut ! • {{date}}"
+  },
+  "vote": {
+    "title": "🗳️ Votez pour MiauDex !",
+    "subtitle": "✨ Soutenez le bot et gagnez des récompenses !",
+    "description": "Votez toutes les 12 heures pour gagner des chats et débloquer des accomplissements !",
+    "footer": "Prochain vote : {{next}}",
+    "reminder_status": "🔔 Statut Rappel",
+    "reminder_enabled": "✅ Rappels Activés",
+    "reminder_disabled": "❌ Rappels Désactivés",
+    "voting_stats": "📊 Stats Vote",
+    "voting_stats_value": "**Total Votes :** {{votes}}\n**Statut :** {{status}}\n**Progrès :** {{progress}}",
+    "vote_rewards": "🎁 Récompenses Vote",
+    "vote_rewards_value": "Gagnez des chats et des badges spéciaux en votant !",
+    "enable_reminders": "🔔 Activer Rappels",
+    "disable_reminders": "🔕 Désactiver Rappels",
+    "view_leaderboard": "🏆 Voir Classement",
+    "vote_now": "🚀 Voter Maintenant",
+    "view_stats": "📈 Voir Stats",
+    "time_remaining": "Temps restant : {{time}}",
+    "ready_to_vote": "Vous pouvez voter maintenant !",
+    "leaderboard_title": "🏆 Classement des Votes",
+    "leaderboard_subtitle": "Découvrez les meilleurs votants !",
+    "voting_legends": "Top 3 Légendes",
+    "rising_voters": "Votants Montants",
+    "no_legends": "Pas encore de légendes !",
+    "your_rank": "Votre Rang",
+    "your_rank_value": "{{emoji}} Position : {{position}} • Votes : {{votes}}\nProgrès : {{progress}} ({{current}}/{{max}})",
+    "leaderboard_footer": "Classement mis à jour",
+    "leaderboard_error_title": "❌ Erreur Chargement Classement",
+    "leaderboard_error_desc": "Quelque chose s'est mal passé lors de la récupération du classement.",
+    "leaderboard_error_footer": "Veuillez réessayer plus tard.",
+    "unknown_user": "Utilisateur Inconnu",
+    "votes": "votes",
+    "reminder_enabled_title": "✅ Rappels Activés !",
+    "reminder_enabled_desc": "🔔 Parfait ! Les rappels de vote sont maintenant actifs !\n\n➡ Vous recevrez un MP quand vous pourrez voter à nouveau.\n🚀 Chaque rappel inclut des liens de vote directs.\n💖 Ne ratez jamais un vote et gagnez plus de chats !\n\n✅ Message test envoyé avec succès - Vérifiez vos MP !",
+    "reminder_enabled_footer": "Message test envoyé avec succès - Vérifiez vos MP !",
+    "reminder_disabled_title": "❌ Rappels Désactivés !",
+    "reminder_disabled_desc": "❌ Rappels désactivés. Vous pouvez les réactiver à tout moment.",
+    "dm_error_title": "❌ Impossible d'Activer les Rappels de Vote",
+    "dm_error_desc": "🔔 Oups ! Nous ne pouvons pas vous envoyer de notifications MP.\n\n➡ **Pour activer les rappels de vote :**\n✅ Allez dans **Paramètres Utilisateur** (icône engrenage)\n✅ Naviguez vers **Confidentialité et Sécurité**\n✅ Activez **Autoriser les MP des membres du serveur**\n✅ Ou ajoutez MiauDex comme ami\n\n✨ **Pourquoi les MP ?**\n💖 Éviter le spam sur le serveur\n🚀 Notifications instantanées\n💎 Expérience personnalisée !",
+    "dm_error_footer": "💡 Une fois vos paramètres MP corrigés, essayez de réactiver les rappels !",
+    "rank_legend": "LÉGENDE DU VOTE",
+    "rank_master": "MAÎTRE DU VOTE",
+    "rank_expert": "EXPERT DU VOTE",
+    "rank_ace": "AS DU VOTE",
+    "rank_pro": "PRO DU VOTE",
+    "rank_voter": "VOTANT",
+    "streak_legendary": "LÉGENDAIRE",
+    "streak_champion": "CHAMPION",
+    "streak_on_fire": "EN FLAMMES",
+    "streak_rising_star": "ÉTOILE MONTANTE",
+    "streak_getting_started": "PREMIERS PAS",
+    "streak_newcomer": "NOUVEL ARRIVANT",
+    "not_your_panel": "❌ C'est le panneau de vote de {{username}} !",
+    "settings_updated": "Paramètres mis à jour avec succès !",
+    "reminder_success_title": "✅ Rappels Activés avec Succès !",
+    "reminder_success_desc": "🔔 Parfait ! Les rappels de vote sont maintenant actifs !\n\n✨ **Que se passe-t-il ensuite ?**\n➡ Vous recevrez un rappel MP quand vous pourrez voter à nouveau\n🚀 Chaque rappel inclura des liens de vote directs\n💖 Ne ratez jamais un vote et gagnez plus de chats !\n\n✅ **Message test envoyé avec succès** - Vérifiez vos MP !",
+    "all_set_footer": "🔔 Tout est prêt ! Bon vote !",
+    "user_stats_title": "🏆 Statistiques de Vote de {{username}}",
+    "stats_subtitle": "✨ Détail complet de votre voyage de vote",
+    "overall_stats": "⭐ Stats Générales",
+    "overall_stats_value": "**Total Votes :** {{votes}}\n**Série Actuelle :** {{streak}}\n**Rang :** {{rank}}",
+    "cats_earned": "🐱 Chats Gagnés",
+    "cats_earned_value": "**Des Votes :** {{cats}}",
+    "reminder_info": "🔔 Info Rappel",
+    "reminder_info_value": "**Statut :** {{status}}\n**Prochain Vote :** {{nextVote}}\n**Efficacité :** {{efficiency}}",
+    "status_active": "✅ Actif",
+    "status_disabled": "❌ Désactivé",
+    "keep_voting_footer": "Continuez à voter pour débloquer plus d'accomplissements ! • {{date}}",
+    "rank_master_voter": "Maître Votant",
+    "rank_expert_voter": "Expert Votant",
+    "rank_active_voter": "Votant Actif",
+    "rank_new_voter": "Nouveau Votant",
+    "efficiency_excellent": "Excellente",
+    "efficiency_good": "Bonne",
+    "efficiency_starting": "Premiers pas"
+  },
+  "trade": {
+    "proposal_title": "🔥 Proposition d'Échange",
+    "completed_title": "🤝 Échange Terminé !",
+    "rejected_title": "❌ Échange Rejeté",
+    "cancelled_title": "⏰ Échange Annulé",
+    "proposal_description": "{{target}}, {{username}} veut échanger des chats avec vous !\n\n⏳ **Choisissez votre réponse ci-dessous**\n⏰ Vous avez {{time}} secondes pour décider",
+    "success_description": "✅ **Échange réussi !**\nLes deux chats ont été transférés à leurs nouveaux propriétaires.",
+    "rejected_description": "{{username}} a refusé la proposition d'échange.",
+    "cancelled_description": "Aucune réponse reçue dans le délai imparti.",
+    "offering": "{{emoji}} {{username}} offre :",
+    "exchange": "⇄",
+    "errors": {
+      "invalid_initiator": "Vous ne pouvez pas initier d'échanges en tant que bot",
+      "invalid_target": "Vous ne pouvez pas échanger avec des bots",
+      "self_trade": "Vous ne pouvez pas échanger avec vous-même ! 🤔\n\nEssayez de trouver un autre utilisateur avec qui échanger.",
+      "invalid_cat_name": "Les noms de chats doivent faire 1-{{max}} caractères et contenir des caractères valides.",
+      "settings_check_failed": "Impossible de vérifier les paramètres d'échange de {{username}}. Ils pourraient avoir besoin d'utiliser le bot d'abord.",
+      "trades_disabled": "{{username}} a désactivé l'échange de chats.\n\nIls peuvent l'activer en utilisant : `/profil`",
+      "cat_not_found": "Vous n'avez pas de chat nommé \"{{name}}\".\n\nUtilisez `/galerie` pour voir vos chats disponibles.",
+      "target_cat_not_found": "{{username}} n'a pas de chat nommé \"{{name}}\".\n\nVous pouvez vérifier leur collection avec `/galerie`",
+      "rarity_mismatch": "Les chats doivent avoir la même rareté pour être échangés !\n\n{{my_emoji}} Votre chat : **{{my_rarity}}**\n{{their_emoji}} Leur chat : **{{their_rarity}}**\n\n*Cela garde les échanges équitables pour tous.*",
+      "lookup_failed": "Impossible de trouver le chat dans la base de données. Veuillez réessayer.",
+      "trade_failed": "Une erreur s'est produite lors du transfert des chats. L'échange a été annulé.\n\nLes deux chats restent avec leurs propriétaires d'origine.",
+      "unexpected_error": "Quelque chose d'inattendu s'est passé lors du traitement de votre échange.\n\nVeuillez réessayer dans quelques instants."
+    },
+    "command": {
+      "option_user": "utilisateur",
+      "option_user_desc": "L'utilisateur avec qui vous souhaitez échanger",
+      "option_yourcat": "votre-chat",
+      "option_yourcat_desc": "Le nom de votre chat à échanger",
+      "option_theircat": "son-chat",
+      "option_theircat_desc": "Le nom du chat que vous désirez chez l'autre utilisateur"
+    }
+  },
+  "rarity": {
+    "title": "✨ 🐱 Raretés des Chats 🐱 ✨",
+    "subtitle": "🌌 **Bienvenue dans le monde magique des raretés de chats !**",
+    "description": "ℹ️ Chaque chat a une rareté unique qui détermine sa couleur et à quel point il est spécial.\n🎲 Plus le chat est rare, plus il est difficile à trouver !",
+    "total_cats": "📊 **Total Chats Disponibles :** {{count}}",
+    "common_rare": "📖 Commun à Rare",
+    "epic_legendary": "⭐ Épique à Légendaire",
+    "ultra_rare": "👑 Ultra Rare",
+    "footer": "🪄 La rareté affecte la couleur de l'embed • Utilisez le menu déroulant pour explorer les raretés individuelles",
+    "details_title": "{{emoji}} Rareté : {{name}}",
+    "details_description": "✨ **\"{{description}}\"**",
+    "drop_info": "🎲 Information de Drop",
+    "drop_info_value": "**Chance :** {{chance}}\n**Chances :** 1 sur {{odds}}\n**Difficulté :** {{difficulty}}",
+    "availability": "📊 Disponibilité",
+    "availability_value": "**Total Chats :** {{count}}\n**% Base de Données :** {{percentage}}%\n**Rang :** #{{rank}} sur {{total}}",
+    "collection_tip": "🪄 Astuce Collection",
+    "tips": {
+      "easy": "💖 **Facile à collecter !** Votez régulièrement pour construire votre collection.",
+      "moderate": "🎯 **Défi modéré.** Le vote quotidien vous les apportera avec le temps.",
+      "serious": "🔥 **Dévouement sérieux requis.** Le vote constant est la clé !",
+      "ultra_rare": "👑 **Ultra rare !** Ceux-ci nécessitent une patience et une chance incroyables.",
+      "legendary": "🌌 **Statut légendaire !** Les plus rares des rares - de vrais prix de collectionneur !"
+    },
+    "details_footer": "Partie du système de rareté MiauDex • Sélectionnez une autre rareté pour explorer plus !",
+    "select_placeholder": "🔍 Sélectionnez une rareté pour en savoir plus..."
+  },
+  "help": {
+    "main": {
+      "title": "Centre de commandes MiauDex",
+      "description": "**Bienvenue dans l'expérience ultime de collection de chats !**\n\n{{sparkles}} **{{totalCommands}} commandes** disponibles pour améliorer votre voyage\n{{cat}} Collectez des chats rares, rivalisez avec des amis, et devenez une légende !\n\n**Choisissez une catégorie ci-dessous pour explorer les commandes :**",
+      "footer": "💡 Astuce pro : Utilisez le menu déroulant pour explorer des catégories spécifiques !"
+    },
+    "categories": {
+      "collection": {
+        "name": "🐱 Collection",
+        "description": "Gérez et visualisez votre collection de chats"
+      },
+      "social": {
+        "name": "👥 Social & Compétition",
+        "description": "Rivalisez et interagissez avec d'autres collecteurs"
+      },
+      "rewards": {
+        "name": "🎁 Récompenses & Vote",
+        "description": "Obtenez des récompenses et soutenez le bot"
+      },
+      "utility": {
+        "name": "⚙️ Utilitaires & Paramètres",
+        "description": "Paramètres du bot et outils utiles"
+      }
+    },
+    "command_descriptions": {
+      "cat": "Découvrez et collectez un nouveau chat pour votre collection !",
+      "gallery": "Visualisez votre galerie de chats ou celle d'un autre utilisateur",
+      "rename": "Donnez un tout nouveau nom à votre chat bien-aimé !",
+      "top": "Affichez le classement des chats",
+      "profile": "Affichez et gérez vos paramètres de profil",
+      "stats": "Affichez les statistiques du bot",
+      "vote": "Votez pour le bot et obtenez des récompenses",
+      "announcement": "Visualisez les dernières mises à jour et annonces MiauDex",
+      "invite": "Rejoignez le serveur officiel MiauDex et débloquez des avantages exclusifs !",
+      "serverinfo": "Affichez les informations du serveur",
+      "rarity": "Affiche toutes les raretés de chat ainsi que leurs chances de drop.",
+      "trade": "Échangez des chats avec un autre utilisateur",
+      "help": "Explorez toutes les commandes et fonctionnalités de Miaudex"
+    },
+    "commands_count": "commandes",
+    "category": {
+      "commands": "Commandes",
+      "count": "**{{count}} commandes** dans cette catégorie :",
+      "no_commands": "Aucune commande trouvée dans cette catégorie.",
+      "footer": "🔍 Utilisez le menu pour explorer d'autres catégories • {{count}} commandes affichées"
+    },
+    "quickstart": {
+      "title": "Guide de Démarrage Rapide",
+      "subtitle": "**Nouveau sur MiauDex ? Commencez votre voyage légendaire ici !**",
+      "step1": {
+        "title": "Étape 1 : Obtenez Votre Premier Chat",
+        "description": "Utilisez `/chat` pour obtenir un chat aléatoire gratuit !"
+      },
+      "step2": {
+        "title": "Étape 2 : Vérifiez Votre Collection",
+        "description": "Utilisez `/galerie` pour voir tous vos chats collectés et leur rareté."
+      },
+      "step3": {
+        "title": "Étape 3 : Grimpez dans le Classement",
+        "description": "Utilisez `/classement` pour voir où vous vous situez parmi les autres collecteurs."
+      },
+      "step4": {
+        "title": "Étape 4 : Personnalisez Votre Expérience",
+        "description": "Utilisez `/profil` pour gérer vos paramètres et préférences."
+      },
+      "tips": {
+        "title": "Astuces Pro",
+        "content": "• Votez toutes les 12 heures pour des récompenses constantes\n• Les chats rares sont plus précieux pour les classements\n• Rejoignez notre communauté pour des événements exclusifs !"
+      },
+      "footer": "🎯 Prêt à devenir une légende de la collection de chats ?"
+    },
+    "menu": {
+      "placeholder": "🔍 Choisissez une catégorie de commande à explorer..."
+    },
+    "buttons": {
+      "quickstart": "🚀 Démarrage Rapide",
+      "support": "💖 Soutenez-nous",
+      "refresh": "🔄 Actualiser"
+    },
+    "error": {
+      "title": "Oups ! Quelque chose s'est mal passé",
+      "description": "Impossible de charger le menu d'aide maintenant. Veuillez réessayer !",
+      "footer": "🐾 Erreur enregistrée pour débogage"
+    }
+  },
+  "invite": {
+    "main": {
+      "title": "Rejoignez la Communauté MiauDex !",
+      "description": "{{rainbow}} **Bienvenue dans le paradis ultime des collecteurs de chats !**\n\n{{community}} Connectez-vous avec d'autres passionnés de chats\n{{support}} Obtenez une aide et un support instantanés de notre équipe incroyable\n{{gift}} Participez à des événements et concours exclusifs\n{{news}} Restez à jour avec les dernières fonctionnalités MiauDex\n\n{{arrow}} [**Cliquez ici pour rejoindre l'aventure !**]({{invite_link}})\n{{bot}} [**Ajoutez MiauDex à votre serveur !**]({{bot_invite_link}})",
+      "whats_inside": {
+        "title": "Qu'y a-t-il à l'intérieur ?",
+        "content": "{{chat}} **Communauté Active** - Chattez avec des amoureux des chats du monde entier\n{{trophy}} **Classements** - Voyez qui est le meilleur collecteur\n{{bell}} **Annonces** - Premier à connaître les mises à jour\n{{target}} **Événements** - Concours et défis spéciaux"
+      },
+      "exclusive_perks": {
+        "title": "Avantages Exclusifs",
+        "content": "{{gift}} **Concours Quotidiens** - Chats gratuits chaque jour\n{{gem}} **Canaux VIP** - Avantages membres premium"
+      },
+      "footer": "{{heart}} Rejoignez {{users}}+ collecteurs enregistrés dans notre communauté grandissante !"
+    },
+    "giveaway": {
+      "title": "Concours de chats quotidiens",
+      "description": "{{tada}} **Chaque jour, un membre chanceux gagne un chat GRATUIT !**\n\n{{lightning}} Rapide à participer, excitant à gagner, et complètement GRATUIT !\n\n{{arrow}} **Disponible seulement sur le [Serveur MiauDex]({{invite_link}}) !**",
+      "schedule": {
+        "title": "Programme",
+        "content": "{{bell}} **Quotidien à 16h UTC**\n{{target}} Notifications automatiques pour les membres"
+      },
+      "rewards": {
+        "title": "Récompenses",
+        "content": "{{cat}} **1 chat aléatoire**"
+      },
+      "how_to_enter": {
+        "title": "Comment Participer",
+        "content": "{{check}} **Juste réagir !** C'est aussi simple que ça\n{{tada}} Gagnants annoncés 24 heures plus tard !"
+      },
+      "footer": "{{wink}} Ne ratez pas votre chance quotidienne - rejoignez maintenant et commencez à gagner !"
+    },
+    "features": {
+      "title": "Aperçu des Fonctionnalités du Serveur",
+      "description": "**Découvrez ce qui rend notre communauté spéciale :**",
+      "community_channels": {
+        "title": "Canaux Communautaires",
+        "content": "{{paw}} **#cat-center** - Montrez votre collection\n{{heart}} **#english-general** - Faites-vous des amis avec d'autres collecteurs\n{{target}} **#trading** - Échangez des chats avec d'autres membres"
+      },
+      "support_help": {
+        "title": "Support & Aide",
+        "content": "{{bell}} **#miaudex** - Dernières nouvelles et mises à jour\n{{check}} **#support** - Obtenez de l'aide de notre équipe\n{{crystal}} **#suggestions** - Façonnez l'avenir du bot"
+      },
+      "vip_benefits": {
+        "title": "Avantages Membres VIP",
+        "content": "{{gem}} **Canaux exclusifs** avec des collecteurs avancés\n{{fire}} **Tests bêta** accès aux nouvelles fonctionnalités\n{{rainbow}} **Rôle spécial** avec des avantages uniques et une reconnaissance"
+      },
+      "footer": "{{globe}} Nous construisons la meilleure communauté de collectionneurs de chats au monde, un membre à la fois !"
+    },
+    "stats": {
+      "title": "Statistiques de la Communauté",
+      "description": "**Notre incroyable communauté en chiffres :**",
+      "registered_users": {
+        "title": "Utilisateurs Enregistrés",
+        "content": "**{{count}}** collecteurs de chats"
+      },
+      "total_cats": {
+        "title": "Total Chats Collectés",
+        "content": "**{{count}}** chats dans les collections"
+      },
+      "active_voters": {
+        "title": "Votants Actifs",
+        "content": "**{{count}}** participants quotidiens"
+      },
+      "total_votes": {
+        "title": "Total Votes Émis",
+        "content": "**{{count}}** votes pour des chats gratuits"
+      },
+      "premium_members": {
+        "title": "Membres Premium",
+        "content": "**{{count}}** collecteurs VIP"
+      },
+      "giveaway_participants": {
+        "title": "Participants Concours",
+        "content": "**{{count}}** actifs dans les événements"
+      },
+      "leaderboard_competitors": {
+        "title": "Compétiteurs Classement",
+        "content": "**{{count}}** montrant leurs collections"
+      },
+      "average_collection": {
+        "title": "Taille Moyenne Collection",
+        "content": "**{{count}}** chats par utilisateur"
+      },
+      "engagement_rate": {
+        "title": "Taux d'Engagement",
+        "content": "{{rate}}% d'activité quotidienne"
+      },
+      "highlights": {
+        "title": "Points Forts Communauté Réelle",
+        "content": "{{heart}} **{{totalVotes}}** votes émis par notre incroyable communauté\n{{sparkles}} **{{giveawayParticipants}}** membres participant activement aux événements\n{{trophy}} **{{leaderboardUsers}}** collecteurs fiers montrant leurs accomplissements"
+      },
+      "footer": "{{wink}} Ce sont de vrais chiffres de notre vraie base de données communautaire !"
+    },
+    "buttons": {
+      "join_server": "{{rocket}} Rejoindre Serveur MiauDex",
+      "add_bot": "{{plus}} Ajouter Bot MiauDex",
+      "review": "{{star}} Laisser un Avis",
+      "vote": "{{trophy}} Voter pour MiauDex",
+      "features": "{{magic}} Fonctionnalités Serveur",
+      "stats": "{{chart}} Stats Communauté"
+    }
+  },
+  "errors": {
+    "unexpected_title": "Erreur Inattendue",
+    "unexpected": "Quelque chose d'inattendu s'est passé lors de la collecte de votre chat.\n\nL'équipe de développement a été notifiée. Veuillez réessayer dans quelques minutes.",
+    "unknown_command": "❌ Commande inconnue : `{{command}}`"
+  },
+  "rename": {
+    "nice_name": "un joli nom",
+    "invalid_name_title": "❌ Nom Invalide !",
+    "invalid_name_description": "⚠️ Il y a eu un problème avec le nom \"{{name}}\".\n\n✨ Veuillez essayer un nom différent pour votre chat !",
+    "choose_loving_name": "Choisissez un nom affectueux pour votre ami à fourrure ! 🐾",
+    "reserved_pattern_title": "❌ Modèle de Nom Réservé !",
+    "reserved_pattern_description": "⚠️ Les noms comme \"**{{name}}**\" sont réservés par le système.\n\n🐱 **Modèle bloqué :** \"cat\" suivi de chiffres (comme cat1, cat30, etc.)\n✨ Votre chat mérite un nom plus créatif et personnel !",
+    "creative_alternatives": "🎨 Alternatives Créatives",
+    "alternative_examples": "• **Moustaches**\n• **Ombre**\n• **Mitaines**\n• **Luna**\n• **{{oldName}}Pro**",
+    "let_creativity_shine": "Laissez votre créativité briller ! ✨",
+    "name_too_long_title": "⚠️ Nom trop long !",
+    "name_too_long_description": "😿 Le nom de votre chat \"{{name}}\" fait **{{length}}** caractères.\n\n✏️ **Maximum autorisé :** 20 caractères\n✨ Essayez un nom plus court et plus mignon !",
+    "suggestions": "🎨 Suggestions",
+    "choose_perfect_fit": "Choisissez un nom qui s'adapte parfaitement ! 🐾",
+    "invalid_characters_title": "❌ Caractères Invalides !",
+    "invalid_characters_description": "⚠️ Le nom \"{{name}}\" contient des caractères invalides.\n\n✅ **Caractères autorisés :**\n• Lettres (A-Z, a-z)\n• Chiffres (0-9)\n• Espaces, tirets (-), underscores (_)\n\n❌ **Non autorisé :** Émojis, symboles spéciaux",
+    "valid_examples": "✨ Exemples Valides",
+    "valid_examples_content": "• **Chat Duveteux**\n• **Ombre-2024**\n• **Mon_Précieux_Un**",
+    "keep_simple_sweet": "Gardez-le simple et doux ! 💫",
+    "cat_not_found_title": "😿 Chat Non Trouvé !",
+    "cat_not_found_description": "🐱 Je n'ai pas pu trouver un chat nommé \"**{{name}}**\" dans votre collection.\n\n✨ **Vérifiez l'orthographe** et réessayez !",
+    "quick_tips": "🎨 Astuces Rapides",
+    "quick_tips_content": "• Les noms sont **sensibles à la casse**\n• Utilisez `/galerie` pour voir tous vos chats\n• Assurez-vous de posséder ce chat",
+    "gallery_tip": "Astuce : Utilisez /galerie pour voir tous vos amis à fourrure ! 🐾",
+    "name_taken_title": "❌ Nom déjà pris !",
+    "name_taken_description": "🐱 Vous avez déjà un chat nommé \"**{{name}}**\" !\n\n✨ Chaque chat de votre collection a besoin d'un **nom unique**.",
+    "unique_name_footer": "Rendez chaque chat spécial avec un nom unique ! ✨",
+    "success_title": "🎉 Chat renommé avec succès ! 🎉",
+    "success_description": "✨ **Félicitations !** La transformation de votre chat est terminée !\n\n🐱 **\"{{oldName}}**\" s'appelle maintenant fièrement **\"{{newName}}**\" !",
+    "cat_details": "{{emoji}} Détails du Chat",
+    "cat_details_content": "**Nouveau Nom :** {{newName}}\n**Rareté :** {{rarity}}\n**Propriétaire :** {{owner}}",
+    "fun_fact": "🎨 Le saviez-vous ?",
+    "fun_fact_content": "Saviez-vous ? Votre chat se souviendra de ce moment spécial pour toujours ! {{newName}} est maintenant prêt pour de nouvelles aventures ! 💖",
+    "success_footer": "{{newName}} dit \"Miaou !\" • Renommé par {{owner}}",
+    "celebration_message": "🌈 **{{newName}}** s'adapte magnifiquement à son nouveau nom ! 😻 Il semble l'adorer !",
+    "celebration_footer": "Votre collection de chats vient de devenir encore plus spéciale ! 🌟",
+    "command": {
+      "option_old": "ancien-nom",
+      "option_old_desc": ":mag: Le nom actuel de votre chat",
+      "option_new": "nouveau-nom",
+      "option_new_desc": ":sparkles: Un joli nouveau nom pour votre chat"
+    }
+  },
+  "gallery": {
+    "command": {
+      "name": "galerie",
+      "description": "Visualisez votre magnifique galerie de chats ou celle d'un autre utilisateur",
+      "option_user": "utilisateur",
+      "option_user_desc": "Utilisateur dont vous voulez voir la galerie"
+    },
+    "empty": {
+      "title": "📭 Galerie vide",
+      "description": "**{{username}}** n'a encore collecté aucun chat !\n\n🐱 Commencez à collecter des chats pour construire votre galerie\n✨ Chaque chat est unique et spécial\n📚 Construisez la collection ultime !",
+      "footer": "Galerie Vide • Commencez votre collection aujourd'hui !"
+    },
+    "error": {
+      "title": "❌ Erreur Galerie",
+      "description": "Quelque chose s'est mal passé lors du chargement de la galerie. Veuillez réessayer !",
+      "not_found": "❓ **Chat non trouvé ou données corrompues**\n\nEssayez d'actualiser la galerie ou contactez le support."
+    },
+    "embed": {
+      "title": "🖼️ Galerie de Chats de {{username}}",
+      "collection_progress": "📚 **Progrès de Collection**\n`{{progressBar}}` {{current}}/{{total}}",
+      "rarity_details": "⭐ Détails Rareté",
+      "collection_stats": "💎 Stats Collection",
+      "footer": "💖 Chat {{current}} sur {{total}} • Galerie de {{username}} • Utilisez les boutons pour naviguer"
+    },
+    "navigation": {
+      "previous": "Précédent",
+      "next": "Suivant",
+      "jump": "Aller"
+    },
+    "utility": {
+      "stats": "Statistiques",
+      "refresh": "Actualiser",
+      "help": "Aide"
+    },
+    "help": {
+      "title": "🔍 Aide Galerie & Commandes",
+      "description": "Apprenez à naviguer dans votre belle galerie de chats !",
+      "navigation": "🎮 Contrôles de Navigation",
+      "navigation_details": {
+        "first": "⏮️ Premier - Aller au premier chat",
+        "previous": "⬅️ Précédent - Reculer d'un chat",
+        "jump": "🎯 Aller - Aller à un numéro de chat spécifique",
+        "next": "➡️ Suivant - Avancer d'un chat",
+        "last": "⏭️ Dernier - Aller au dernier chat"
+      },
+      "sorting": "📊 Options de Tri",
+      "sorting_details": {
+        "date": "📅 Par Date - Chats les plus récents en premier",
+        "rarity": "🌟 Par Rareté - Chats les plus rares en premier",
+        "alpha": "🔤 Alphabétique - Trier par nom A-Z"
+      },
+      "utility": "🛠️ Fonctionnalités Utilitaires",
+      "utility_details": {
+        "stats": "📊 Statistiques - Voir les stats détaillées de collection",
+        "refresh": "🔄 Actualiser - Recharger les données de galerie",
+        "help": "❓ Aide - Afficher ce menu d'aide"
+      },
+      "footer": "Aide Galerie • Profitez de votre collection !"
+    },
+    "stats": {
+      "title": "💎 Statistiques de Galerie de {{username}}",
+      "overview": "📚 Aperçu Collection",
+      "rarity_breakdown": "⭐ Répartition Rareté",
+      "footer": "Statistiques Galerie • Données en Direct"
+    },
+    "labels": {
+      "type": "Type",
+      "rarity": "Rareté",
+      "total_cats": "Total Chats",
+      "completion": "Progrès",
+      "enter_cat_number": "Entrez le numéro de chat (1 - {{max}})"
+    },
+    "jump_modal": {
+      "label": "Entrez le numéro de chat (1 - {{max}})",
+      "invalid": "❌ Numéro de chat invalide. Entrez un nombre entre 1 et {{max}}."
+    }
+  },
+  "commands": {
+    "cat": { "name": "chat" },
+    "gallery": { "name": "galerie" },
+    "rename": { "name": "renommer" },
+    "top": { "name": "classement" },
+    "profile": { "name": "profil" },
+    "stats": { "name": "stats" },
+    "vote": { "name": "vote" },
+    "announcement": { "name": "annonce" },
+    "invite": { "name": "invitation" },
+    "serverinfo": { "name": "infoserveur" },
+    "rarity": { "name": "rarete" },
+    "trade": { "name": "echange" },
+    "help": { "name": "aide" }
+  },
+  "profanity": {
+    "warning_title": "Miaou... Ce n'est pas un beau nom !",
+    "warning_description": "Je ne peux pas utiliser ce nom pour votre chaton. Appelons-le **{{newName}}** à la place !",
+    "reminder": "🐱 **Rappelez-vous :** Nos chats méritent des noms affectueux et gentils !",
+    "tip": "👍 **Astuce :** Essayez des noms comme Luna, Milo, Bella, ou laissez-moi simplement choisir un numéro !",
+    "footer": "MiauDex • Gardez ça sain ! 🐾"
+  },
+  "announcement": {
+    "buttons": {
+      "tag": "🏷️ Obtenir le tag MIAU"
+    }
+  },
+  "translations": {
+    "authors": [
+      { "Zer0Two": "642642727237845041", "MaxiMep": "219532455856701442" }
+    ]
+  }
+}

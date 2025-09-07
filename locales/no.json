@@ -1,0 +1,688 @@
+{
+  "cat": {
+    "cooldown": {
+      "title": "🐾 Katteinnsamling Nedkjøling",
+      "description": "Du må vente **{{time}}** før du kan samle en ny katt.",
+      "tip": "💡 *Tips: Bruk `/galleri` for å sjekke din nåværende samling mens du venter!*",
+      "footer": "Nedkjøling gjør kattene spesielle og rettferdige for alle!"
+    },
+    "success": {
+      "title": "{{rarity_emoji}} Gratulerer, {{username}}!",
+      "collected": "🐱 **{{cat_name}}** har blitt med i samlingen din!",
+      "rarity": "✨ Raritet: **{{rarity_name}}** ({{chance}} sjanse)",
+      "streak": "{{streak_emoji}} **Daglig Streak:** {{streak}} dager",
+      "description": "📝 {{rarity_description}}",
+      "footer": "MiauDex • Neste katt tilgjengelig om 24 timer • Beste streak: {{best_streak}} dager"
+    },
+    "errors": {
+      "invalid_name_title": "Ugyldig kattenavn",
+      "invalid_name": "Kattenavn må være 1-32 tegn lange og inneholde gyldige tegn.\n\n❌ **Ikke tillatt:** `<>@#&` og tomme navn\n✅ **Tillatt:** Bokstaver, tall, mellomrom og de fleste symboler",
+      "reserved_pattern_title": "Reservert navnemønster!",
+      "reserved_pattern": "⚠️ Navn som \"cat1\", \"cat30\" osv. er reservert av systemet.\n\n🐱 **Mønster blokkert:** \"cat\" etterfulgt av tall\n✨ Katten din fortjener et mer kreativt og personlig navn!",
+      "creative_alternatives": "🎨 **Kreative alternativer:**",
+      "examples": "• **Whiskers** - Klassisk og søt\n• **Shadow** - Mystisk og kul\n• **Mittens** - Sjarmerende og koselig\n• **Luna** - Himmelsk og vakker\n• **Ziggy** - Lekende og unik",
+      "creativity_tip": "💡 *Eller la systemet generere et unikt navn for deg!*",
+      "footer_creativity": "La kreativiteten din skinne! ✨",
+      "api_failed_title": "Kattesøk mislyktes",
+      "api_failed": "Kunne ikke koble til kattebildetjenesten. Dette er vanligvis midlertidig.\n\n🔧 **Mulige årsaker:**\n• Nettverksproblemer\n• Vedlikehold av katte-API\n• Midlertidig serveroverbelastning",
+      "save_failed_title": "Lagring mislyktes",
+      "save_failed": "Katten din ble funnet, men kunne ikke lagres i samlingen din. Prøv igjen.\n\nHvis dette fortsetter, kan databasen være midlertidig utilgjengelig."
+    },
+    "streak": {
+      "new_record": "🏆 **Ny personlig rekord!**",
+      "legendary": "🌟 **Legendarisk dedikasjon!**",
+      "on_fire": "🔥 **Du er på topp!**",
+      "great_consistency": "⚡ **Flott konsistens!**",
+      "building_momentum": "🐱 **Bygger momentum!**"
+    },
+    "command": {
+      "option_name": "navn",
+      "option_name_desc": "Gi katten din et egendefinert navn (1–32 tegn, valgfritt)"
+    }
+  },
+  "profile": {
+    "title": "👑 {{username}}s profilpanel",
+    "subtitle": "*Velkommen til ditt personlige kontrollsenter*",
+    "information": "✨ Profilinformasjon",
+    "user": "Bruker",
+    "member_since": "▶️ **Medlem siden:** {{date}}",
+    "streak": {
+      "title": "🐱 Katteinnsamlingsrekke",
+      "current": "{{emoji}} **Nåværende rekke:** {{streak}} dager",
+      "best": "🏆 **Beste rekke:** {{best}} dager",
+      "messages": {
+        "start": "*Start din rekke ved å samle en katt!*",
+        "amazing": "*Fantastisk dedikasjon! 🌟*",
+        "fire": "*Du er på topp! 🔥*",
+        "consistency": "*Flott konsistens! ⚡*",
+        "momentum": "*Fortsett! 🐱*"
+      }
+    },
+    "settings": {
+      "title": "⚙️ Nåværende innstillinger",
+      "leaderboard": "Synlighet på toppliste",
+      "trading": "Bytting aktivert",
+      "reminders": "Kattepåminnelser",
+      "enabled": "aktivert",
+      "disabled": "deaktivert"
+    },
+    "premium": {
+      "status": "✨ Premiumstatus",
+      "member": "✅ **Premium-medlem**",
+      "notifications": "🔔 Avanserte varsler",
+      "support": "⭐ Prioritert støtte"
+    },
+    "buttons": {
+      "refresh": "Oppdater",
+      "help": "Hjelp"
+    },
+    "help": {
+      "title": "⚙️ Hjelp for profilinnstillinger",
+      "description": "Her er hva hver innstilling gjør:",
+      "leaderboard": "Styrer om du vises på serverens topplister og rangeringer",
+      "trading": "Lar andre brukere sende deg bytterequester og tilbud",
+      "reminders": "Sender deg personlige varsler om katter og aktiviteter",
+      "footer": "Hjelp • Profilpanel"
+    },
+    "common": {
+      "premium": "Premium",
+      "premium_only": "Kun Premium",
+      "enabled": "aktivert",
+      "disabled": "deaktivert",
+      "loading": "Laster...",
+      "success": "Vellykket!",
+      "error": "Feil!"
+    },
+    "footer": {
+      "standard": "Standardopplevelse • Bruk knappene for å tilpasse",
+      "premium": "Premiumopplevelse • Bruk knappene for å tilpasse",
+      "session_expired": "Økten er utløpt - bruk `/profil` for å starte en ny"
+    },
+    "premium_required": {
+      "title": "👑 Premiumfunksjon",
+      "description": "**Kattepåminnelser** er kun tilgjengelig for Premium-medlemmer!\n\n✨ **Dette får du med Premium:**\n🔔 Smarte kattevarsler\n💎 Avanserte profilfunksjoner\n👑 VIP-status\n\n*Klar for oppgradering? Kontakt din serveradministrator!*",
+      "footer": "Premium • Forbedret Discord-opplevelse"
+    },
+    "errors": {
+      "generic": "Oisann! Noe gikk galt. Prøv igjen."
+    }
+  },
+  "serverinfo": {
+    "dm_only": "Denne kommandoen kan kun brukes i en server!",
+    "title": "🏰 {{server_name}} Serverinfo",
+    "subtitle": "{{sparkles}} {{level}}",
+    "description": "Velkommen til {{server_name}}! Et levende fellesskap.",
+    "members": "👥 Medlemmer",
+    "members_value": "**Totalt:** {{total}}\n**Mennesker:** {{humans}}\n**Boter:** {{bots}}",
+    "boosts": "{{boost_emoji}} Serverboosts",
+    "boosts_value": "**Nivå:** {{level}}\n**Boosts:** {{count}}",
+    "timeline": "📅 Tidslinje",
+    "timeline_value": "**Opprettet:** <t:{{created}}:R>\n**Du ble med:** <t:{{joined}}:R>",
+    "footer": "Server-ID: {{id}} • Forespurt av {{username}}",
+    "level_mega": "🌟 MEGA SERVER",
+    "level_large": "🏆 STOR SERVER",
+    "level_big": "🚀 STOR SERVER",
+    "level_medium": "💎 MELLOMSTOR SERVER",
+    "level_growing": "✨ VOKSENDE SERVER",
+    "level_small": "🌱 LITEN SERVER",
+    "join_miaudex": "💖 Bli med i MiauDex",
+    "leave_review": "⭐ Legg igjen en anmeldelse",
+    "vote_bot": "🚀 Stem på boten"
+  },
+  "stats": {
+    "title": "📈 MiauDex statistikkpanel",
+    "subtitle": "**Sanntidsinnsikt i katteuniverset!**",
+    "status": "🚀 **Status:** Alle systemer fungerer",
+    "performance": "⚡ **Ytelse:** {{status}}",
+    "scale": "🛡️ **Skala:** {{tier}}",
+    "network": "🌍 Nettverksrekkevidde",
+    "network_value": "**Servere:** {{servers}}\n**Totalt brukere:** {{users}}\n**Snitt brukere/server:** {{avg_users}}",
+    "collection": "🐱 Samlingsstatistikk",
+    "collection_value": "**Totalt katter:** {{cats}}\n**Snitt katter/bruker:** {{avg_cats}}\n**Samlingstakt:** {{rate}}",
+    "health": "⏱️ Systemhelse",
+    "health_value": "**Oppetid:** {{uptime}}\n**Ping:** {{ping}}\n**Status:** {{status}}",
+    "footer": "💡 Klikk på knappene under for detaljerte innsikter • Sist oppdatert",
+    "community_title": "💖 Fellesskapsinnsikt",
+    "community_subtitle": "**Vi feirer vårt fantastiske kattefellesskap!**",
+    "community_size": "👥 Fellesskapsstørrelse",
+    "community_size_value": "**Totalt samlere:** {{collectors}}\n**Daglig aktive:** ~{{active}}\n**Ukentlig vekst:** +{{growth}}%",
+    "milestones": "🐱 Samlingsmilepæler",
+    "milestones_value": "**Totalt innsamlede katter:** {{total}}\n**Snitt per bruker:** {{average}} katter\n**Sjeldneste samlinger:** {{rarest}}+ katter",
+    "achievements": "🏆 Prestasjoner",
+    "achievements_value": "**Toppsamler:** {{top}} katter\n**Aktive guilds:** {{guilds}}\n**Global rangering:** Aktiv",
+    "community_footer": "🌟 Takk for at du er en del av vårt fellesskap!",
+    "error_title": "⚙️ Statistikk midlertidig utilgjengelig",
+    "error_description": "Kunne ikke hente statistikk nå. Prøv igjen om et øyeblikk!",
+    "error_footer": "🔧 Teamet vårt er varslet om problemet",
+    "status_legendary": "LEGENDARISK",
+    "status_excellent": "UTMERKET",
+    "status_great": "FLOTT",
+    "status_good": "BRA",
+    "status_fresh": "FRISK",
+    "tier_massive": "MASSIV",
+    "tier_huge": "ENORM",
+    "tier_large": "STOR",
+    "tier_growing": "VOKSENDE",
+    "tier_small": "LITEN",
+    "rate_high": "Høy",
+    "rate_medium": "Middels",
+    "rate_growing": "Voksende",
+    "conn_excellent": "Utmerket",
+    "conn_good": "Bra",
+    "conn_fair": "Rimelig",
+    "calculating": "Beregner...",
+    "community_button": "Fellesskap",
+    "refresh_button": "Oppdater",
+    "support_button": "Støtte",
+    "back_to_main": "Tilbake til hovedmeny"
+  },
+  "leaderboard": {
+    "title": "🏆 Katte-toppliste",
+    "subtitle": "**De mest legendariske katte-samlerne!**",
+    "legends": "👑 Legendehallen",
+    "rising": "⭐ Fremadstormende samlere",
+    "your_rank": "🐾 Din rangering",
+    "your_rank_value": "**#{{rank}}** • **{{cats}}** katter {{emoji}}\n{{progress}} `{{current}}/{{next}}`",
+    "footer": "🐾 Fortsett å samle for å klatre på listen! • Oppdatert hvert øyeblikk",
+    "empty_title": "🐱 ✨ Katte-toppliste ✨",
+    "empty_description": "🐾 **Topplisten er tom!**\n\n🚀 Bli den første legendariske katte-samleren!\n🔮 Start samlingen og ta tronen!",
+    "empty_footer": "🐾 Start din samlerreise i dag!",
+    "error_title": "❌ Oisann! Noe gikk galt",
+    "error_description": "🐾 Kunne ikke hente topplisten nå. Prøv igjen!",
+    "error_footer": "🐾 Feil logget for feilsøking",
+    "refresh_button": "🔄 Oppdater",
+    "my_stats_button": "📊 Mine statistikker",
+    "stats_title": "💎 {{username}}s samlingsstatistikk",
+    "stats_description": "**Din katte-samlerreise**",
+    "stats_ranking": "🏆 Rangering",
+    "stats_ranking_value": "**Rang:** #{{rank}}\n**Katter:** {{cats}}\n**Status:** {{status}}",
+    "stats_no_data": "Du har ikke startet samlingen ennå!",
+    "stats_progress": "⭐ Fremgang",
+    "stats_progress_value": "**Neste milepæl:** {{next}}\n**Fremgang:** {{progress}} `{{current}}/100`\n**Effektivitet:** {{efficiency}}",
+    "stats_progress_no_data": "Start samlingen for å se fremgangen din!",
+    "stats_max_level": "MAKS NIVÅ!",
+    "stats_efficiency_legendary": "Legendarisk",
+    "stats_efficiency_expert": "Ekspert",
+    "stats_efficiency_good": "Bra",
+    "stats_efficiency_starting": "Startet",
+    "stats_footer": "Fortsett å samle for å klatre høyere! • {{date}}"
+  },
+  "vote": {
+    "title": "🗳️ Stem på MiauDex!",
+    "subtitle": "✨ Støtt boten og få belønninger!",
+    "description": "Stem hver 12. time for å få katter og låse opp prestasjoner!",
+    "footer": "Neste stemme: {{next}}",
+    "reminder_status": "🔔 Påminnelsesstatus",
+    "reminder_enabled": "✅ Påminnelser aktivert",
+    "reminder_disabled": "❌ Påminnelser deaktivert",
+    "voting_stats": "📊 Stemmestatistikk",
+    "voting_stats_value": "**Totalt stemmer:** {{votes}}\n**Status:** {{status}}\n**Fremgang:** {{progress}}",
+    "vote_rewards": "🎁 Stemmebelønninger",
+    "vote_rewards_value": "Få katter og spesielle merker for å stemme!",
+    "enable_reminders": "🔔 Aktiver påminnelser",
+    "disable_reminders": "🔕 Deaktiver påminnelser",
+    "view_leaderboard": "🏆 Vis toppliste",
+    "vote_now": "🚀 Stem nå",
+    "view_stats": "📈 Vis statistikk",
+    "time_remaining": "Tid igjen: {{time}}",
+    "ready_to_vote": "Du kan stemme nå!",
+    "leaderboard_title": "🏆 Stemme-toppliste",
+    "leaderboard_subtitle": "Se de beste stemmerne!",
+    "voting_legends": "Topp 3 legender",
+    "rising_voters": "Fremadstormende stemmere",
+    "no_legends": "Ingen legender ennå!",
+    "your_rank": "Din rangering",
+    "your_rank_value": "{{emoji}} Plassering: {{position}} • Stemmer: {{votes}}\nFremgang: {{progress}} ({{current}}/{{max}})",
+    "leaderboard_footer": "Topplisten er oppdatert",
+    "leaderboard_error_title": "❌ Feil ved lasting av toppliste",
+    "leaderboard_error_desc": "Noe gikk galt ved henting av topplisten.",
+    "leaderboard_error_footer": "Prøv igjen senere.",
+    "unknown_user": "Ukjent bruker",
+    "votes": "stemmer",
+    "reminder_enabled_title": "✅ Påminnelser aktivert!",
+    "reminder_enabled_desc": "🔔 Perfekt! Stemmepåminnelser er nå aktive!\n\n➡ Du får en DM når du kan stemme igjen.\n🚀 Hver påminnelse inneholder direkte stemmelinker.\n💖 Ikke gå glipp av en stemme og få flere katter!\n\n✅ Testmelding sendt - Sjekk dine DMer!",
+    "reminder_enabled_footer": "Testmelding sendt - Sjekk dine DMer!",
+    "reminder_disabled_title": "❌ Påminnelser deaktivert!",
+    "reminder_disabled_desc": "❌ Påminnelser deaktivert. Du kan aktivere dem når som helst.",
+    "dm_error_title": "❌ Kan ikke aktivere stemmepåminnelser",
+    "dm_error_desc": "🔔 Oisann! Vi kan ikke sende deg DM-varsler.\n\n➡ **For å aktivere stemmepåminnelser:**\n✅ Gå til **Brukerinnstillinger** (tannhjul)\n✅ Naviger til **Personvern og sikkerhet**\n✅ Aktiver **Tillat DMer fra servermedlemmer**\n✅ Eller legg til MiauDex som venn\n\n✨ **Hvorfor DMer?**\n💖 Unngå spam i serveren\n🚀 Umiddelbare varsler\n💎 Personlig opplevelse!",
+    "dm_error_footer": "💡 Når du har fikset DM-innstillingene, prøv å aktivere påminnelser igjen!",
+    "rank_legend": "STEMMELEGENDE",
+    "rank_master": "STEMMEMESTER",
+    "rank_expert": "STEMMEEKSPERT",
+    "rank_ace": "STEMMEACE",
+    "rank_pro": "STEMMEPROFF",
+    "rank_voter": "STEMMER",
+    "streak_legendary": "LEGENDARISK",
+    "streak_champion": "MESTER",
+    "streak_on_fire": "PÅ TOPP",
+    "streak_rising_star": "STJERNESKUDD",
+    "streak_getting_started": "STARTER",
+    "streak_newcomer": "NYKOMMER",
+    "not_your_panel": "❌ Dette er {{username}}s stemmepanel!",
+    "settings_updated": "Innstillinger oppdatert!",
+    "reminder_success_title": "✅ Påminnelser aktivert!",
+    "reminder_success_desc": "🔔 Perfekt! Stemmepåminnelser er nå aktive!\n\n✨ **Hva skjer nå?**\n➡ Du får en DM-påminnelse når du kan stemme igjen\n🚀 Hver påminnelse inneholder direkte stemmelinker\n💖 Ikke gå glipp av en stemme og få flere katter!\n\n✅ **Testmelding sendt** - Sjekk dine DMer!",
+    "all_set_footer": "🔔 Alt klart! God stemmegivning!",
+    "user_stats_title": "🏆 {{username}}s stemmestatistikk",
+    "stats_subtitle": "✨ Detaljert oversikt over din stemmereise",
+    "overall_stats": "⭐ Totalstatistikk",
+    "overall_stats_value": "**Totalt stemmer:** {{votes}}\n**Nåværende rekke:** {{streak}}\n**Rang:** {{rank}}",
+    "cats_earned": "🐱 Katter opptjent",
+    "cats_earned_value": "**Fra stemmer:** {{cats}}",
+    "reminder_info": "🔔 Påminnelseinfo",
+    "reminder_info_value": "**Status:** {{status}}\n**Neste stemme:** {{nextVote}}\n**Effektivitet:** {{efficiency}}",
+    "status_active": "✅ Aktiv",
+    "status_disabled": "❌ Deaktivert",
+    "keep_voting_footer": "Fortsett å stemme for å låse opp flere prestasjoner! • {{date}}",
+    "rank_master_voter": "Stemmester",
+    "rank_expert_voter": "Stemmeekspert",
+    "rank_active_voter": "Aktiv stemmer",
+    "rank_new_voter": "Ny stemmer",
+    "efficiency_excellent": "Utmerket",
+    "efficiency_good": "Bra",
+    "efficiency_starting": "Starter"
+  },
+  "trade": {
+    "proposal_title": "🔄 Bytteforslag",
+    "completed_title": "🤝 Bytte fullført!",
+    "rejected_title": "❌ Bytte avvist",
+    "cancelled_title": "⏰ Bytte avbrutt",
+    "proposal_description": "{{target}}, {{username}} vil bytte katter med deg!\n\n⏳ **Velg ditt svar nedenfor**\n⏰ Du har {{time}} sekunder til å bestemme",
+    "success_description": "✅ **Bytte vellykket!**\nBegge kattene er overført til sine nye eiere.",
+    "rejected_description": "{{username}} avviste bytteforslaget.",
+    "cancelled_description": "Ingen respons mottatt innen tidsfristen.",
+    "offering": "{{emoji}} {{username}} tilbyr:",
+    "exchange": "⇄",
+    "errors": {
+      "invalid_initiator": "Du kan ikke starte bytter som en bot",
+      "invalid_target": "Du kan ikke bytte med boter",
+      "self_trade": "Du kan ikke bytte med deg selv! 🤔\n\nPrøv å finne en annen bruker å bytte med.",
+      "invalid_cat_name": "Kattenavn må være 1-{{max}} tegn lange og inneholde gyldige tegn.",
+      "settings_check_failed": "Kunne ikke verifisere {{username}}s bytteinnstillinger. De må kanskje bruke boten først.",
+      "trades_disabled": "{{username}} har deaktivert kattebytte.\n\nDe kan aktivere det med: `/profil`",
+      "cat_not_found": "Du har ikke en katt som heter \"{{name}}\".\n\nBruk `/galleri` for å se dine tilgjengelige katter.",
+      "target_cat_not_found": "{{username}} har ikke en katt som heter \"{{name}}\".\n\nDu kan sjekke samlingen deres med `/galleri`",
+      "rarity_mismatch": "Katter må ha samme sjeldenhet for å bytte!\n\n{{my_emoji}} Din katt: **{{my_rarity}}**\n{{their_emoji}} Deres katt: **{{their_rarity}}**\n\n*Dette holder bytter rettferdige for alle.*",
+      "lookup_failed": "Kunne ikke finne katten i databasen. Prøv igjen.",
+      "trade_failed": "En feil oppstod under overføring av kattene. Byttet er avbrutt.\n\nBegge kattene forblir hos sine opprinnelige eiere.",
+      "unexpected_error": "Noe uventet skjedde under behandlingen av byttet.\n\nPrøv igjen om noen minutter."
+    },
+    "command": {
+      "option_user": "bruker",
+      "option_user_desc": "Brukeren du vil bytte med",
+      "option_yourcat": "din-katt",
+      "option_yourcat_desc": "Navnet på katten din for byttet",
+      "option_theircat": "deres-katt",
+      "option_theircat_desc": "Navnet på katten deres du ønsker"
+    }
+  },
+  "rarity": {
+    "title": "✨ 🐱 Katte-sjeldenheter 🐱 ✨",
+    "subtitle": "🌌 **Velkommen til den magiske verden av katte-sjeldenheter!**",
+    "description": "ℹ️ Hver katt har en unik sjeldenhet som bestemmer farge og hvor spesiell den er.\n🎲 Jo sjeldnere katten er, desto vanskeligere er den å finne!",
+    "total_cats": "📊 **Totalt tilgjengelige katter:** {{count}}",
+    "common_rare": "📖 Vanlig til sjelden",
+    "epic_legendary": "⭐ Episk til legendarisk",
+    "ultra_rare": "👑 Ultra sjelden",
+    "footer": "🪄 Sjeldenhet påvirker farge på embed • Bruk nedtrekksmenyen for å utforske sjeldenheter",
+    "details_title": "{{emoji}} {{name}} sjeldenhet",
+    "details_description": "✨ **\"{{description}}\"**",
+    "drop_info": "🎲 Slippinformasjon",
+    "drop_info_value": "**Sjanse:** {{chance}}\n**Odds:** 1 av {{odds}}\n**Vanskelighetsgrad:** {{difficulty}}",
+    "availability": "📊 Tilgjengelighet",
+    "availability_value": "**Totalt katter:** {{count}}\n**Database %:** {{percentage}}%\n**Rang:** #{{rank}} av {{total}}",
+    "collection_tip": "🪄 Samlingstips",
+    "tips": {
+      "easy": "💖 **Lett å samle!** Stem regelmessig for å bygge opp samlingen din.",
+      "moderate": "🎯 **Moderat utfordring.** Daglig stemming gir deg disse over tid.",
+      "serious": "🔥 **Krever seriøs dedikasjon.** Konsistent stemming er nøkkelen!",
+      "ultra_rare": "👑 **Ultra sjelden!** Disse krever utrolig tålmodighet og flaks.",
+      "legendary": "🌌 **Legendarisk status!** De absolutt sjeldneste - ekte samlerpriser!"
+    },
+    "details_footer": "Del av MiauDex sjeldenhetssystem • Velg en annen sjeldenhet for å utforske mer!",
+    "select_placeholder": "🔍 Velg en sjeldenhet for å lære mer..."
+  },
+  "help": {
+    "main": {
+      "title": "MiauDex kommandosenter",
+      "description": "**Velkommen til den ultimate katte-samleropplevelsen!**\n\n{{sparkles}} **{{totalCommands}} kommandoer** tilgjengelig for å forbedre reisen din\n{{cat}} Samle sjeldne katter, konkurrer med venner og bli en legende!\n\n**Velg en kategori nedenfor for å utforske kommandoer:**",
+      "footer": "💡 Tips: Bruk nedtrekksmenyen for å utforske spesifikke kategorier!"
+    },
+    "categories": {
+      "collection": {
+        "name": "🐱 Samling",
+        "description": "Administrer og se din katte-samling"
+      },
+      "social": {
+        "name": "👥 Sosialt & Konkurranse",
+        "description": "Konkurrer og samhandle med andre samlere"
+      },
+      "rewards": {
+        "name": "🎁 Belønninger & Stemming",
+        "description": "Få belønninger og støtt boten"
+      },
+      "utility": {
+        "name": "⚙️ Verktøy & Innstillinger",
+        "description": "Bot-innstillinger og nyttige verktøy"
+      }
+    },
+    "commands_count": "kommandoer",
+    "category": {
+      "commands": "Kommandoer",
+      "count": "**{{count}} kommandoer** i denne kategorien:",
+      "no_commands": "Ingen kommandoer funnet i denne kategorien.",
+      "footer": "🔍 Bruk menyen for å utforske andre kategorier • {{count}} kommandoer vist"
+    },
+    "quickstart": {
+      "title": "Hurtigstart-guide",
+      "subtitle": "**Ny i MiauDex? Start din legendariske reise her!**",
+      "step1": {
+        "title": "Steg 1: Få din første katt",
+        "description": "Bruk `/katt` for å få en gratis, tilfeldig katt!"
+      },
+      "step2": {
+        "title": "Steg 2: Sjekk samlingen din",
+        "description": "Bruk `/galleri` for å se alle kattene du har samlet og deres sjeldenhet."
+      },
+      "step3": {
+        "title": "Steg 3: Klatre på topplisten",
+        "description": "Bruk `/topp` for å se hvor du ligger blant andre samlere."
+      },
+      "step4": {
+        "title": "Steg 4: Tilpass opplevelsen din",
+        "description": "Bruk `/profil` for å administrere innstillinger og preferanser."
+      },
+      "tips": {
+        "title": "Tips",
+        "content": "• Stem hver 12. time for jevnlige belønninger\n• Sjeldne katter gir høyere rangering\n• Bli med i fellesskapet for eksklusive arrangementer!"
+      },
+      "footer": "🎯 Klar til å bli en katte-samlerlegende?"
+    },
+    "menu": {
+      "placeholder": "🔍 Velg en kommandokategori for å utforske..."
+    },
+    "buttons": {
+      "quickstart": "🚀 Hurtigstart",
+      "support": "💖 Støtt oss",
+      "refresh": "🔄 Oppdater"
+    },
+    "error": {
+      "title": "Oisann! Noe gikk galt",
+      "description": "Kunne ikke laste inn hjelpemenyen nå. Prøv igjen!",
+      "footer": "🐾 Feil logget for feilsøking"
+    },
+    "command_descriptions": {
+      "cat": "Oppdag og samle en ny katt til samlingen din!",
+      "gallery": "Se din eller en annen brukers kattegalleri",
+      "rename": "Gi din kjære katt et nytt navn!",
+      "top": "Vis katte-topplisten",
+      "profile": "Vis og administrer profilinnstillingene dine",
+      "stats": "Vis bot-statistikk",
+      "vote": "Stem på boten og få belønninger",
+      "announcement": "Se de siste MiauDex-oppdateringene og kunngjøringene",
+      "invite": "Bli med i den offisielle MiauDex-serveren og få eksklusive fordeler!",
+      "serverinfo": "Vis serverinformasjon",
+      "rarity": "Vis alle kattens sjeldenheter og sjansene deres",
+      "help": "Utforsk alle MiauDex-kommandoer og funksjoner",
+      "trade": "Bytt katter med andre brukere"
+    }
+  },
+  "invite": {
+    "main": {
+      "title": "Bli med i MiauDex-fellesskapet!",
+      "description": "{{rainbow}} **Velkommen til det ultimate katte-samlerparadiset!**\n\n{{community}} Koble med andre katteentusiaster\n{{support}} Få umiddelbar hjelp og støtte fra vårt fantastiske team\n{{gift}} Delta i eksklusive arrangementer og giveaways\n{{news}} Hold deg oppdatert med de siste MiauDex-funksjonene\n\n{{arrow}} [**Klikk her for å bli med på eventyret!**]({{invite_link}})\n{{bot}} [**Legg til MiauDex på din server!**]({{bot_invite_link}})",
+      "whats_inside": {
+        "title": "Hva finner du?",
+        "content": "{{chat}} **Aktivt fellesskap** - Chat med katteelskere over hele verden\n{{trophy}} **Topplister** - Se hvem som er toppsamler\n{{bell}} **Kunngjøringer** - Først til å vite om oppdateringer\n{{target}} **Arrangementer** - Spesielle konkurranser og utfordringer"
+      },
+      "exclusive_perks": {
+        "title": "Eksklusive fordeler",
+        "content": "{{gift}} **Daglige giveaways** - Gratis katter hver dag\n{{gem}} **VIP-kanaler** - Premium-medlemsfordeler"
+      },
+      "footer": "{{heart}} Bli med {{users}}+ registrerte samlere i vårt voksende fellesskap!"
+    },
+    "giveaway": {
+      "title": "Daglige katte-giveaways",
+      "description": "{{tada}} **Hver dag vinner ett heldig medlem en GRATIS katt!**\n\n{{lightning}} Raskt å delta, spennende å vinne og helt GRATIS!\n\n{{arrow}} **Kun tilgjengelig på [MiauDex-serveren]({{invite_link}})!**",
+      "schedule": {
+        "title": "Tidsplan",
+        "content": "{{bell}} **Daglig kl. 16:00 UTC**\n{{target}} Automatisk varsling for medlemmer"
+      },
+      "rewards": {
+        "title": "Belønninger",
+        "content": "{{cat}} **1 tilfeldig katt**"
+      },
+      "how_to_enter": {
+        "title": "Slik deltar du",
+        "content": "{{check}} **Bare reager!** Så enkelt er det\n{{tada}} Vinnere annonseres 24 timer senere!"
+      },
+      "footer": "{{wink}} Ikke gå glipp av din daglige sjanse - bli med og vinn!"
+    },
+    "features": {
+      "title": "Serverfunksjoner",
+      "description": "**Oppdag hva som gjør vårt fellesskap spesielt:**",
+      "community_channels": {
+        "title": "Fellesskapskanaler",
+        "content": "{{paw}} **#cat-center** - Vis frem samlingen din\n{{heart}} **#english-general** - Bli venn med andre samlere\n{{target}} **#trading** - Bytt katter med andre medlemmer"
+      },
+      "support_help": {
+        "title": "Støtte og hjelp",
+        "content": "{{bell}} **#miaudex** - Siste nytt og oppdateringer\n{{check}} **#support** - Få hjelp fra teamet vårt\n{{crystal}} **#suggestions** - Vær med å forme botens fremtid"
+      },
+      "vip_benefits": {
+        "title": "VIP-medlemsfordeler",
+        "content": "{{gem}} **Eksklusive kanaler** med avanserte samlere\n{{fire}} **Beta-testing** tilgang til nye funksjoner\n{{rainbow}} **Spesiell rolle** med unike fordeler og anerkjennelse"
+      },
+      "footer": "{{globe}} Vi bygger verdens beste katte-samlerfellesskap, én medlem om gangen!"
+    },
+    "stats": {
+      "title": "Fellesskapsstatistikk",
+      "description": "**Vårt fantastiske fellesskap i tall:**",
+      "registered_users": {
+        "title": "Registrerte brukere",
+        "content": "**{{count}}** katte-samlere"
+      },
+      "total_cats": {
+        "title": "Totalt innsamlede katter",
+        "content": "**{{count}}** katter i samlinger"
+      },
+      "active_voters": {
+        "title": "Aktive stemmere",
+        "content": "**{{count}}** daglige deltakere"
+      },
+      "total_votes": {
+        "title": "Totalt antall stemmer",
+        "content": "**{{count}}** stemmer for gratis katter"
+      },
+      "premium_members": {
+        "title": "Premium-medlemmer",
+        "content": "**{{count}}** VIP-samlere"
+      },
+      "giveaway_participants": {
+        "title": "Giveaway-deltakere",
+        "content": "**{{count}}** aktive i arrangementer"
+      },
+      "leaderboard_competitors": {
+        "title": "Toppliste-deltakere",
+        "content": "**{{count}}** viser frem samlinger"
+      },
+      "average_collection": {
+        "title": "Gjennomsnittlig samlingsstørrelse",
+        "content": "**{{count}}** katter per bruker"
+      },
+      "engagement_rate": {
+        "title": "Engasjementsrate",
+        "content": "{{rate}}% daglig aktivitet"
+      },
+      "highlights": {
+        "title": "Ekte fellesskapshøydepunkter",
+        "content": "{{heart}} **{{totalVotes}}** stemmer gitt av vårt fantastiske fellesskap\n{{sparkles}} **{{giveawayParticipants}}** medlemmer deltar aktivt i arrangementer\n{{trophy}} **{{leaderboardUsers}}** stolte samlere viser sine prestasjoner"
+      },
+      "footer": "{{wink}} Dette er ekte tall fra vår faktiske fellesskapsdatabase!"
+    },
+    "buttons": {
+      "join_server": "{{rocket}} Bli med i MiauDex-serveren",
+      "add_bot": "{{plus}} Legg til MiauDex-bot",
+      "review": "{{star}} Legg igjen en anmeldelse",
+      "vote": "{{trophy}} Stem på MiauDex",
+      "features": "{{magic}} Serverfunksjoner",
+      "stats": "{{chart}} Fellesskapsstatistikk"
+    }
+  },
+  "errors": {
+    "unexpected_title": "Uventet feil",
+    "unexpected": "Noe uventet skjedde under innsamling av katten din.\n\nUtviklingsteamet er varslet. Prøv igjen om noen minutter.",
+    "unknown_command": "❌ Ukjent kommando: `{{command}}`"
+  },
+  "rename": {
+    "nice_name": "et fint navn",
+    "invalid_name_title": "❌ Ugyldig navn!",
+    "invalid_name_description": "⚠️ Det oppstod et problem med navnet \"{{name}}\".\n\n✨ Prøv et annet navn til katten din!",
+    "choose_loving_name": "Velg et kjærlig navn til din pelskledde venn! 🐾",
+    "reserved_pattern_title": "❌ Reservert navnemønster!",
+    "reserved_pattern_description": "⚠️ Navn som \"**{{name}}**\" er reservert av systemet.\n\n🐱 **Mønster blokkert:** \"cat\" etterfulgt av tall (som cat1, cat30 osv.)\n✨ Katten din fortjener et mer kreativt og personlig navn!",
+    "creative_alternatives": "🎨 Kreative alternativer",
+    "alternative_examples": "• **Whiskers**\n• **Shadow**\n• **Mittens**\n• **Luna**\n• **{{oldName}}Pro**",
+    "let_creativity_shine": "La kreativiteten din skinne! ✨",
+    "name_too_long_title": "⚠️ Navnet er for langt!",
+    "name_too_long_description": "😿 Kattenavnet \"{{name}}\" er **{{length}}** tegn langt.\n\n✏️ **Maksimalt tillatt:** 20 tegn\n✨ Prøv et kortere, søtere navn!",
+    "suggestions": "🎨 Forslag",
+    "choose_perfect_fit": "Velg et navn som passer perfekt! 🐾",
+    "invalid_characters_title": "❌ Ugyldige tegn!",
+    "invalid_characters_description": "⚠️ Navnet \"{{name}}\" inneholder ugyldige tegn.\n\n✅ **Tillatte tegn:**\n• Bokstaver (A-Z, a-z)\n• Tall (0-9)\n• Mellomrom, bindestrek (-), understrek (_ )\n\n❌ **Ikke tillatt:** Emojis, spesialtegn",
+    "valid_examples": "✨ Gyldige eksempler",
+    "valid_examples_content": "• **Fluffy Cat**\n• **Shadow-2024**\n• **My_Precious_One**",
+    "keep_simple_sweet": "Hold det enkelt og søtt! 💫",
+    "cat_not_found_title": "😿 Katt ikke funnet!",
+    "cat_not_found_description": "🐱 Fant ikke en katt med navnet \"**{{name}}**\" i samlingen din.\n\n✨ **Dobbeltsjekk stavemåten** og prøv igjen!",
+    "quick_tips": "🎨 Rask tips",
+    "quick_tips_content": "• Navn er **store- og småbokstav-sensitive**\n• Bruk `/galleri` for å se alle kattene dine\n• Sørg for at du eier denne katten",
+    "gallery_tip": "Tips: Bruk /galleri for å se alle dine pelskledde venner! 🐾",
+    "name_taken_title": "❌ Navnet er allerede tatt!",
+    "name_taken_description": "🐱 Du har allerede en katt som heter \"**{{name}}**\"!\n\n✨ Hver katt i samlingen din må ha et **unikt navn**.",
+    "unique_name_footer": "Gjør hver katt spesiell med et unikt navn! ✨",
+    "success_title": "🎉 Katten er vellykket omdøpt! 🎉",
+    "success_description": "✨ **Gratulerer!** Katteforvandlingen er fullført!\n\n🐱 **\"{{oldName}}\"** heter nå stolt **\"{{newName}}\"**!",
+    "cat_details": "{{emoji}} Katte-detaljer",
+    "cat_details_content": "**Nytt navn:** {{newName}}\n**Sjeldenhet:** {{rarity}}\n**Eier:** {{owner}}",
+    "fun_fact": "🎨 Funfact",
+    "fun_fact_content": "Visste du? Katten din vil huske dette spesielle øyeblikket for alltid! {{newName}} er nå klar for nye eventyr! 💖",
+    "success_footer": "{{newName}} sier \"Mjau!\" • Omdøpt av {{owner}}",
+    "celebration_message": "🌈 **{{newName}}** finner seg til rette med sitt nye navn! 😻 De ser ut til å elske det!",
+    "celebration_footer": "Kattesamlingen din ble nettopp enda mer spesiell! 🌟",
+    "command": {
+      "option_old": "gammelt-navn",
+      "option_old_desc": "🔍 Kattens nåværende navn",
+      "option_new": "nytt-navn",
+      "option_new_desc": "✨ Et skinnende nytt navn til katten din"
+    }
+  },
+  "gallery": {
+    "command": {
+      "name": "gallery",
+      "description": "Se ditt eller en annen brukers flotte kattegalleri",
+      "option_user": "bruker",
+      "option_user_desc": "Bruker hvis galleri skal vises"
+    },
+    "empty": {
+      "title": "📭 Tomt galleri",
+      "description": "**{{username}}** har ikke samlet noen katter ennå!\n\n🐱 Start samlingen for å bygge opp galleriet ditt\n✨ Hver katt er unik og spesiell\n📚 Bygg den ultimate samlingen!",
+      "footer": "Tomt galleri • Start samlingen din i dag!"
+    },
+    "error": {
+      "title": "❌ Galleri-feil",
+      "description": "Noe gikk galt under lasting av galleriet. Prøv igjen!",
+      "not_found": "❓ **Katt ikke funnet eller data ødelagt**\n\nPrøv å oppdatere galleriet eller kontakt støtte."
+    },
+    "embed": {
+      "title": "🖼️ {{username}}s kattegalleri",
+      "collection_progress": "📚 **Samleprogresjon**\n`{{progressBar}}` {{current}}/{{total}}",
+      "rarity_details": "⭐ Sjeldenhetsdetaljer",
+      "collection_stats": "💎 Samlingsstatistikk",
+      "footer": "💖 Katt {{current}} av {{total}} • {{username}}s galleri • Bruk knappene for å navigere"
+    },
+    "navigation": {
+      "previous": "Forrige",
+      "next": "Neste",
+      "jump": "Hopp"
+    },
+    "utility": {
+      "stats": "Statistikk",
+      "refresh": "Oppdater",
+      "help": "Hjelp"
+    },
+    "help": {
+      "title": "🔍 Galleri-hjelp og kommandoer",
+      "description": "Lær hvordan du navigerer i ditt vakre kattegalleri!",
+      "navigation": "🎮 Navigasjonskontroller",
+      "navigation_details": {
+        "first": "⏮️ Første - Hopp til første katt",
+        "previous": "⬅️ Forrige - Gå tilbake én katt",
+        "jump": "🎯 Hopp - Gå til spesifikt kattnummer",
+        "next": "➡️ Neste - Gå frem én katt",
+        "last": "⏭️ Siste - Hopp til siste katt"
+      },
+      "sorting": "📊 Sorteringsvalg",
+      "sorting_details": {
+        "date": "📅 Etter dato - Nyeste katter først",
+        "rarity": "🌟 Etter sjeldenhet - De sjeldneste først",
+        "alpha": "🔤 Alfabetisk - Sorter etter navn A-Å"
+      },
+      "utility": "🛠️ Verktøyfunksjoner",
+      "utility_details": {
+        "stats": "📊 Statistikk - Se detaljert samlingsstatistikk",
+        "refresh": "🔄 Oppdater - Last inn galleri på nytt",
+        "help": "❓ Hjelp - Vis denne hjelpemenyen"
+      },
+      "footer": "Galleri-hjelp • Nyt samlingen din!"
+    },
+    "stats": {
+      "title": "💎 {{username}}s galleri-statistikk",
+      "overview": "📚 Samlingsoversikt",
+      "rarity_breakdown": "⭐ Sjeldenhetsfordeling",
+      "footer": "Galleri-statistikk • Live-data"
+    },
+    "labels": {
+      "type": "Type",
+      "rarity": "Sjeldenhet",
+      "total_cats": "Totalt katter",
+      "completion": "Progresjon",
+      "enter_cat_number": "Skriv inn kattnummer (1 - {{max}})"
+    },
+    "jump_modal": {
+      "label": "Skriv inn kattnummer (1 - {{max}})",
+      "invalid": "❌ Ugyldig kattnummer. Skriv inn et tall mellom 1 og {{max}}."
+    }
+  },
+  "commands": {
+    "cat": { "name": "katt" },
+    "gallery": { "name": "galleri" },
+    "rename": { "name": "endre-navn" },
+    "top": { "name": "topp" },
+    "profile": { "name": "profil" },
+    "stats": { "name": "statistikk" },
+    "vote": { "name": "stemme" },
+    "announcement": { "name": "kunngjoring" },
+    "invite": { "name": "inviter" },
+    "serverinfo": { "name": "serverinfo" },
+    "rarity": { "name": "sjeldenhet" },
+    "help": { "name": "hjelp" },
+    "trade": { "name": "bytte" }
+  },
+  "profanity": {
+    "warning_title": "Mjau... Det er ikke et pent navn!",
+    "warning_description": "Jeg kan ikke bruke det navnet på katten din. La oss heller kalle den **{{newName}}**!",
+    "reminder": "🐱 **Husk:** Kattene våre fortjener kjærlige, snille navn!",
+    "tip": "💝 **Tips:** Prøv navn som Luna, Milo, Bella, eller la meg velge et nummer!",
+    "footer": "MiauDex • Hold det hyggelig! 🐾"
+  },
+  "announcement": {
+    "buttons": {
+      "tag": "🏷️ Få MIAU-merke"
+    }
+  },
+  "translations": {
+    "authors": [{ "Kf637": "515402023223427072" }]
+  }
+}
