@@ -36,8 +36,10 @@ Welcome to the official translation repository for MiauDex - the ultimate Discor
 ## Tools & Validation
 
 Run validation before submitting:
+```
 node tools/validate.js locales/your-language.json
 node tools/missing-keys.js locales/your-language.json
+```
 
 ## Contributing
 
@@ -49,16 +51,28 @@ node tools/missing-keys.js locales/your-language.json
 ## Translation Team
 
 ### Current Translators
-- English: MiauDex Team
-- Polish: Looking for volunteers!
-- Norwegian: Looking for volunteers!
-- Italian: Looking for volunteers!
-- French: Looking for volunteers!
+| Language       | Contributor | Status |
+|----------------|-------------|--------|
+| ![GB](https://flagcdn.com/16x12/gb.png) English    | [ItsAlex](https://github.com/ItsAlexIK) | ✅ |
+| ![PL](https://flagcdn.com/16x12/pl.png) Polish     | [ItsAlex](https://github.com/ItsAlexIK) | ✅ |
+| ![ES](https://flagcdn.com/16x12/es.png) Spanish    |             | ❌ |
+| ![FR](https://flagcdn.com/16x12/fr.png) French     | [Zer0Two](https://github.com/NotZer0Two) | ✅ |
+| ![DE](https://flagcdn.com/16x12/de.png) German     |             | ❌ |
+| ![RO](https://flagcdn.com/16x12/ro.png) Romanian   |             | ❌ |
+| ![SE](https://flagcdn.com/16x12/se.png) Swedish    |             | ❌ |
+| ![RU](https://flagcdn.com/16x12/ru.png) Russian    |             | ❌ |
+| ![KR](https://flagcdn.com/16x12/kr.png) Korean     |             | ❌ |
+| ![NO](https://flagcdn.com/16x12/no.png) Norwegian  | [Kf637](https://github.com/Kf637) | ✅ |
+| ![DK](https://flagcdn.com/16x12/dk.png) Danish     |             | ❌ |
+| ![HR](https://flagcdn.com/16x12/hr.png) Croatian   |             | ❌ |
+| ![IT](https://flagcdn.com/16x12/it.png) Italian    | [Zer0Two](https://github.com/NotZer0Two) | ✅ |
+| ![HU](https://flagcdn.com/16x12/hu.png) Hungarian  |             | ❌ |
 
 Want to help? Open an issue or join our Discord!
 
 ## Repository Structure
 
+```
 miaudex-translations/
 ├── README.md
 ├── CONTRIBUTING.md
@@ -81,3 +95,4 @@ miaudex-translations/
 └── docs/
     ├── translation-guide.md
     └── style-guide.md
+```
