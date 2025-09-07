@@ -5,6 +5,7 @@ function getAllKeys(obj, prefix = "") {
   let keys = [];
   for (let key in obj) {
     const fullKey = prefix ? `${prefix}.${key}` : key;
+
     if (typeof obj[key] === "object" && obj[key] !== null) {
       keys = keys.concat(getAllKeys(obj[key], fullKey));
     } else {
@@ -18,8 +19,12 @@ function findMissingKeys(referenceFile, targetFile) {
   const reference = JSON.parse(fs.readFileSync(referenceFile, "utf8"));
   const target = JSON.parse(fs.readFileSync(targetFile, "utf8"));
 
-  const referenceKeys = getAllKeys(reference);
-  const targetKeys = getAllKeys(target);
+  let referenceKeys = getAllKeys(reference);
+  let targetKeys = getAllKeys(target);
+
+  // Ignore authors
+  referenceKeys = referenceKeys.filter((k) => !k.startsWith("translations.authors"));
+  targetKeys = targetKeys.filter((k) => !k.startsWith("translations.authors"));
 
   const missing = referenceKeys.filter((key) => !targetKeys.includes(key));
   const extra = targetKeys.filter((key) => !referenceKeys.includes(key));
