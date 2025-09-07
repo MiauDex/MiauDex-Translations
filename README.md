@@ -50,7 +50,6 @@ node tools/missing-keys.js locales/your-language.json
 
 ## Translation Team
 
-### Current Translators
 | Language       | Contributor | Status |
 |----------------|-------------|--------|
 | ![GB](https://flagcdn.com/16x12/gb.png) English    | [ItsAlex](https://github.com/ItsAlexIK) | ✅ |
