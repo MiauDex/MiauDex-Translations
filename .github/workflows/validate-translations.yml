@@ -1,0 +1,19 @@
+name: Validate Translations
+
+on:
+  pull_request:
+    paths:
+      - 'locales/*.json'
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+      - name: Validate JSON files
+        run: |
+          for file in locales/*.json; do
+            echo "Validating $file"
+            node -e "JSON.parse(require('fs').readFileSync('$file', 'utf8'))"
+          done
