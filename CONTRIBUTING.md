@@ -19,6 +19,8 @@ Thank you for helping make MiauDex accessible to more users worldwide!
 ### 1. Choose Your Language
 Check the /locales/ folder for your target language file. If it doesn't exist, create it based on en.json.
 
+##### Translation file names must use ISO 639 language codes (for example: en, fr, it, nl, nb, pl): https://en.wikipedia.org/wiki/List_of_ISO_639_language_codes
+
 ### 2. Translation Guidelines
 
 #### DO:

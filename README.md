@@ -8,7 +8,7 @@ Welcome to the official translation repository for MiauDex - the ultimate Discor
 - Polish - pl.json 
 - French - fr.json
 - Italian - it.json
-- Norwegian - no.json
+- Norwegian - nb.json
 - Dutch - nl.json
 
 ## Quick Start for Translators
@@ -85,7 +85,7 @@ miaudex-translations/
 ├── locales/
 │   ├── en.json (reference file)
 │   ├── pl.json
-│   ├── no.json
+│   ├── nb.json
 │   ├── it.json
 │   ├── fr.json
 │   ├── nl.json
