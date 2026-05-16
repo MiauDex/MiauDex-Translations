@@ -342,7 +342,7 @@
     "drop_info_value": "**Sjanse:** {{chance}}\n**Odds:** 1 av {{odds}}\n**Vanskelighetsgrad:** {{difficulty}}",
     "availability": "📊 Tilgjengelighet",
     "availability_value": "**Totalt katter:** {{count}}\n**Database %:** {{percentage}}%\n**Rang:** #{{rank}} av {{total}}",
-    "collection_tip": "🪄 Samlingstips",
+    "collection_tip": "Samlingstips",
     "tips": {
       "easy": "💖 **Lett å samle!** Stem regelmessig for å bygge opp samlingen din.",
       "moderate": "🎯 **Moderat utfordring.** Daglig stemming gir deg disse over tid.",
