@@ -38,7 +38,9 @@
     "command": {
       "option_name": "navn",
       "option_name_desc": "Gi katten din et egendefinert navn (1–32 tegn, valgfritt)"
-    }
+    },
+    "vote_button": "Stem for gratis katter",
+    "vote_button_cooldown": "Få katter ved å stemme"
   },
   "profile": {
     "title": "👑 {{username}}s profilpanel",
@@ -340,7 +342,7 @@
     "drop_info_value": "**Sjanse:** {{chance}}\n**Odds:** 1 av {{odds}}\n**Vanskelighetsgrad:** {{difficulty}}",
     "availability": "📊 Tilgjengelighet",
     "availability_value": "**Totalt katter:** {{count}}\n**Database %:** {{percentage}}%\n**Rang:** #{{rank}} av {{total}}",
-    "collection_tip": "Samlingstips",
+    "collection_tip": "🪄 Samlingstips",
     "tips": {
       "easy": "💖 **Lett å samle!** Stem regelmessig for å bygge opp samlingen din.",
       "moderate": "🎯 **Moderat utfordring.** Daglig stemming gir deg disse over tid.",
@@ -433,7 +435,8 @@
       "serverinfo": "Vis serverinformasjon",
       "rarity": "Vis alle kattens sjeldenheter og sjansene deres",
       "help": "Utforsk alle MiauDex-kommandoer og funksjoner",
-      "trade": "Bytt katter med andre brukere"
+      "trade": "Bytt katter med andre brukere",
+      "favourites": "Se samlingen av favorittkatter"
     }
   },
   "invite": {
@@ -618,7 +621,8 @@
     "utility": {
       "stats": "Statistikk",
       "refresh": "Oppdater",
-      "help": "Hjelp"
+      "help": "Hjelp",
+      "favourite": "Favoritt"
     },
     "help": {
       "title": "🔍 Galleri-hjelp og kommandoer",
@@ -676,7 +680,16 @@
     "serverinfo": { "name": "serverinfo" },
     "rarity": { "name": "sjeldenhet" },
     "help": { "name": "hjelp" },
-    "trade": { "name": "bytte" }
+    "trade": { "name": "bytte" },
+    "favourites": {
+      "name": "favoritter",
+      "options": {
+        "user": {
+          "name": "bruker",
+          "description": "Se en annen brukers favorittkatter"
+        }
+      }
+    }
   },
   "profanity": {
     "warning_title": "Mjau... Det er ikke et pent navn!",
@@ -689,6 +702,24 @@
     "buttons": {
       "tag": "🏷️ Få MIAU-merke"
     }
+  },
+  "favourites": {
+    "embed": {
+      "title": "❤️ {{username}}s favorittkatter",
+      "footer": "Katt {{current}} av {{total}} favoritter • {{username}}"
+    },
+    "empty": {
+      "title": "Ingen favoritter ennå",
+      "description": "**{{username}}** har ikke lagt til noen katter i favoritter!\n\nBruk **❤️ Favoritt**-knappen i `/galleri` for å legge til katter.",
+      "footer": "Bruk /galleri og klikk ❤️ for å legge til favoritter"
+    },
+    "button": {
+      "add": "Favoritt",
+      "remove": "Fjern favoritt",
+      "added": "La til **{{name}}** i favorittene dine! ❤️",
+      "removed": "Fjernet **{{name}}** fra favorittene dine."
+    },
+    "session_expired": "Økten er utløpt • Bruk /favoritter for å starte en ny økt"
   },
   "translations": {
     "authors": [{ "Kf637": "515402023223427072" }]
