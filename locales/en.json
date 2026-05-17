@@ -622,7 +622,7 @@
       "stats": "Statistics",
       "refresh": "Refresh",
       "help": "Help",
-      "favorite": "favorite"
+      "favorite": "Favorite"
     },
     "help": {
       "title": "🔍 Gallery Help & Commands",
@@ -740,7 +740,7 @@
       "footer": "Use /gallery and click ❤️ to add favorites"
     },
     "button": {
-      "add": "favorite",
+      "add": "Favorite",
       "remove": "Unfavorite",
       "added": "Added **{{name}}** to your favorites! ❤️",
       "removed": "Removed **{{name}}** from your favorites."
