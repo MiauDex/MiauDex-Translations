@@ -1,13 +1,11 @@
 name: Validate Translations
 
 on:
-  pull_request_target:
+  pull_request:
     paths:
       - 'locales/*.json'
 
 permissions:
-  pull-requests: write
-  issues: write
   contents: read
 
 jobs:
@@ -17,7 +15,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: ${{ github.event.pull_request.head.sha }}
           fetch-depth: 0
 
       - uses: actions/setup-node@v4
@@ -38,110 +35,58 @@ jobs:
             )
           fi
 
-          REPORT="validation-report.md"
+          echo "Scope: ${SCOPE}"
+          echo ""
+
           FAILED=false
 
-          echo "## __STATUS__ Translation Validation" > "$REPORT"
-          echo "" >> "$REPORT"
-          echo "Scope: ${SCOPE}" >> "$REPORT"
-          echo "" >> "$REPORT"
-
           if [[ ${#FILES[@]} -eq 0 ]]; then
-            echo "No locale files to validate." >> "$REPORT"
+            echo "No locale files to validate."
           else
             for file in "${FILES[@]}"; do
               [[ -z "$file" ]] && continue
 
-              echo "### ${file}" >> "$REPORT"
-              echo "" >> "$REPORT"
+              echo "=== ${file} ==="
 
               JSON_OUT=$(node tools/validate.js "$file" 2>&1)
               JSON_EXIT=$?
 
               if [[ $JSON_EXIT -ne 0 ]]; then
-                echo "FAIL: Invalid JSON - fix this first, other checks skipped" >> "$REPORT"
-                echo '```' >> "$REPORT"
-                echo "$JSON_OUT" >> "$REPORT"
-                echo '```' >> "$REPORT"
-                echo "" >> "$REPORT"
-                echo "---" >> "$REPORT"
-                echo "" >> "$REPORT"
+                echo "FAIL: Invalid JSON - fix this first, other checks skipped"
+                echo "$JSON_OUT"
+                echo ""
                 FAILED=true
                 continue
               fi
-              echo "PASS: Valid JSON" >> "$REPORT"
-              echo "" >> "$REPORT"
+              echo "PASS: Valid JSON"
 
               MISSING_OUT=$(node tools/missing-keys.js "$file" 2>&1)
               MISSING_EXIT=$?
 
               if [[ $MISSING_EXIT -ne 0 ]]; then
-                echo "FAIL: Key issues detected" >> "$REPORT"
+                echo "FAIL: Key issues detected"
                 FAILED=true
               else
-                echo "PASS: All keys present" >> "$REPORT"
+                echo "PASS: All keys present"
               fi
-              echo '```' >> "$REPORT"
-              echo "$MISSING_OUT" >> "$REPORT"
-              echo '```' >> "$REPORT"
-              echo "" >> "$REPORT"
+              echo "$MISSING_OUT"
 
               PH_OUT=$(node tools/validate-placeholders.js "$file" 2>&1)
               PH_EXIT=$?
 
               if [[ $PH_EXIT -ne 0 ]]; then
-                echo "FAIL: Placeholder issues - variables added or removed" >> "$REPORT"
+                echo "FAIL: Placeholder issues - variables added or removed"
+                echo "$PH_OUT"
                 FAILED=true
-                echo '```' >> "$REPORT"
-                echo "$PH_OUT" >> "$REPORT"
-                echo '```' >> "$REPORT"
               else
-                echo "PASS: All placeholders preserved" >> "$REPORT"
+                echo "PASS: All placeholders preserved"
               fi
 
-              echo "" >> "$REPORT"
-              echo "---" >> "$REPORT"
-              echo "" >> "$REPORT"
+              echo ""
             done
           fi
 
           echo "failed=$FAILED" >> "$GITHUB_OUTPUT"
-
-      - name: Post PR comment
-        uses: actions/github-script@v7
-        with:
-          script: |
-            const fs = require('fs');
-            const failed = '${{ steps.validate.outputs.failed }}' === 'true';
-
-            let body = fs.readFileSync('validation-report.md', 'utf8');
-            body = body.replace('__STATUS__', failed ? 'FAILED' : 'PASSED');
-
-            const { data: comments } = await github.rest.issues.listComments({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              issue_number: context.issue.number,
-            });
-
-            const existing = comments.find(
-              (c) => c.user.type === 'Bot' && c.body.includes('Translation Validation')
-            );
-
-            if (existing) {
-              await github.rest.issues.updateComment({
-                owner: context.repo.owner,
-                repo: context.repo.repo,
-                comment_id: existing.id,
-                body,
-              });
-            } else {
-              await github.rest.issues.createComment({
-                owner: context.repo.owner,
-                repo: context.repo.repo,
-                issue_number: context.issue.number,
-                body,
-              });
-            }
 
       - name: Fail on validation errors
         if: steps.validate.outputs.failed == 'true'
