@@ -544,7 +544,9 @@
   "errors": {
     "unexpected_title": "Unexpected Error",
     "unexpected": "Something unexpected happened while collecting your cat.\n\nThe development team has been notified. Please try again in a few minutes.",
-    "unknown_command": "❌ Unknown command: `{{command}}`"
+    "unknown_command": "❌ Unknown command: `{{command}}`",
+    "not_your_session": "This isn't your session. Run the command yourself to interact.",
+    "not_your_cat": "You can only favourite your own cats."
   },
   "rename": {
     "nice_name": "a nice name",
