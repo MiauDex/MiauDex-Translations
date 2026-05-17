@@ -81,6 +81,7 @@ miaudex-translations/
 ├── tools/
 │   ├── validate.js
 │   ├── missing-keys.js
+│   ├── sync-keys.js
 │   └── validate-placeholders.js
 └── docs/
     ├── translation-guide.md
