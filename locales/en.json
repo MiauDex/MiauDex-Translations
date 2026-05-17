@@ -436,7 +436,7 @@
       "rarity": "Show all cat rarities and their chances",
       "help": "Explore all MiauDex commands and features",
       "trade": "Trade cats with other users",
-      "favourites": "Browse your favourite cats collection"
+      "favorites": "Browse your favorite cats collection"
     }
   },
   "invite": {
@@ -622,7 +622,7 @@
       "stats": "Statistics",
       "refresh": "Refresh",
       "help": "Help",
-      "favourite": "Favourite"
+      "favorite": "favorite"
     },
     "help": {
       "title": "🔍 Gallery Help & Commands",
@@ -707,12 +707,12 @@
     "trade": {
       "name": "trade"
     },
-    "favourites": {
-      "name": "favourites",
+    "favorites": {
+      "name": "favorites",
       "options": {
         "user": {
           "name": "user",
-          "description": "View another user's favourite cats"
+          "description": "View another user's favorite cats"
         }
       }
     }
@@ -729,23 +729,23 @@
       "tag": "🏷️ Get MIAU Tag"
     }
   },
-    "favourites": {
+    "favorites": {
     "embed": {
-      "title": "❤️ {{username}}'s Favourite Cats",
-      "footer": "Cat {{current}} of {{total}} favourites • {{username}}"
+      "title": "❤️ {{username}}'s favorite Cats",
+      "footer": "Cat {{current}} of {{total}} favorites • {{username}}"
     },
     "empty": {
-      "title": "No Favourites Yet",
-      "description": "**{{username}}** hasn't added any cats to their favourites!\n\nUse the **❤️ Favourite** button in `/gallery` to add cats.",
-      "footer": "Use /gallery and click ❤️ to add favourites"
+      "title": "No favorites Yet",
+      "description": "**{{username}}** hasn't added any cats to their favorites!\n\nUse the **❤️ favorite** button in `/gallery` to add cats.",
+      "footer": "Use /gallery and click ❤️ to add favorites"
     },
     "button": {
-      "add": "Favourite",
-      "remove": "Unfavourite",
-      "added": "Added **{{name}}** to your favourites! ❤️",
-      "removed": "Removed **{{name}}** from your favourites."
+      "add": "favorite",
+      "remove": "Unfavorite",
+      "added": "Added **{{name}}** to your favorites! ❤️",
+      "removed": "Removed **{{name}}** from your favorites."
     },
-    "session_expired": "Session expired • Use /favourites to start a new session"
+    "session_expired": "Session expired • Use /favorites to start a new session"
   },
   "translations": {
     "authors": [

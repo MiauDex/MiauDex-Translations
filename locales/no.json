@@ -436,7 +436,7 @@
       "rarity": "Vis alle kattens sjeldenheter og sjansene deres",
       "help": "Utforsk alle MiauDex-kommandoer og funksjoner",
       "trade": "Bytt katter med andre brukere",
-      "favourites": "Se samlingen av favorittkatter"
+      "favorites": "Se samlingen av favorittkatter"
     }
   },
   "invite": {
@@ -622,7 +622,7 @@
       "stats": "Statistikk",
       "refresh": "Oppdater",
       "help": "Hjelp",
-      "favourite": "Favoritt"
+      "favorite": "Favoritt"
     },
     "help": {
       "title": "🔍 Galleri-hjelp og kommandoer",
@@ -681,7 +681,7 @@
     "rarity": { "name": "sjeldenhet" },
     "help": { "name": "hjelp" },
     "trade": { "name": "bytte" },
-    "favourites": {
+    "favorites": {
       "name": "favoritter",
       "options": {
         "user": {
@@ -703,7 +703,7 @@
       "tag": "🏷️ Få MIAU-merke"
     }
   },
-  "favourites": {
+  "favorites": {
     "embed": {
       "title": "❤️ {{username}}s favorittkatter",
       "footer": "Katt {{current}} av {{total}} favoritter • {{username}}"

@@ -436,7 +436,7 @@
       "rarity": "Poznaj rzadkości kotków",
       "help": "Poznaj centrum pomocy i wszystkie komendy",
       "trade": "Wymień się kotkami z innymi kolekcjonerami",
-      "favourites": "Przeglądaj swoją ulubioną kolekcję kotów"
+      "favorites": "Przeglądaj swoją ulubioną kolekcję kotów"
     }
   },
   "invite": {
@@ -622,7 +622,7 @@
       "stats": "Statystyki",
       "refresh": "Odśwież",
       "help": "Pomoc",
-      "favourite": "Ulubione"
+      "favorite": "Ulubione"
     },
     "help": {
       "title": "🔍 Pomoc i Komendy Galerii",
@@ -681,7 +681,7 @@
     "rarity": { "name": "rzadkosc" },
     "help": { "name": "pomoc" },
     "trade": { "name": "wymien" },
-    "favourites": {
+    "favorites": {
       "name": "ulubione",
       "options": {
         "user": {
@@ -703,7 +703,7 @@
       "tag": "🏷️ Zdobądź MIAU Tag"
     }
   },
-    "favourites": {
+    "favorites": {
     "embed": {
       "title": "❤️ {{username}} Ulubione Koty",
       "footer": "Kot {{current}} z {{total}} ulubionych • {{username}}"
