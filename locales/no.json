@@ -544,7 +544,9 @@
   "errors": {
     "unexpected_title": "Uventet feil",
     "unexpected": "Noe uventet skjedde under innsamling av katten din.\n\nUtviklingsteamet er varslet. Prøv igjen om noen minutter.",
-    "unknown_command": "❌ Ukjent kommando: `{{command}}`"
+    "unknown_command": "❌ Ukjent kommando: `{{command}}`",
+    "not_your_session": "Dette er ikke din økt. Kjør kommandoen selv for å samhandle.",
+    "not_your_cat": "Du kan bare legge dine egne katter til favoritter."
   },
   "rename": {
     "nice_name": "et fint navn",
@@ -668,19 +670,45 @@
     }
   },
   "commands": {
-    "cat": { "name": "katt" },
-    "gallery": { "name": "galleri" },
-    "rename": { "name": "endre-navn" },
-    "top": { "name": "topp" },
-    "profile": { "name": "profil" },
-    "stats": { "name": "statistikk" },
-    "vote": { "name": "stemme" },
-    "announcement": { "name": "kunngjoring" },
-    "invite": { "name": "inviter" },
-    "serverinfo": { "name": "serverinfo" },
-    "rarity": { "name": "sjeldenhet" },
-    "help": { "name": "hjelp" },
-    "trade": { "name": "bytte" },
+    "cat": {
+      "name": "katt"
+    },
+    "gallery": {
+      "name": "galleri"
+    },
+    "rename": {
+      "name": "endre-navn"
+    },
+    "top": {
+      "name": "topp"
+    },
+    "profile": {
+      "name": "profil"
+    },
+    "stats": {
+      "name": "statistikk"
+    },
+    "vote": {
+      "name": "stemme"
+    },
+    "announcement": {
+      "name": "kunngjoring"
+    },
+    "invite": {
+      "name": "inviter"
+    },
+    "serverinfo": {
+      "name": "serverinfo"
+    },
+    "rarity": {
+      "name": "sjeldenhet"
+    },
+    "help": {
+      "name": "hjelp"
+    },
+    "trade": {
+      "name": "bytte"
+    },
     "favorites": {
       "name": "favoritter",
       "options": {
@@ -722,6 +750,10 @@
     "session_expired": "Økten er utløpt • Bruk /favoritter for å starte en ny økt"
   },
   "translations": {
-    "authors": [{ "Kf637": "515402023223427072" }]
+    "authors": [
+      {
+        "Kf637": "515402023223427072"
+      }
+    ]
   }
 }
