@@ -544,7 +544,9 @@
   "errors": {
     "unexpected_title": "Onverwachte Fout",
     "unexpected": "Er gebeurde iets onverwachts tijdens het verzamelen van je kat.\n\nHet ontwikkelings team is op de hoogte gesteld. Probeer het over een paar minuten opnieuw.",
-    "unknown_command": "❌ Onbekend commando: `{{command}}`"
+    "unknown_command": "❌ Onbekend commando: `{{command}}`",
+    "not_your_session": "Dit is niet jouw sessie. Gebruik het commando zelf om dit te gebruiken.",
+    "not_your_cat": "Je kan enkel je eigen katten aan je favorieten toevoegen."
   },
   "rename": {
     "nice_name": "een mooie naam",
