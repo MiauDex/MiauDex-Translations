@@ -79,7 +79,7 @@ jobs:
                 echo "$PH_OUT"
                 FAILED=true
               else
-                echo "PASS: All placeholders preserved"
+                echo "PASS: All placeholders preserved!"
               fi
 
               echo ""
