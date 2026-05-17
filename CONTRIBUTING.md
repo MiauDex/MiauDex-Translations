@@ -49,6 +49,9 @@ node tools/validate.js locales/your-file.json
 # Check for missing keys
 node tools/missing-keys.js locales/your-file.json
 
+# Validate placeholders
+node tools/validate-placeholders.js locales/your-file.json
+
 ## Submission Process
 
 ### Pull Request Guidelines
