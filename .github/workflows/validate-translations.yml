@@ -52,7 +52,7 @@ jobs:
               JSON_EXIT=$?
 
               if [[ $JSON_EXIT -ne 0 ]]; then
-                echo "FAIL: Invalid JSON - fix this first, other checks skipped"
+                echo "FAIL: Invalid JSON - fix this first, other checks skipped!"
                 echo "$JSON_OUT"
                 echo ""
                 FAILED=true
