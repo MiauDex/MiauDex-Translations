@@ -38,7 +38,9 @@
     "command": {
       "option_name": "nome",
       "option_name_desc": "Dai al tuo nuovo gatto un nome personalizzato (1–32 caratteri, opzionale)"
-    }
+    },
+    "vote_button": "Vota per avere un gatto gratuito",
+    "vote_button_cooldown": "Ottieni gatti votando"
   },
   "profile": {
     "title": "👑 Dashboard di {{username}}",
@@ -433,7 +435,8 @@
       "serverinfo": "Mostra informazioni sul server",
       "rarity": "Mostra tutte le rarità dei gatti e le loro probabilità",
       "help": "Esplora tutti i comandi e le funzionalità di MiauDex",
-      "trade": "Scambia gatti con altri utenti"
+      "trade": "Scambia gatti con altri utenti",
+      "favorites": "Visita la tua lista di gatti preferiti"
     }
   },
   "invite": {
@@ -541,7 +544,9 @@
   "errors": {
     "unexpected_title": "Errore Inaspettato",
     "unexpected": "Qualcosa di inaspettato è successo durante la raccolta del tuo gatto.\n\nIl team di sviluppo è stato notificato. Riprova tra qualche minuto.",
-    "unknown_command": "❌ Comando sconosciuto: `{{command}}`"
+    "unknown_command": "❌ Comando sconosciuto: `{{command}}`",
+    "not_your_session": "Questa non è la tua sessione. Per favore esegui il comando.",
+    "not_your_cat": "Puoi solo mettere nei tuoi preferiti un gatto che hai."
   },
   "rename": {
     "nice_name": "un bel nome",
@@ -618,7 +623,8 @@
     "utility": {
       "stats": "Statistiche",
       "refresh": "Aggiorna",
-      "help": "Aiuto"
+      "help": "Aiuto",
+      "favorite": "Preferito"
     },
     "help": {
       "title": "🔍 Aiuto & Comandi Galleria",
@@ -664,19 +670,54 @@
     }
   },
   "commands": {
-    "cat": { "name": "gatto" },
-    "gallery": { "name": "galleria" },
-    "rename": { "name": "rinomina" },
-    "top": { "name": "top" },
-    "profile": { "name": "profilo" },
-    "stats": { "name": "stats" },
-    "vote": { "name": "vota" },
-    "announcement": { "name": "annunci" },
-    "invite": { "name": "invita" },
-    "serverinfo": { "name": "serverinfo" },
-    "rarity": { "name": "rarita" },
-    "help": { "name": "aiuto" },
-    "trade": { "name": "scambio" }
+    "cat": {
+      "name": "gatto"
+    },
+    "gallery": {
+      "name": "galleria"
+    },
+    "rename": {
+      "name": "rinomina"
+    },
+    "top": {
+      "name": "top"
+    },
+    "profile": {
+      "name": "profilo"
+    },
+    "stats": {
+      "name": "stats"
+    },
+    "vote": {
+      "name": "vota"
+    },
+    "announcement": {
+      "name": "annunci"
+    },
+    "invite": {
+      "name": "invita"
+    },
+    "serverinfo": {
+      "name": "serverinfo"
+    },
+    "rarity": {
+      "name": "rarita"
+    },
+    "help": {
+      "name": "aiuto"
+    },
+    "trade": {
+      "name": "scambio"
+    },
+    "favorites": {
+      "name": "preferiti",
+      "options": {
+        "user": {
+          "name": "utente",
+          "description": "Vedi il gatto di un'altro utente"
+        }
+      }
+    }
   },
   "profanity": {
     "warning_title": "Meow... Non è un bel nome!",
@@ -690,7 +731,29 @@
       "tag": "🏷️ Ottieni la tag MIAU"
     }
   },
+  "favorites": {
+    "embed": {
+      "title": "❤️ Gatto preferito di {{username}}",
+      "footer": "Gatto {{current}} di {{total}} preferito/i • {{username}}"
+    },
+    "empty": {
+      "title": "Nessun preferito",
+      "description": "**{{username}}** non ha nessun gatto preferito!\n\nUsa il bottone **❤️ preferito** in `/galleria` per aggiungere il gatto.",
+      "footer": "Usa /galleria e clicca ❤️ per aggiungerlo ai preferiti"
+    },
+    "button": {
+      "add": "Preferito",
+      "remove": "Rimuovi dai Preferiti",
+      "added": "Aggiunto **{{name}}** ai tuoi preferiti! ❤️",
+      "removed": "Rimosso **{{name}}** dai tuoi preferiti."
+    },
+    "session_expired": "Sessione scaduta • Usa /preferiti per iniziare una nuova sessione"
+  },
   "translations": {
-    "authors": [{ "Zer0Two": "642642727237845041" }]
+    "authors": [
+      {
+        "Zer0Two": "642642727237845041"
+      }
+    ]
   }
 }
