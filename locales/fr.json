@@ -38,7 +38,9 @@
     "command": {
       "option_name": "nom",
       "option_name_desc": "Donnez à votre nouveau chat un nom personnalisé (1–32 caractères, facultatif)"
-    }
+    },
+    "vote_button": "Voter pour des Chats Gratuits",
+    "vote_button_cooldown": "Obtenir des Chats en Votant"
   },
   "profile": {
     "title": "👑 Tableau de Bord de {{username}}",
@@ -375,21 +377,6 @@
         "description": "Paramètres du bot et outils utiles"
       }
     },
-    "command_descriptions": {
-      "cat": "Découvrez et collectez un nouveau chat pour votre collection !",
-      "gallery": "Visualisez votre galerie de chats ou celle d'un autre utilisateur",
-      "rename": "Donnez un tout nouveau nom à votre chat bien-aimé !",
-      "top": "Affichez le classement des chats",
-      "profile": "Affichez et gérez vos paramètres de profil",
-      "stats": "Affichez les statistiques du bot",
-      "vote": "Votez pour le bot et obtenez des récompenses",
-      "announcement": "Visualisez les dernières mises à jour et annonces MiauDex",
-      "invite": "Rejoignez le serveur officiel MiauDex et débloquez des avantages exclusifs !",
-      "serverinfo": "Affichez les informations du serveur",
-      "rarity": "Affiche toutes les raretés de chat ainsi que leurs chances de drop.",
-      "trade": "Échangez des chats avec un autre utilisateur",
-      "help": "Explorez toutes les commandes et fonctionnalités de Miaudex"
-    },
     "commands_count": "commandes",
     "category": {
       "commands": "Commandes",
@@ -434,6 +421,22 @@
       "title": "Oups ! Quelque chose s'est mal passé",
       "description": "Impossible de charger le menu d'aide maintenant. Veuillez réessayer !",
       "footer": "🐾 Erreur enregistrée pour débogage"
+    },
+    "command_descriptions": {
+      "cat": "Découvrez et collectez un nouveau chat pour votre collection !",
+      "gallery": "Visualisez votre galerie de chats ou celle d'un autre utilisateur",
+      "rename": "Donnez un tout nouveau nom à votre chat bien-aimé !",
+      "top": "Affichez le classement des chats",
+      "profile": "Affichez et gérez vos paramètres de profil",
+      "stats": "Affichez les statistiques du bot",
+      "vote": "Votez pour le bot et obtenez des récompenses",
+      "announcement": "Visualisez les dernières mises à jour et annonces MiauDex",
+      "invite": "Rejoignez le serveur officiel MiauDex et débloquez des avantages exclusifs !",
+      "serverinfo": "Affichez les informations du serveur",
+      "rarity": "Affiche toutes les raretés de chat ainsi que leurs chances de drop.",
+      "help": "Explorez toutes les commandes et fonctionnalités de Miaudex",
+      "trade": "Échangez des chats avec un autre utilisateur",
+      "favorites": "Parcourez votre collection de chats favoris"
     }
   },
   "invite": {
@@ -541,7 +544,9 @@
   "errors": {
     "unexpected_title": "Erreur Inattendue",
     "unexpected": "Quelque chose d'inattendu s'est passé lors de la collecte de votre chat.\n\nL'équipe de développement a été notifiée. Veuillez réessayer dans quelques minutes.",
-    "unknown_command": "❌ Commande inconnue : `{{command}}`"
+    "unknown_command": "❌ Commande inconnue : `{{command}}`",
+    "not_your_session": "Ce n'est pas votre session. Exécutez la commande vous-même pour interagir.",
+    "not_your_cat": "Vous ne pouvez mettre en favori que vos propres chats."
   },
   "rename": {
     "nice_name": "un joli nom",
@@ -618,7 +623,8 @@
     "utility": {
       "stats": "Statistiques",
       "refresh": "Actualiser",
-      "help": "Aide"
+      "help": "Aide",
+      "favorite": "Favori"
     },
     "help": {
       "title": "🔍 Aide Galerie & Commandes",
@@ -664,19 +670,54 @@
     }
   },
   "commands": {
-    "cat": { "name": "chat" },
-    "gallery": { "name": "galerie" },
-    "rename": { "name": "renommer" },
-    "top": { "name": "classement" },
-    "profile": { "name": "profil" },
-    "stats": { "name": "stats" },
-    "vote": { "name": "vote" },
-    "announcement": { "name": "annonce" },
-    "invite": { "name": "invitation" },
-    "serverinfo": { "name": "infoserveur" },
-    "rarity": { "name": "rarete" },
-    "trade": { "name": "echange" },
-    "help": { "name": "aide" }
+    "cat": {
+      "name": "chat"
+    },
+    "gallery": {
+      "name": "galerie"
+    },
+    "rename": {
+      "name": "renommer"
+    },
+    "top": {
+      "name": "classement"
+    },
+    "profile": {
+      "name": "profil"
+    },
+    "stats": {
+      "name": "stats"
+    },
+    "vote": {
+      "name": "vote"
+    },
+    "announcement": {
+      "name": "annonce"
+    },
+    "invite": {
+      "name": "invitation"
+    },
+    "serverinfo": {
+      "name": "infoserveur"
+    },
+    "rarity": {
+      "name": "rarete"
+    },
+    "help": {
+      "name": "aide"
+    },
+    "trade": {
+      "name": "echange"
+    },
+    "favorites": {
+      "name": "favoris",
+      "options": {
+        "user": {
+          "name": "utilisateur",
+          "description": "Voir les chats favoris d'un autre utilisateur"
+        }
+      }
+    }
   },
   "profanity": {
     "warning_title": "Miaou... Ce n'est pas un beau nom !",
@@ -690,9 +731,30 @@
       "tag": "🏷️ Obtenir le tag MIAU"
     }
   },
+  "favorites": {
+    "embed": {
+      "title": "❤️ Chats Favoris de {{username}}",
+      "footer": "Chat {{current}} sur {{total}} favoris • {{username}}"
+    },
+    "empty": {
+      "title": "Aucun Favori",
+      "description": "**{{username}}** n'a encore ajouté aucun chat à ses favoris !\n\nUtilisez le bouton **❤️ Favori** dans `/galerie` pour ajouter des chats.",
+      "footer": "Utilisez /galerie et cliquez sur ❤️ pour ajouter des favoris"
+    },
+    "button": {
+      "add": "Favori",
+      "remove": "Retirer des Favoris",
+      "added": "**{{name}}** ajouté à vos favoris ! ❤️",
+      "removed": "**{{name}}** retiré de vos favoris."
+    },
+    "session_expired": "Session expirée • Utilisez /favoris pour commencer une nouvelle session"
+  },
   "translations": {
     "authors": [
-      { "Zer0Two": "642642727237845041", "MaxiMep": "219532455856701442" }
+      {
+        "Zer0Two": "642642727237845041",
+        "MaxiMep": "219532455856701442"
+      }
     ]
   }
 }

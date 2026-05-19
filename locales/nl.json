@@ -38,7 +38,9 @@
     "command": {
       "option_name": "naam",
       "option_name_desc": "Geef je nieuwe kat een naam naar jouw keuze (1–32 karakters, optioneel)"
-    }
+    },
+    "vote_button": "Stem voor Gratis Katten",
+    "vote_button_cooldown": "Krijg Katten door te Stemmen"
   },
   "profile": {
     "title": "👑 {{username}} Profiel Dashboard",
@@ -433,7 +435,8 @@
       "serverinfo": "Toon informatie over de server",
       "rarity": "Toon alle kat zeldzaamheden en hun kansen",
       "help": "Verken alle MiauDex commandp's en features",
-      "trade": "Ruil katten met andere gebruikers"
+      "trade": "Ruil katten met andere gebruikers",
+      "favorites": "Bekijk je favoriete katten collectie"
     }
   },
   "invite": {
@@ -541,7 +544,9 @@
   "errors": {
     "unexpected_title": "Onverwachte Fout",
     "unexpected": "Er gebeurde iets onverwachts tijdens het verzamelen van je kat.\n\nHet ontwikkelings team is op de hoogte gesteld. Probeer het over een paar minuten opnieuw.",
-    "unknown_command": "❌ Onbekend commando: `{{command}}`"
+    "unknown_command": "❌ Onbekend commando: `{{command}}`",
+    "not_your_session": "Dit is niet jouw sessie. Gebruik het commando zelf om dit te gebruiken.",
+    "not_your_cat": "Je kan enkel je eigen katten aan je favorieten toevoegen."
   },
   "rename": {
     "nice_name": "een mooie naam",
@@ -618,7 +623,8 @@
     "utility": {
       "stats": "Statistieken",
       "refresh": "Vernieuwen",
-      "help": "Hulp"
+      "help": "Hulp",
+      "favorite": "Voeg toe aan favorieten"
     },
     "help": {
       "title": "🔍 Galerij Hulp & Commands",
@@ -664,19 +670,54 @@
     }
   },
   "commands": {
-    "cat": { "name": "kat" },
-    "gallery": { "name": "galerij" },
-    "rename": { "name": "hernoem" },
-    "top": { "name": "top" },
-    "profile": { "name": "profiel" },
-    "stats": { "name": "statistieken" },
-    "vote": { "name": "stem" },
-    "announcement": { "name": "aankondiging" },
-    "invite": { "name": "uitnodiging" },
-    "serverinfo": { "name": "serverinfo" },
-    "rarity": { "name": "zeldzaamheid" },
-    "help": { "name": "hulp" },
-    "trade": { "name": "ruil" }
+    "cat": {
+      "name": "kat"
+    },
+    "gallery": {
+      "name": "galerij"
+    },
+    "rename": {
+      "name": "hernoem"
+    },
+    "top": {
+      "name": "top"
+    },
+    "profile": {
+      "name": "profiel"
+    },
+    "stats": {
+      "name": "statistieken"
+    },
+    "vote": {
+      "name": "stem"
+    },
+    "announcement": {
+      "name": "aankondiging"
+    },
+    "invite": {
+      "name": "uitnodiging"
+    },
+    "serverinfo": {
+      "name": "serverinfo"
+    },
+    "rarity": {
+      "name": "zeldzaamheid"
+    },
+    "help": {
+      "name": "hulp"
+    },
+    "trade": {
+      "name": "ruil"
+    },
+    "favorites": {
+      "name": "favorieten",
+      "options": {
+        "user": {
+          "name": "gebruiker",
+          "description": "Bekijk de favoriete katten van een andere gebruiker"
+        }
+      }
+    }
   },
   "profanity": {
     "warning_title": "Miauw... Dat is geen leuke naam!",
@@ -690,7 +731,29 @@
       "tag": "🏷️ Krijg de MIAU Tag"
     }
   },
+  "favorites": {
+    "embed": {
+      "title": "❤️ De Favoriete Katten van {{username}}",
+      "footer": "{{current}} van de {{total}} favoriete katten • {{username}}"
+    },
+    "empty": {
+      "title": "Nog Geen Favorieten",
+      "description": "**{{username}}** heeft geen favoriete katten!\n\nGebruik de **❤️ Voeg toe aan favorieten** knop in `/gallerij` om katten toe te voegen.",
+      "footer": "Gebruik /gallerij en klik ❤️ om favorieten toe te voegen"
+    },
+    "button": {
+      "add": "Voeg toe aan favorieten",
+      "remove": "Verwijder van favorieten",
+      "added": "**{{name}}** werd toegevoegd aan je favorieten! ❤️",
+      "removed": "**{{name}}** werd verwijderd van je favorieten."
+    },
+    "session_expired": "Sessie verlopen • Gebruik /favorieten om een nieuwe sessie te starten"
+  },
   "translations": {
-    "authors": [{ "Quincy": "467310209312882709" }]
+    "authors": [
+      {
+        "Quincy": "467310209312882709"
+      }
+    ]
   }
 }

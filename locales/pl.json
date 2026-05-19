@@ -38,7 +38,9 @@
     "command": {
       "option_name": "nazwa",
       "option_name_desc": "Nadaj swojemu nowemu kotu własną nazwę (1-32 znaki, opcjonalnie)"
-    }
+    },
+    "vote_button": "Głosuj po darmowe koty",
+    "vote_button_cooldown": "Zdobądź koty przez głosowanie"
   },
   "profile": {
     "title": "👑 Panel {{username}}",
@@ -433,7 +435,8 @@
       "serverinfo": "Pokaż informacje o serwerze",
       "rarity": "Poznaj rzadkości kotków",
       "help": "Poznaj centrum pomocy i wszystkie komendy",
-      "trade": "Wymień się kotkami z innymi kolekcjonerami"
+      "trade": "Wymień się kotkami z innymi kolekcjonerami",
+      "favorites": "Przeglądaj swoją ulubioną kolekcję kotów"
     }
   },
   "invite": {
@@ -541,7 +544,9 @@
   "errors": {
     "unexpected_title": "Nieoczekiwany Błąd",
     "unexpected": "Coś nieoczekiwanego się stało podczas zbierania kota.\n\nZespół programistów został powiadomiony. Spróbuj ponownie za kilka minut.",
-    "unknown_command": "❌ Nieznana komenda: `{{command}}`"
+    "unknown_command": "❌ Nieznana komenda: `{{command}}`",
+    "not_your_session": "To nie jest twoja sesja. Uruchom komendę samemu, aby wziąć udział.",
+    "not_your_cat": "Możesz dodawać tylko swoje własne koty."
   },
   "rename": {
     "nice_name": "ładniej",
@@ -618,7 +623,8 @@
     "utility": {
       "stats": "Statystyki",
       "refresh": "Odśwież",
-      "help": "Pomoc"
+      "help": "Pomoc",
+      "favorite": "Ulubione"
     },
     "help": {
       "title": "🔍 Pomoc i Komendy Galerii",
@@ -664,19 +670,54 @@
     }
   },
   "commands": {
-    "cat": { "name": "kot" },
-    "gallery": { "name": "galeria" },
-    "rename": { "name": "nazwij" },
-    "top": { "name": "ranking" },
-    "profile": { "name": "profil" },
-    "stats": { "name": "statystyki" },
-    "vote": { "name": "vote" },
-    "announcement": { "name": "ogloszenie" },
-    "invite": { "name": "zaproszenie" },
-    "serverinfo": { "name": "serwerinfo" },
-    "rarity": { "name": "rzadkosc" },
-    "help": { "name": "pomoc" },
-    "trade": { "name": "wymien" }
+    "cat": {
+      "name": "kot"
+    },
+    "gallery": {
+      "name": "galeria"
+    },
+    "rename": {
+      "name": "nazwij"
+    },
+    "top": {
+      "name": "ranking"
+    },
+    "profile": {
+      "name": "profil"
+    },
+    "stats": {
+      "name": "statystyki"
+    },
+    "vote": {
+      "name": "vote"
+    },
+    "announcement": {
+      "name": "ogloszenie"
+    },
+    "invite": {
+      "name": "zaproszenie"
+    },
+    "serverinfo": {
+      "name": "serwerinfo"
+    },
+    "rarity": {
+      "name": "rzadkosc"
+    },
+    "help": {
+      "name": "pomoc"
+    },
+    "trade": {
+      "name": "wymien"
+    },
+    "favorites": {
+      "name": "ulubione",
+      "options": {
+        "user": {
+          "name": "użytkownik",
+          "description": "Zobacz ulubione koty innego użytkownika"
+        }
+      }
+    }
   },
   "profanity": {
     "warning_title": "Meow... To nie jest ładna nazwa!",
@@ -690,7 +731,29 @@
       "tag": "🏷️ Zdobądź MIAU Tag"
     }
   },
+  "favorites": {
+    "embed": {
+      "title": "❤️ {{username}} Ulubione Koty",
+      "footer": "Kot {{current}} z {{total}} ulubionych • {{username}}"
+    },
+    "empty": {
+      "title": "Brak Ulubionych kotów",
+      "description": "**{{username}}** nie dodał jeszcze żadnych ulubionych kotów!\n\nUżyj przycisku **❤️ Ulubione** w `/galeria`, aby dodać koty.",
+      "footer": "Użyj /galeria i kliknij ❤️, aby dodać do ulubionych"
+    },
+    "button": {
+      "add": "Dodaj do ulubionych",
+      "remove": "Usuń z ulubionych",
+      "added": "Dodano **{{name}}** do ulubionych! ❤️",
+      "removed": "Usunięto **{{name}}** z ulubionych."
+    },
+    "session_expired": "Sesja wygasła • Użyj /ulubione, aby rozpocząć nową sesję"
+  },
   "translations": {
-    "authors": [{ "ItsAlex": "551023598203043840" }]
+    "authors": [
+      {
+        "ItsAlex": "551023598203043840"
+      }
+    ]
   }
 }

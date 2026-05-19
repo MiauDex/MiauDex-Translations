@@ -38,7 +38,9 @@
     "command": {
       "option_name": "name",
       "option_name_desc": "Give your new cat a custom name (1–32 characters, optional)"
-    }
+    },
+    "vote_button": "Vote for Free Cats",
+    "vote_button_cooldown": "Get Cats by Voting"
   },
   "profile": {
     "title": "👑 {{username}}'s Profile Dashboard",
@@ -433,7 +435,8 @@
       "serverinfo": "Show server information",
       "rarity": "Show all cat rarities and their chances",
       "help": "Explore all MiauDex commands and features",
-      "trade": "Trade cats with other users"
+      "trade": "Trade cats with other users",
+      "favorites": "Browse your favorite cats collection"
     }
   },
   "invite": {
@@ -541,7 +544,9 @@
   "errors": {
     "unexpected_title": "Unexpected Error",
     "unexpected": "Something unexpected happened while collecting your cat.\n\nThe development team has been notified. Please try again in a few minutes.",
-    "unknown_command": "❌ Unknown command: `{{command}}`"
+    "unknown_command": "❌ Unknown command: `{{command}}`",
+    "not_your_session": "This isn't your session. Run the command yourself to interact.",
+    "not_your_cat": "You can only favourite your own cats."
   },
   "rename": {
     "nice_name": "a nice name",
@@ -618,7 +623,8 @@
     "utility": {
       "stats": "Statistics",
       "refresh": "Refresh",
-      "help": "Help"
+      "help": "Help",
+      "favorite": "Favorite"
     },
     "help": {
       "title": "🔍 Gallery Help & Commands",
@@ -664,19 +670,54 @@
     }
   },
   "commands": {
-    "cat": { "name": "cat" },
-    "gallery": { "name": "gallery" },
-    "rename": { "name": "rename" },
-    "top": { "name": "top" },
-    "profile": { "name": "profile" },
-    "stats": { "name": "stats" },
-    "vote": { "name": "vote" },
-    "announcement": { "name": "announcement" },
-    "invite": { "name": "invite" },
-    "serverinfo": { "name": "serverinfo" },
-    "rarity": { "name": "rarity" },
-    "help": { "name": "help" },
-    "trade": { "name": "trade" }
+    "cat": {
+      "name": "cat"
+    },
+    "gallery": {
+      "name": "gallery"
+    },
+    "rename": {
+      "name": "rename"
+    },
+    "top": {
+      "name": "top"
+    },
+    "profile": {
+      "name": "profile"
+    },
+    "stats": {
+      "name": "stats"
+    },
+    "vote": {
+      "name": "vote"
+    },
+    "announcement": {
+      "name": "announcement"
+    },
+    "invite": {
+      "name": "invite"
+    },
+    "serverinfo": {
+      "name": "serverinfo"
+    },
+    "rarity": {
+      "name": "rarity"
+    },
+    "help": {
+      "name": "help"
+    },
+    "trade": {
+      "name": "trade"
+    },
+    "favorites": {
+      "name": "favorites",
+      "options": {
+        "user": {
+          "name": "user",
+          "description": "View another user's favorite cats"
+        }
+      }
+    }
   },
   "profanity": {
     "warning_title": "Meow... That's not a nice name!",
@@ -690,7 +731,29 @@
       "tag": "🏷️ Get MIAU Tag"
     }
   },
+    "favorites": {
+    "embed": {
+      "title": "❤️ {{username}}'s favorite Cats",
+      "footer": "Cat {{current}} of {{total}} favorites • {{username}}"
+    },
+    "empty": {
+      "title": "No favorites Yet",
+      "description": "**{{username}}** hasn't added any cats to their favorites!\n\nUse the **❤️ favorite** button in `/gallery` to add cats.",
+      "footer": "Use /gallery and click ❤️ to add favorites"
+    },
+    "button": {
+      "add": "Favorite",
+      "remove": "Unfavorite",
+      "added": "Added **{{name}}** to your favorites! ❤️",
+      "removed": "Removed **{{name}}** from your favorites."
+    },
+    "session_expired": "Session expired • Use /favorites to start a new session"
+  },
   "translations": {
-    "authors": [{ "ItsAlex": "551023598203043840" }]
+    "authors": [
+      {
+        "ItsAlex": "551023598203043840"
+      }
+    ]
   }
 }
