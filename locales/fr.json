@@ -39,6 +39,17 @@
       "option_name": "nom",
       "option_name_desc": "Donnez à votre nouveau chat un nom personnalisé (1–32 caractères, facultatif)"
     },
+    "welcome": {
+      "title": "🐾 Bienvenue sur MiauDex!",
+      "description": "Super, votre premier chat! Voici comment intégrer cela dans votre routine quotidienne :",
+      "streak_name": "📅 Construisez une série",
+      "streak_value": "Revenez toutes les 24h pour obtenir un nouveau chat. Les séries plus longues débloquent de plus grands paliers et une place dans le classement `/classement`.",
+      "vote_name": "🗳️ Votez pour des chats bonus",
+      "vote_value": "Votez toutes les 12h pour obtenir un **chat gratuit**. Activez les rappels directement dans `/vote` pour ne jamais en manquer un.",
+      "support_name": "🔗 Soutenez le projet",
+      "support_value": "[Laissez-nous un avis sur top.gg](https://top.gg/bot/1388169772298145963#reviews) • [Visitez le site web](https://itsalexik.github.io/MiauDex-Web/)",
+      "footer": "MiauDex • Utilisez /aide pour voir la liste complète des commandes"
+    },
     "vote_button": "Voter pour des Chats Gratuits",
     "vote_button_cooldown": "Obtenir des Chats en Votant"
   },

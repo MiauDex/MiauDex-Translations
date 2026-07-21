@@ -39,6 +39,17 @@
       "option_name": "nazwa",
       "option_name_desc": "Nadaj swojemu nowemu kotu własną nazwę (1-32 znaki, opcjonalnie)"
     },
+    "welcome": {
+      "title": "🐾 Witaj w MiauDex!",
+      "description": "Twój pierwszy kot! Oto jak zrobić z tego swój codzienny rytuał:",
+      "streak_name": "📅 Buduj serię",
+      "streak_value": "Wracaj co 24h po nowego kota. Dłuższe serie odblokowują większe kamienie milowe i miejsce w `/ranking`.",
+      "vote_name": "🗳️ Zagłosuj po dodatkowego kota",
+      "vote_value": "Zagłosuj co 12h, by dostać **darmowego kota**. Włącz przypomnienia w `/vote`, żeby nigdy nie przegapić głosowania.",
+      "support_name": "🔗 Wesprzyj projekt",
+      "support_value": "[Oceń nas na top.gg](https://top.gg/bot/1388169772298145963#reviews) • [Odwiedź stronę](https://itsalexik.github.io/MiauDex-Web/)",
+      "footer": "MiauDex • Użyj /pomoc, by zobaczyć wszystkie komendy"
+    },
     "vote_button": "Głosuj po darmowe koty",
     "vote_button_cooldown": "Zdobądź koty przez głosowanie"
   },
