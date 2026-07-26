@@ -39,6 +39,17 @@
       "option_name": "nome",
       "option_name_desc": "Dai al tuo nuovo gatto un nome personalizzato (1–32 caratteri, opzionale)"
     },
+    "welcome": {
+      "title": "🐾 Benvenuto su MiauDex!",
+      "description": "Ottimo, il tuo primo gatto! Ecco come rendere questa parte della tua routine quotidiana:",
+      "streak_name": "📅 Crea una serie",
+      "streak_value": "Torna ogni 24 ore per ottenere un nuovo gatto. Le serie più lunghe sbloccano traguardi più grandi e un posto nella classifica `/top`.",
+      "vote_name": "🗳️ Vota per ottenere gatti bonus",
+      "vote_value": "Vota ogni 12 ore per un **gatto gratuito**. Attiva i promemoria direttamente in `/vota` per non perderne mai uno.",
+      "support_name": "🔗 Supporta il progetto",
+      "support_value": "[Lasciaci una recensione su top.gg](https://top.gg/bot/1388169772298145963#reviews) • [Visita il sito web](https://itsalexik.github.io/MiauDex-Web/)",
+      "footer": "MiauDex • Usa /aiuto per l'elenco completo dei comandi"
+    },
     "vote_button": "Vota per avere un gatto gratuito",
     "vote_button_cooldown": "Ottieni gatti votando"
   },

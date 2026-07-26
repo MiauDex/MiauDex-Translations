@@ -39,6 +39,17 @@
       "option_name": "navn",
       "option_name_desc": "Gi katten din et egendefinert navn (1–32 tegn, valgfritt)"
     },
+    "welcome": {
+      "title": "🐾 Velkommen til MiauDex!",
+      "description": "Fint, din første katt! Her er hvordan du gjør dette til en del av din daglige rutine:",
+      "streak_name": "📅 Bygg en Streak",
+      "streak_value": "Kom tilbake hver 24. time for en ny katt. Lengre streaks låser opp større milepæler og en plass på `/topp`.",
+      "vote_name": "🗳️ Stem for Bonuskatter",
+      "vote_value": "Stem hver 12. time for en **gratis katt**. Aktiver påminnelser direkte i `/stemme` så du aldri går glipp av en.",
+      "support_name": "🔗 Støtt Prosjektet",
+      "support_value": "[Vurder oss på top.gg](https://top.gg/bot/1388169772298145963#reviews) • [Besøk nettsiden](https://itsalexik.github.io/MiauDex-Web/)",
+      "footer": "MiauDex • Bruk /hjelp for hele kommandolisten"
+    },
     "vote_button": "Stem for gratis katter",
     "vote_button_cooldown": "Få katter ved å stemme"
   },

@@ -39,6 +39,17 @@
       "option_name": "naam",
       "option_name_desc": "Geef je nieuwe kat een naam naar jouw keuze (1–32 karakters, optioneel)"
     },
+    "welcome": {
+      "title": "🐾 Welkom bij MiauDex!",
+      "description": "Top, je eerste kat! Zo maak je dit een deel van je dagelijkse routine:",
+      "streak_name": "📅 Bouw een Reeks op",
+      "streak_value": "Kom elke 24u terug voor een nieuwe kat. Een langere reeks geeft je een grotere mijlpaal en een plek op `/top`.",
+      "vote_name": "🗳️ Stem voor Bonus Katten",
+      "vote_value": "Stem elke 12u voor een **gratis kat**. Zet herinneringen aan in `/stem` zodat je er geen mist.",
+      "support_name": "🔗 Ondersteun het Project",
+      "support_value": "[Geef ons een beoordeling op top.gg](https://top.gg/bot/1388169772298145963#reviews) • [Bekijk onze website](https://itsalexik.github.io/MiauDex-Web/)",
+      "footer": "MiauDex • Gebruik /hulp voor een volledige lijst van commando's"
+    },
     "vote_button": "Stem voor Gratis Katten",
     "vote_button_cooldown": "Krijg Katten door te Stemmen"
   },

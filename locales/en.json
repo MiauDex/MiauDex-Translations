@@ -39,6 +39,17 @@
       "option_name": "name",
       "option_name_desc": "Give your new cat a custom name (1–32 characters, optional)"
     },
+    "welcome": {
+      "title": "🐾 Welcome to MiauDex!",
+      "description": "Nice, your first cat! Here's how to make this part of your daily routine:",
+      "streak_name": "📅 Build a Streak",
+      "streak_value": "Come back every 24h for a new cat. Longer streaks unlock bigger milestones and a spot on `/top`.",
+      "vote_name": "🗳️ Vote for Bonus Cats",
+      "vote_value": "Vote every 12h for a **free cat**. Enable reminders right in `/vote` so you never miss one.",
+      "support_name": "🔗 Support the Project",
+      "support_value": "[Rate us on top.gg](https://top.gg/bot/1388169772298145963#reviews) • [Visit the website](https://itsalexik.github.io/MiauDex-Web/)",
+      "footer": "MiauDex • Run /help for the full command list"
+    },
     "vote_button": "Vote for Free Cats",
     "vote_button_cooldown": "Get Cats by Voting"
   },
@@ -731,7 +742,7 @@
       "tag": "🏷️ Get MIAU Tag"
     }
   },
-    "favorites": {
+  "favorites": {
     "embed": {
       "title": "❤️ {{username}}'s favorite Cats",
       "footer": "Cat {{current}} of {{total}} favorites • {{username}}"
