@@ -756,7 +756,8 @@
       "add": "Favori",
       "remove": "Retirer des Favoris",
       "added": "**{{name}}** ajouté à vos favoris ! ❤️",
-      "removed": "**{{name}}** retiré de vos favoris."
+      "removed": "**{{name}}** retiré de vos favoris.",
+      "limit_reached": "Tu ne peux avoir que **{{limit}}** favoris à la fois ! Retires-en un d'abord. 💔"
     },
     "session_expired": "Session expirée • Utilisez /favoris pour commencer une nouvelle session"
   },

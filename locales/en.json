@@ -756,7 +756,8 @@
       "add": "Favorite",
       "remove": "Unfavorite",
       "added": "Added **{{name}}** to your favorites! ❤️",
-      "removed": "Removed **{{name}}** from your favorites."
+      "removed": "Removed **{{name}}** from your favorites.",
+      "limit_reached": "You can only have **{{limit}}** favorites at a time! Remove one first. 💔"
     },
     "session_expired": "Session expired • Use /favorites to start a new session"
   },

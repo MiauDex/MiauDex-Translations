@@ -756,7 +756,8 @@
       "add": "Preferito",
       "remove": "Rimuovi dai Preferiti",
       "added": "Aggiunto **{{name}}** ai tuoi preferiti! ❤️",
-      "removed": "Rimosso **{{name}}** dai tuoi preferiti."
+      "removed": "Rimosso **{{name}}** dai tuoi preferiti.",
+      "limit_reached": "Puoi avere al massimo **{{limit}}** preferiti alla volta! Rimuovine uno prima. 💔"
     },
     "session_expired": "Sessione scaduta • Usa /preferiti per iniziare una nuova sessione"
   },

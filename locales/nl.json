@@ -756,7 +756,8 @@
       "add": "Voeg toe aan favorieten",
       "remove": "Verwijder van favorieten",
       "added": "**{{name}}** werd toegevoegd aan je favorieten! ❤️",
-      "removed": "**{{name}}** werd verwijderd van je favorieten."
+      "removed": "**{{name}}** werd verwijderd van je favorieten.",
+      "limit_reached": "Je kan maar **{{limit}}** favorieten tegelijk hebben! Je moet er eerst eentje verwijderen. 💔"
     },
     "session_expired": "Sessie verlopen • Gebruik /favorieten om een nieuwe sessie te starten"
   },

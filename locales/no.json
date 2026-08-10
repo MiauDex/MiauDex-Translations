@@ -756,7 +756,8 @@
       "add": "Favoritt",
       "remove": "Fjern favoritt",
       "added": "La til **{{name}}** i favorittene dine! ❤️",
-      "removed": "Fjernet **{{name}}** fra favorittene dine."
+      "removed": "Fjernet **{{name}}** fra favorittene dine.",
+      "limit_reached": "Du kan bare ha **{{limit}}** favoritter om gangen! Fjern en først. 💔"
     },
     "session_expired": "Økten er utløpt • Bruk /favoritter for å starte en ny økt"
   },
