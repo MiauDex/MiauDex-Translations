@@ -81,9 +81,7 @@
     },
     "premium": {
       "status": "✨ Premium Status",
-      "member": "✅ **Premium Lid**",
-      "notifications": "📱 Geavanceerde Meldingen",
-      "support": "⭐ Prioriteits Ondersteuning"
+      "member": "✅ **Premium Lid**"
     },
     "buttons": {
       "refresh": "Vernieuwen",
@@ -98,8 +96,6 @@
       "footer": "Hulp • Profiel Dashboard"
     },
     "common": {
-      "premium": "Premium",
-      "premium_only": "Alleen Premium",
       "enabled": "ingeschakeld",
       "disabled": "uitgeschakeld",
       "loading": "Laden...",
@@ -110,11 +106,6 @@
       "standard": "Standaard Ervaring • Gebruik de knoppen om aan te passen",
       "premium": "Premium Ervaring • Gebruik de knoppen om aan te passen",
       "session_expired": "Sessie verlopen - gebruik `/profiel` om een nieuwe te starten"
-    },
-    "premium_required": {
-      "title": "👑 Premium Functie",
-      "description": "**Kat Herinneringen** zijn alleen beschikbaar voor Premium leden!\n\n✨ **Wat je krijgt met Premium:**\n📱 Slimme kat meldingen\n💎 Geavanceerde profiel functies\n👑 VIP Status\n\n*Klaar om te upgraden? Neem contact op met je server beheerder!*",
-      "footer": "Premium • Verbeterde Discord Ervaring"
     },
     "errors": {
       "generic": "Oeps! Er ging iets mis. Probeer het opnieuw."

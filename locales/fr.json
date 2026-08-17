@@ -81,9 +81,7 @@
     },
     "premium": {
       "status": "✨ Statut Premium",
-      "member": "✅ **Membre Premium**",
-      "notifications": "🔔 Notifications avancées",
-      "support": "⭐ Support prioritaire"
+      "member": "✅ **Membre Premium**"
     },
     "buttons": {
       "refresh": "Actualiser",
@@ -98,8 +96,6 @@
       "footer": "Aide • Tableau de Bord du Profil"
     },
     "common": {
-      "premium": "Premium",
-      "premium_only": "Premium Seulement",
       "enabled": "activé",
       "disabled": "désactivé",
       "loading": "Chargement...",
@@ -110,11 +106,6 @@
       "standard": "Expérience Standard • Utilisez les boutons pour personnaliser",
       "premium": "Expérience Premium • Utilisez les boutons pour personnaliser",
       "session_expired": "Session expirée - utilisez `/profil` pour en commencer une nouvelle"
-    },
-    "premium_required": {
-      "title": "👑 Fonctionnalité Premium",
-      "description": "**Les Rappels de Chat** ne sont disponibles que pour les membres Premium !\n\n✨ **Ce que vous obtenez avec Premium :**\n🔔 Notifications intelligentes de chats\n💎 Fonctionnalités avancées de profil\n👑 Statut VIP\n\n*Prêt à upgrader ? Contactez votre administrateur de serveur !*",
-      "footer": "Premium • Expérience Discord Améliorée"
     },
     "errors": {
       "generic": "Oups ! Quelque chose s'est mal passé. Veuillez réessayer."

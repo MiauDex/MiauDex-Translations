@@ -81,9 +81,7 @@
     },
     "premium": {
       "status": "✨ Status Premium",
-      "member": "✅ **Członek Premium**",
-      "notifications": "Zaawansowane Powiadomienia",
-      "support": "Wsparcie Priorytetowe"
+      "member": "✅ **Członek Premium**"
     },
     "buttons": {
       "refresh": "Odśwież",
@@ -98,8 +96,6 @@
       "footer": "Pomoc • Panel Profilu"
     },
     "common": {
-      "premium": "Premium",
-      "premium_only": "Tylko Premium",
       "enabled": "włączone",
       "disabled": "wyłączone",
       "loading": "Ładowanie...",
@@ -110,11 +106,6 @@
       "standard": "Standardowe Doświadczenie • Kliknij przyciski, aby dostosować",
       "premium": "Doświadczenie Premium • Kliknij przyciski, aby dostosować",
       "session_expired": "Sesja wygasła - użyj `/profil`, aby rozpocząć nową"
-    },
-    "premium_required": {
-      "title": "👑 Funkcja Premium",
-      "description": "**Przypomnienia o kotach** są dostępne tylko dla członków Premium!\n\n✨ **Co otrzymasz z Premium:**\n🔔 Inteligentne powiadomienia o kotach\n💎 Zaawansowane funkcje profilu\n👑 Status VIP\n\n*Gotowy, aby uaktualnić? Skontaktuj się z administratorem serwera!*",
-      "footer": "Premium • Ulepszone Doświadczenie Discord"
     },
     "errors": {
       "generic": "Ups! Coś poszło nie tak. Spróbuj ponownie."

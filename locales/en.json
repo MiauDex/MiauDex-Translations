@@ -81,9 +81,7 @@
     },
     "premium": {
       "status": "✨ Premium Status",
-      "member": "✅ **Premium Member**",
-      "notifications": "🔔 Advanced Notifications",
-      "support": "⭐ Priority Support"
+      "member": "✅ **Premium Member**"
     },
     "buttons": {
       "refresh": "Refresh",
@@ -98,8 +96,6 @@
       "footer": "Help • Profile Dashboard"
     },
     "common": {
-      "premium": "Premium",
-      "premium_only": "Premium Only",
       "enabled": "enabled",
       "disabled": "disabled",
       "loading": "Loading...",
@@ -110,11 +106,6 @@
       "standard": "Standard Experience • Use the buttons to customize",
       "premium": "Premium Experience • Use the buttons to customize",
       "session_expired": "Session expired - use `/profile` to start a new one"
-    },
-    "premium_required": {
-      "title": "👑 Premium Feature",
-      "description": "**Cat Reminders** are only available for Premium members!\n\n✨ **What you get with Premium:**\n🔔 Smart cat notifications\n💎 Advanced profile features\n👑 VIP Status\n\n*Ready to upgrade? Contact your server administrator!*",
-      "footer": "Premium • Enhanced Discord Experience"
     },
     "errors": {
       "generic": "Oops! Something went wrong. Please try again."

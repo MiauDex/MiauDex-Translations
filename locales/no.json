@@ -81,9 +81,7 @@
     },
     "premium": {
       "status": "✨ Premiumstatus",
-      "member": "✅ **Premium-medlem**",
-      "notifications": "🔔 Avanserte varsler",
-      "support": "⭐ Prioritert støtte"
+      "member": "✅ **Premium-medlem**"
     },
     "buttons": {
       "refresh": "Oppdater",
@@ -98,8 +96,6 @@
       "footer": "Hjelp • Profilpanel"
     },
     "common": {
-      "premium": "Premium",
-      "premium_only": "Kun Premium",
       "enabled": "aktivert",
       "disabled": "deaktivert",
       "loading": "Laster...",
@@ -110,11 +106,6 @@
       "standard": "Standardopplevelse • Bruk knappene for å tilpasse",
       "premium": "Premiumopplevelse • Bruk knappene for å tilpasse",
       "session_expired": "Økten er utløpt - bruk `/profil` for å starte en ny"
-    },
-    "premium_required": {
-      "title": "👑 Premiumfunksjon",
-      "description": "**Kattepåminnelser** er kun tilgjengelig for Premium-medlemmer!\n\n✨ **Dette får du med Premium:**\n🔔 Smarte kattevarsler\n💎 Avanserte profilfunksjoner\n👑 VIP-status\n\n*Klar for oppgradering? Kontakt din serveradministrator!*",
-      "footer": "Premium • Forbedret Discord-opplevelse"
     },
     "errors": {
       "generic": "Oisann! Noe gikk galt. Prøv igjen."

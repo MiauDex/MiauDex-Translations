@@ -81,9 +81,7 @@
     },
     "premium": {
       "status": "✨ Status Premium",
-      "member": "✅ **Membro Premium**",
-      "notifications": "🔔 Notifiche avanzate",
-      "support": "⭐ Supporto Prioritario"
+      "member": "✅ **Membro Premium**"
     },
     "buttons": {
       "refresh": "Aggiorna",
@@ -98,8 +96,6 @@
       "footer": "Aiuto • Dashboard Profilo"
     },
     "common": {
-      "premium": "Premium",
-      "premium_only": "Solo Premium",
       "enabled": "abilitato",
       "disabled": "disabilitato",
       "loading": "Caricamento...",
@@ -110,11 +106,6 @@
       "standard": "Esperienza Standard • Usa il bottone per personalizzare",
       "premium": "Esperienza Premium • Usa il bottone per personalizzare",
       "session_expired": "Sessione scaduta - usa `/profilo` per iniziarne un'altra"
-    },
-    "premium_required": {
-      "title": "👑 Feature Premium",
-      "description": "**Promemoria Felini** sono solo disponibili per i membri Premium!\n\n✨ **Cosa ottieni se diventi premium:**\n🔔 Notifiche intelligenti dei gatti\n💎 Features avanzate per il tuo profilo\n👑 Status Vip\n\n*Pronto a diventare un Membro Premium? Contatta il tuo amministratore del Server!*",
-      "footer": "Premium • Esperienza Discord migliorata"
     },
     "errors": {
       "generic": "Oops! Qualcosa è andato storto. Riprova di nuovo."
