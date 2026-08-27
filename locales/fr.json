@@ -306,6 +306,11 @@
     "cancelled_description": "Aucune réponse reçue dans le délai imparti.",
     "offering": "{{emoji}} {{username}} offre :",
     "exchange": "⇄",
+    "proposal_sent": "✅ Requête d'échange envoyée à **{{username}}**!",
+    "buttons": {
+      "accept": "Accepter l'échange",
+      "reject": "Rejeter l'échange"
+    },
     "errors": {
       "invalid_initiator": "Vous ne pouvez pas initier d'échanges en tant que bot",
       "invalid_target": "Vous ne pouvez pas échanger avec des bots",
@@ -318,7 +323,18 @@
       "rarity_mismatch": "Les chats doivent avoir la même rareté pour être échangés !\n\n{{my_emoji}} Votre chat : **{{my_rarity}}**\n{{their_emoji}} Leur chat : **{{their_rarity}}**\n\n*Cela garde les échanges équitables pour tous.*",
       "lookup_failed": "Impossible de trouver le chat dans la base de données. Veuillez réessayer.",
       "trade_failed": "Une erreur s'est produite lors du transfert des chats. L'échange a été annulé.\n\nLes deux chats restent avec leurs propriétaires d'origine.",
-      "unexpected_error": "Quelque chose d'inattendu s'est passé lors du traitement de votre échange.\n\nVeuillez réessayer dans quelques instants."
+      "duplicate_cat_title": "Doublon de chat détecté !",
+      "duplicate_cat": "🐱 L'un d'entre vous possède déjà ce chat dans sa collection, l'échange ne peut donc avoir lieu!\n\n✨ Essayez d'offrir un autre chat à la place.",
+      "unexpected_error": "Quelque chose d'inattendu s'est passé lors du traitement de votre échange.\n\nVeuillez réessayer dans quelques instants.",
+      "invalid_target_title": "Les bots n'échangent pas de chats.",
+      "self_trade_title": "Pas d'échange avec soi-même",
+      "trades_disabled_title": "Les échanges ont été désactivés.",
+      "lookup_failed_title": "Le chat n'a pas pu être trouvé",
+      "cat_not_found_title": "Aucun chat correspondant",
+      "trade_failed_title": "L'échange a échoué",
+      "not_your_trade": "🐾 Seul {{username}} peut accepter ou refuser cet échange!",
+      "response_failed": "😿 Quelque chose s'est mal passé pendant le traitement de votre réponse.\n\n Ré-essayez.",
+      "input_footer": "🐱 Vérifiez les détails, puis réessayez!"
     },
     "command": {
       "option_user": "utilisateur",

@@ -306,6 +306,11 @@
     "cancelled_description": "Geen antwoord ontvangen binnen de tijdslimiet.",
     "offering": "{{emoji}} {{username}} biedt het volgende aan:",
     "exchange": "⇄",
+    "proposal_sent": "✅ Ruil verzoek verzonden naar **{{username}}**!",
+    "buttons": {
+      "accept": "Ruil aanvaarden",
+      "reject": "Ruil afwijzen"
+    },
     "errors": {
       "invalid_initiator": "Als bot kan je niet ruilen",
       "invalid_target": "Je kan niet ruilen met bots",
@@ -318,7 +323,18 @@
       "rarity_mismatch": "Katten moeten dezelfde zeldzaamheid hebben om te ruilen!\n\n{{my_emoji}} Jouw kat: **{{my_rarity}}**\n{{their_emoji}} Hun kat: **{{their_rarity}}**\n\n*Dit houdt ruilen eerlijk voor iedereen.*",
       "lookup_failed": "We konden de kat niet vinden in onze database. Probeer later opnieuw.",
       "trade_failed": "Er trad een fout op bij het overdragen van de katten. De ruil is geannuleerd.\n\nBeide katten blijven bij hun oorspronkelijke eigenaars.",
-      "unexpected_error": "Er gebeurde iets onverwachts bij het verwerken van je ruil.\n\nProbeer het over een paar momenten opnieuw."
+      "duplicate_cat_title": "Duplicaat Gevonden!",
+      "duplicate_cat": "🐱 Iemand in deze ruil heeft deze exacte kat in hun verzameling, dus de ruil kan niet doorgaan!\n\n✨ Selecteer een andere kat en probeer opnieuw.",
+      "unexpected_error": "Er gebeurde iets onverwachts bij het verwerken van je ruil.\n\nProbeer het later opnieuw.",
+      "invalid_target_title": "Bots Ruilen Geen Katten",
+      "self_trade_title": "Alleen Kan Je Niet Ruilen",
+      "trades_disabled_title": "Ruilen Is Uitgeschakeld",
+      "lookup_failed_title": "Die Kat Konden We Niet Vinden",
+      "cat_not_found_title": "Die Kat Bestaat Niet",
+      "trade_failed_title": "Ruil Niet Geslaagd",
+      "not_your_trade": "🐾 Enkel {{username}} kan deze ruil aanvaarden of afwijzen!",
+      "response_failed": "😿 Er ging iets mis.\n\nProbeer later opnieuw.",
+      "input_footer": "🐱 Bekijk de details nogmaals en probeer opnieuw!"
     },
     "command": {
       "option_user": "gebruiker",

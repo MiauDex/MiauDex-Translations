@@ -306,6 +306,11 @@
     "cancelled_description": "Nessuna risposta ricevuta entro il tempo limite.",
     "offering": "{{emoji}} {{username}} offre:",
     "exchange": "⇄",
+    "proposal_sent": "✅ Proposta di scambio inviata a **{{username}}**!",
+    "buttons": {
+      "accept": "Accetta lo Scambio",
+      "reject": "Rifiuta lo scambio"
+    },
     "errors": {
       "invalid_initiator": "Non puoi avviare scambi come bot",
       "invalid_target": "Non puoi scambiare con i bot",
@@ -318,7 +323,18 @@
       "rarity_mismatch": "I gatti devono avere la stessa rarità per essere scambiati!\n\n{{my_emoji}} Il tuo gatto: **{{my_rarity}}**\n{{their_emoji}} Il loro gatto: **{{their_rarity}}**\n\n*Questo mantiene gli scambi equi per tutti.*",
       "lookup_failed": "Impossibile trovare il gatto nel database. Riprova.",
       "trade_failed": "Si è verificato un errore durante il trasferimento dei gatti. Lo scambio è stato annullato.\n\nEntrambi i gatti rimangono ai proprietari originali.",
-      "unexpected_error": "Qualcosa di inaspettato è successo durante l'elaborazione dello scambio.\n\nRiprova tra qualche istante."
+      "duplicate_cat_title": "Gatto doppione rilevato!",
+      "duplicate_cat": "🐱 Uno di voi ha già questo stesso gatto nella propria collezione, quindi lo scambio non può andare avanti!\n\n✨ Prova ad offrire un altro gatto.",
+      "unexpected_error": "C'è stato un'imprevisto durante l'elaborazione dello scambio.\n\nRiprova tra qualche istante.",
+      "invalid_target_title": "I Bot Non Scambiano Gatti",
+      "self_trade_title": "Niente Scambi da Solo",
+      "trades_disabled_title": "Gli Scambi Sono Disabilitati",
+      "lookup_failed_title": "Impossibile Trovare Quel Gatto",
+      "cat_not_found_title": "Quel Gatto Non Esiste",
+      "trade_failed_title": "Scambio fallito",
+      "not_your_trade": "🐾 Solo {{username}} può accettare o rifiutare questo scambio!",
+      "response_failed": "😿 Qualcosa è andato storto nell'elaborazione della tua richiesta.\n\nRiprova più tardi.",
+      "input_footer": "🐱 Ricontrolla i dati e riprova!"
     },
     "command": {
       "option_user": "utente",

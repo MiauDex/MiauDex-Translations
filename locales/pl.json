@@ -306,6 +306,11 @@
     "cancelled_description": "Nie otrzymano odpowiedzi w limicie czasu.",
     "offering": "{{emoji}} {{username}} oferuje:",
     "exchange": "⇄",
+    "proposal_sent": "✅ Wymiana została wysłana przez **{{username}}**!",
+    "buttons": {
+      "accept": "Akceptuj wymianę",
+      "reject": "Odrzuć wymianę"
+    },
     "errors": {
       "invalid_initiator": "Nie możesz inicjować wymian jako bot",
       "invalid_target": "Nie możesz handlować z botami",
@@ -318,7 +323,18 @@
       "rarity_mismatch": "Koty muszą mieć tę samą rzadkość aby je wymienić!\n\n{{my_emoji}} Twój kot: **{{my_rarity}}**\n{{their_emoji}} Ich kot: **{{their_rarity}}**\n\n*To sprawia, że wymiany są uczciwe dla wszystkich.*",
       "lookup_failed": "Nie można znaleźć kota w bazie danych. Spróbuj ponownie.",
       "trade_failed": "Wystąpił błąd podczas przenoszenia kotów. Wymiana została anulowana.\n\nOba koty pozostają u pierwotnych właścicieli.",
-      "unexpected_error": "Coś nieoczekiwanego stało się podczas przetwarzania wymiany.\n\nSpróbuj ponownie za kilka chwil."
+      "duplicate_cat_title": "Duplikat kotka znaleziony!",
+      "duplicate_cat": "🐱 Jedno z was ma już dokładnie tego samego kota w swojej kolekcji, więc wymiana nie może się udać!\n\n✨ Spróbuj zaoferować innego kota.",
+      "unexpected_error": "Wystąpił nieoczekiwany błąd podczas przetwarzania wymiany.\n\nSpróbuj ponownie za chwilę.",
+      "invalid_target_title": "Boty nie mogą wymieniać kotków",
+      "self_trade_title": "Nie możesz wymieniać się sam ze sobą",
+      "trades_disabled_title": "Wymiany są wyłączone",
+      "lookup_failed_title": "Nie udało się znaleźć tego kotka",
+      "cat_not_found_title": "Nie znaleziono takiego kotka",
+      "trade_failed_title": "Wymiana nie powiodła się",
+      "not_your_trade": "🐾 Tylko {{username}} może zaakceptować lub odrzucić tę wymianę!",
+      "response_failed": "😿 Coś poszło nie tak podczas przetwarzania odpowiedzi.\n\nSpróbuj ponownie.",
+      "input_footer": "🐱 Sprawdź dokładnie podane dane i spróbuj ponownie!"
     },
     "command": {
       "option_user": "użytkownik",

@@ -306,6 +306,11 @@
     "cancelled_description": "No response received within the time limit.",
     "offering": "{{emoji}} {{username}} offers:",
     "exchange": "⇄",
+    "proposal_sent": "✅ Trade proposal sent to **{{username}}**!",
+    "buttons": {
+      "accept": "Accept Trade",
+      "reject": "Reject Trade"
+    },
     "errors": {
       "invalid_initiator": "You cannot initiate trades as a bot",
       "invalid_target": "You cannot trade with bots",
@@ -317,8 +322,19 @@
       "target_cat_not_found": "{{username}} doesn't have a cat named \"{{name}}\".\n\nYou can check their collection with `/gallery`",
       "rarity_mismatch": "Cats must be the same rarity to trade!\n\n{{my_emoji}} Your cat: **{{my_rarity}}**\n{{their_emoji}} Their cat: **{{their_rarity}}**\n\n*This keeps trades fair for everyone.*",
       "lookup_failed": "Unable to find cat in the database. Please try again.",
-      "trade_failed": "An error occurred while transferring the cats. The trade has been cancelled.\n\nBoth cats remain with their original owners.",
-      "unexpected_error": "Something unexpected happened while processing your trade.\n\nPlease try again in a few moments."
+      "trade_failed": "😿 Something unexpected happened while transferring the cats, so the trade was cancelled.\n\n✨ Both cats are safe - they're still with their original owners!",
+      "duplicate_cat_title": "Duplicate cat found!",
+      "duplicate_cat": "🐱 One of you already has this exact cat in your collection, so the trade can't go through!\n\n✨ Try offering a different cat instead.",
+      "unexpected_error": "Something unexpected happened while processing your trade.\n\nPlease try again in a few moments.",
+      "invalid_target_title": "Bots Don't Trade Cats",
+      "self_trade_title": "No Trading Solo",
+      "trades_disabled_title": "Trading's Turned Off",
+      "lookup_failed_title": "Couldn't Find That Cat",
+      "cat_not_found_title": "No Such Cat",
+      "trade_failed_title": "Trade Fell Through",
+      "not_your_trade": "🐾 Only {{username}} can accept or reject this trade!",
+      "response_failed": "😿 Something went wrong processing your response.\n\nPlease try again.",
+      "input_footer": "🐱 Double-check the details and try again!"
     },
     "command": {
       "option_user": "user",

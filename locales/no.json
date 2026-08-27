@@ -306,6 +306,11 @@
     "cancelled_description": "Ingen respons mottatt innen tidsfristen.",
     "offering": "{{emoji}} {{username}} tilbyr:",
     "exchange": "⇄",
+    "proposal_sent": "✅ Bytteforespørsel sendt til **{{username}}**!",
+    "buttons": {
+      "accept": "Avslå bytte",
+      "reject": "Godta bytte"
+    },
     "errors": {
       "invalid_initiator": "Du kan ikke starte bytter som en bot",
       "invalid_target": "Du kan ikke bytte med boter",
@@ -318,7 +323,18 @@
       "rarity_mismatch": "Katter må ha samme sjeldenhet for å bytte!\n\n{{my_emoji}} Din katt: **{{my_rarity}}**\n{{their_emoji}} Deres katt: **{{their_rarity}}**\n\n*Dette holder bytter rettferdige for alle.*",
       "lookup_failed": "Kunne ikke finne katten i databasen. Prøv igjen.",
       "trade_failed": "En feil oppstod under overføring av kattene. Byttet er avbrutt.\n\nBegge kattene forblir hos sine opprinnelige eiere.",
-      "unexpected_error": "Noe uventet skjedde under behandlingen av byttet.\n\nPrøv igjen om noen minutter."
+      "duplicate_cat_title": "Har allerede den katten!",
+      "duplicate_cat": "🐱 En av dere har allerede nøyaktig denne katten i samlingen, så byttet kan ikke gjennomføres!\n\n✨ Prøv å tilby en annen katt i stedet.",
+      "unexpected_error": "Noe uventet skjedde under behandlingen av byttet ditt.\n\nPrøv igjen om noen øyeblikk.",
+      "invalid_target_title": "Roboter Bytter Ikke Katter",
+      "self_trade_title": "Ingen Solobytter",
+      "trades_disabled_title": "Bytting Er Slått Av",
+      "lookup_failed_title": "Fant Ikke Den Katten",
+      "cat_not_found_title": "Ingen Slik Katt",
+      "trade_failed_title": "Byttet Gikk I Vasken",
+      "not_your_trade": "🐾 Bare {{username}} kan godta eller avslå dette byttet!",
+      "response_failed": "😿 Noe gikk galt under behandlingen av svaret ditt.\n\nVennligst prøv igjen.",
+      "input_footer": "🐱 Dobbeltsjekk detaljene og prøv igjen!"
     },
     "command": {
       "option_user": "bruker",
