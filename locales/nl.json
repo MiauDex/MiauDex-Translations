@@ -673,7 +673,8 @@
       "title": "💎 Galerij Statistieken van {{username}}",
       "overview": "📚 Verzameling Overzicht",
       "rarity_breakdown": "⭐ Overzicht van Zeldzaamheden",
-      "footer": "Galerij Statistieken • Live Data"
+      "footer": "Galerij Statistieken • Live Data",
+      "locked": "Vergrendeld"
     },
     "labels": {
       "type": "Type",

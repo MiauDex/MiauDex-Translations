@@ -564,7 +564,7 @@
     "unexpected": "Something unexpected happened while collecting your cat.\n\nThe development team has been notified. Please try again in a few minutes.",
     "unknown_command": "❌ Unknown command: `{{command}}`",
     "not_your_session": "This isn't your session. Run the command yourself to interact.",
-    "not_your_cat": "You can only favourite your own cats."
+    "not_your_cat": "You can only favorite your own cats."
   },
   "rename": {
     "nice_name": "a nice name",
@@ -673,7 +673,8 @@
       "title": "💎 {{username}}'s Gallery Statistics",
       "overview": "📚 Collection Overview",
       "rarity_breakdown": "⭐ Rarity Breakdown",
-      "footer": "Gallery Statistics • Live Data"
+      "footer": "Gallery Statistics • Live Data",
+      "locked": "Locked"
     },
     "labels": {
       "type": "Type",

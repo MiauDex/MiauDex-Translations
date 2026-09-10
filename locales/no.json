@@ -673,7 +673,8 @@
       "title": "💎 {{username}}s galleri-statistikk",
       "overview": "📚 Samlingsoversikt",
       "rarity_breakdown": "⭐ Sjeldenhetsfordeling",
-      "footer": "Galleri-statistikk • Live-data"
+      "footer": "Galleri-statistikk • Live-data",
+      "locked": "Låst"
     },
     "labels": {
       "type": "Type",

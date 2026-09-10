@@ -673,7 +673,8 @@
       "title": "💎 Statystyki Galerii użytkownika {{username}}",
       "overview": "📚 Przegląd Kolekcji",
       "rarity_breakdown": "⭐ Podział wg Rzadkości",
-      "footer": "Statystyki Galerii • Dane na żywo"
+      "footer": "Statystyki Galerii • Dane na żywo",
+      "locked": "Nieodblokowany"
     },
     "labels": {
       "type": "Typ",
