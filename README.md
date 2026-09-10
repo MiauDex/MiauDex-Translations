@@ -9,7 +9,7 @@ Welcome to the official translation repository for MiauDex - the ultimate Discor
 | ![GB](https://flagcdn.com/16x12/gb.png) English | [ItsAlex](https://github.com/ItsAlexIK) | Done |
 | ![PL](https://flagcdn.com/16x12/pl.png) Polish | [ItsAlex](https://github.com/ItsAlexIK) | Done |
 | ![FR](https://flagcdn.com/16x12/fr.png) French | [Zer0Two](https://github.com/NotZer0Two) | Done |
-| ![IT](https://flagcdn.com/16x12/it.png) Italian | [Zer0Two](https://github.com/NotZer0Two) | Done |
+| ![IT](https://flagcdn.com/16x12/it.png) Italian | [Zer0Two](https://github.com/NotZer0Two), [miciogattomatto](https://github.com/miciogattomatto) | Done |
 | ![NO](https://flagcdn.com/16x12/no.png) Norwegian | [Kf637](https://github.com/Kf637) | Done |
 | ![NL](https://flagcdn.com/16x12/nl.png) Dutch | [Quincy](https://github.com/JustCallMeQuincy) | Done |
 | ![ES](https://flagcdn.com/16x12/es.png) Spanish | | Needed |

@@ -673,7 +673,8 @@
       "title": "💎 Statistiche Galleria di {{username}}",
       "overview": "📚 Panoramica Collezione",
       "rarity_breakdown": "⭐ Suddivisione per Rarità",
-      "footer": "Statistiche Galleria • Dati in Tempo Reale"
+      "footer": "Statistiche Galleria • Dati in Tempo Reale",
+      "locked": "Bloccato"
     },
     "labels": {
       "type": "Tipo",
@@ -771,7 +772,8 @@
   "translations": {
     "authors": [
       {
-        "Zer0Two": "642642727237845041"
+        "Zer0Two": "642642727237845041",
+        "miciogattomatto": "1101489941395034172"
       }
     ]
   }
