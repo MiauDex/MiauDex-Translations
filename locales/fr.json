@@ -673,7 +673,8 @@
       "title": "💎 Statistiques de Galerie de {{username}}",
       "overview": "📚 Aperçu Collection",
       "rarity_breakdown": "⭐ Répartition Rareté",
-      "footer": "Statistiques Galerie • Données en Direct"
+      "footer": "Statistiques Galerie • Données en Direct",
+      "locked": "Verrouillé"
     },
     "labels": {
       "type": "Type",
@@ -771,8 +772,7 @@
   "translations": {
     "authors": [
       {
-        "Zer0Two": "642642727237845041",
-        "MaxiMep": "219532455856701442"
+        "Zer0Two": "642642727237845041"
       }
     ]
   }
