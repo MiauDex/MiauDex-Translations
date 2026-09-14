@@ -109,6 +109,16 @@
     },
     "errors": {
       "generic": "Oops! Qualcosa è andato storto. Riprova di nuovo."
+    },
+    "card": {
+      "premium_member": "Membro Premium",
+      "current_streak": "Serie Attuale",
+      "best_streak": "Serie Migliore",
+      "leaderboard_rank": "🏆 #{{rank}} in Classifica",
+      "cats_collected": "{{count}} gatti collezionati",
+      "rarest": "Più raro: {{name}}",
+      "rarest_with_chance": "Più raro: {{name}} ({{chance}})",
+      "no_cats": "Nessun gatto collezionato"
     }
   },
   "serverinfo": {
@@ -767,7 +777,12 @@
       "removed": "Rimosso **{{name}}** dai tuoi preferiti.",
       "limit_reached": "Puoi avere al massimo **{{limit}}** preferiti alla volta! Rimuovine uno prima. 💔"
     },
-    "session_expired": "Sessione scaduta • Usa /preferiti per iniziare una nuova sessione"
+    "session_expired": "Sessione scaduta • Usa /preferiti per iniziare una nuova sessione",
+    "card": {
+      "subtitle": "Gatti Preferiti",
+      "count_singular": "🐾 {{count}} Preferito",
+      "count_plural": "🐾 {{count}} Preferiti"
+    }
   },
   "translations": {
     "authors": [

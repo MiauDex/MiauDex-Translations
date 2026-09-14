@@ -109,6 +109,16 @@
     },
     "errors": {
       "generic": "Oops! Something went wrong. Please try again."
+    },
+    "card": {
+      "premium_member": "Premium Member",
+      "current_streak": "Current Streak",
+      "best_streak": "Best Streak",
+      "leaderboard_rank": "🏆 Leaderboard #{{rank}}",
+      "cats_collected": "{{count}} cats collected",
+      "rarest": "Rarest: {{name}}",
+      "rarest_with_chance": "Rarest: {{name}} ({{chance}})",
+      "no_cats": "No cats collected yet"
     }
   },
   "serverinfo": {
@@ -767,7 +777,12 @@
       "removed": "Removed **{{name}}** from your favorites.",
       "limit_reached": "You can only have **{{limit}}** favorites at a time! Remove one first. 💔"
     },
-    "session_expired": "Session expired • Use /favorites to start a new session"
+    "session_expired": "Session expired • Use /favorites to start a new session",
+    "card": {
+      "subtitle": "Favorite Cats",
+      "count_singular": "🐾 {{count}} Favorite",
+      "count_plural": "🐾 {{count}} Favorites"
+    }
   },
   "translations": {
     "authors": [

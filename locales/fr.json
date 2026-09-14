@@ -109,6 +109,16 @@
     },
     "errors": {
       "generic": "Oups ! Quelque chose s'est mal passé. Veuillez réessayer."
+    },
+    "card": {
+      "premium_member": "Membre Premium",
+      "current_streak": "Combo actuel",
+      "best_streak": "Meilleur combo",
+      "leaderboard_rank": "🏆 Classement : #{{rank}}",
+      "cats_collected": "{{count}} chats collectés",
+      "rarest": "Chat le plus rare: {{name}}",
+      "rarest_with_chance": "Chat le plus rare: {{name}} ({{chance}})",
+      "no_cats": "Aucun chat collecté pour le moment"
     }
   },
   "serverinfo": {
@@ -767,12 +777,18 @@
       "removed": "**{{name}}** retiré de vos favoris.",
       "limit_reached": "Tu ne peux avoir que **{{limit}}** favoris à la fois ! Retires-en un d'abord. 💔"
     },
-    "session_expired": "Session expirée • Utilisez /favoris pour commencer une nouvelle session"
+    "session_expired": "Session expirée • Utilisez /favoris pour commencer une nouvelle session",
+    "card": {
+      "subtitle": "Chats favoris",
+      "count_singular": "🐾 {{count}} Favori",
+      "count_plural": "🐾 {{count}} Favoris"
+    }
   },
   "translations": {
     "authors": [
       {
-        "Zer0Two": "642642727237845041"
+        "Zer0Two": "642642727237845041",
+        "Anonymous": "Preffered not to be credited"
       }
     ]
   }

@@ -109,6 +109,16 @@
     },
     "errors": {
       "generic": "Ups! Coś poszło nie tak. Spróbuj ponownie."
+    },
+    "card": {
+      "premium_member": "Członek Premium",
+      "current_streak": "Aktualna Passa",
+      "best_streak": "Najlepsza Passa",
+      "leaderboard_rank": "🏆 Ranking #{{rank}}",
+      "cats_collected": "Zebrano kotków: {{count}}",
+      "rarest": "Najrzadszy: {{name}}",
+      "rarest_with_chance": "Najrzadszy: {{name}} ({{chance}})",
+      "no_cats": "Brak zebranych kotków"
     }
   },
   "serverinfo": {
@@ -767,7 +777,12 @@
       "removed": "Usunięto **{{name}}** z ulubionych.",
       "limit_reached": "Możesz mieć maksymalnie **{{limit}}** ulubionych na raz! Najpierw usuń innego. 💔"
     },
-    "session_expired": "Sesja wygasła • Użyj /ulubione, aby rozpocząć nową sesję"
+    "session_expired": "Sesja wygasła • Użyj /ulubione, aby rozpocząć nową sesję",
+    "card": {
+      "subtitle": "Ulubione Koty",
+      "count_singular": "🐾 {{count}} Ulubiony",
+      "count_plural": "🐾 {{count}} Ulubionych"
+    }
   },
   "translations": {
     "authors": [

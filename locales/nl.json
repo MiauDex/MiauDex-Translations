@@ -109,6 +109,16 @@
     },
     "errors": {
       "generic": "Oeps! Er ging iets mis. Probeer het opnieuw."
+    },
+    "card": {
+      "premium_member": "Premium Member",
+      "current_streak": "Huidige Reeks",
+      "best_streak": "Beste Reeks",
+      "leaderboard_rank": "🏆 Leaderboard #{{rank}}",
+      "cats_collected": "{{count}} katten verzameld",
+      "rarest": "Zeldzaamste: {{name}}",
+      "rarest_with_chance": "Zeldzaamste: {{name}} ({{chance}})",
+      "no_cats": "Nog geen katten verzameld"
     }
   },
   "serverinfo": {
@@ -767,7 +777,12 @@
       "removed": "**{{name}}** werd verwijderd van je favorieten.",
       "limit_reached": "Je kan maar **{{limit}}** favorieten tegelijk hebben! Je moet er eerst eentje verwijderen. 💔"
     },
-    "session_expired": "Sessie verlopen • Gebruik /favorieten om een nieuwe sessie te starten"
+    "session_expired": "Sessie verlopen • Gebruik /favorieten om een nieuwe sessie te starten",
+    "card": {
+      "subtitle": "Favoriete katten",
+      "count_singular": "🐾 {{count}} Favoriet",
+      "count_plural": "🐾 {{count}} Favorieten"
+    }
   },
   "translations": {
     "authors": [

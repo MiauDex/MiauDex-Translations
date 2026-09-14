@@ -109,6 +109,16 @@
     },
     "errors": {
       "generic": "Oisann! Noe gikk galt. Prøv igjen."
+    },
+    "card": {
+      "premium_member": "Premium-medlem",
+      "current_streak": "Nåværende rekke",
+      "best_streak": "Beste rekke",
+      "leaderboard_rank": "🏆 Ledertavle #{{rank}}",
+      "cats_collected": "{{count}} katter samlet",
+      "rarest": "Sjeldnest: {{name}}",
+      "rarest_with_chance": "Sjeldnest: {{name}} ({{chance}})",
+      "no_cats": "Ingen katter samlet ennå"
     }
   },
   "serverinfo": {
@@ -767,7 +777,12 @@
       "removed": "Fjernet **{{name}}** fra favorittene dine.",
       "limit_reached": "Du kan bare ha **{{limit}}** favoritter om gangen! Fjern en først. 💔"
     },
-    "session_expired": "Økten er utløpt • Bruk /favoritter for å starte en ny økt"
+    "session_expired": "Økten er utløpt • Bruk /favoritter for å starte en ny økt",
+    "card": {
+      "subtitle": "Favorittkatter",
+      "count_singular": "🐾 {{count}} favoritt",
+      "count_plural": "🐾 {{count}} favoritter"
+    }
   },
   "translations": {
     "authors": [
