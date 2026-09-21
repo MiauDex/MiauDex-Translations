@@ -87,3 +87,11 @@ miaudex-translations/
     ├── translation-guide.md
     └── style-guide.md
 ```
+
+## Support MiauDex
+
+If you enjoy MiauDex and want to help keep development going, you can support the project on Ko-fi.
+
+☕ **[Support MiauDex on Ko-fi](https://ko-fi.com/miaudex)**
+
+Every contribution helps keep the bot running, improve existing features, and bring more cats to the collection.
