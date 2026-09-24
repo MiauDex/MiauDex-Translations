@@ -16,7 +16,7 @@
     },
     "errors": {
       "invalid_name_title": "Nieprawidłowa Nazwa Kota",
-      "invalid_name": "Nazwy kotów muszą mieć 1-32 znaki i zawierać prawidłowe znaki.\n\n❌ **Niedozwolone:** `<>@#&` i puste nazwy\n✅ **Dozwolone:** Litery, cyfry, spacje i większość symboli",
+      "invalid_name": "Nazwy kotów muszą mieć 1-20 znaki i zawierać prawidłowe znaki.\n\n❌ **Niedozwolone:** `<>@#&` i puste nazwy\n✅ **Dozwolone:** Litery, cyfry, spacje i większość symboli",
       "reserved_pattern_title": "Zarezerwowany Wzór Nazwy!",
       "reserved_pattern": "⚠️ Nazwy takie jak \"cat1\", \"cat30\" itp. są zarezerwowane przez system.\n\n🐱 **Zablokowany wzór:** \"cat\" po którym następują cyfry\n✨ Twój kot zasługuje na bardziej kreatywną i osobistą nazwę!",
       "creative_alternatives": "🎨 **Kreatywne Alternatywy:**",
@@ -37,7 +37,7 @@
     },
     "command": {
       "option_name": "nazwa",
-      "option_name_desc": "Nadaj swojemu nowemu kotu własną nazwę (1-32 znaki, opcjonalnie)"
+      "option_name_desc": "Nadaj swojemu nowemu kotu własną nazwę (1-20 znaki, opcjonalnie)"
     },
     "welcome": {
       "title": "🐾 Witaj w MiauDex!",
@@ -122,23 +122,6 @@
     }
   },
   "serverinfo": {
-    "dm_only": "Ta komenda może być używana tylko na serwerze!",
-    "title": "🏰 Informacje o serwerze {{server_name}}",
-    "subtitle": "{{sparkles}} {{level}}",
-    "description": "Witaj na {{server_name}}! Tętniąca życiem społeczność.",
-    "members": "👥 Członkowie",
-    "members_value": "{{total}}",
-    "boosts": "{{boost_emoji}} Boosty serwera",
-    "boosts_value": "{{count}}",
-    "timeline": "📅 Historia",
-    "timeline_value": "**Utworzony:** <t:{{created}}:R>",
-    "footer": "ID serwera: {{id}} • Żądanie od {{username}}",
-    "level_mega": "🌟 MEGA SERWER",
-    "level_large": "🏆 DUŻY SERWER",
-    "level_big": "🚀 WIELKI SERWER",
-    "level_medium": "💎 ŚREDNI SERWER",
-    "level_growing": "✨ ROZWIJAJĄCY SIĘ SERWER",
-    "level_small": "🌱 MAŁY SERWER",
     "join_miaudex": "💖 Dołącz do MiauDex",
     "leave_review": "⭐ Zostaw opinię",
     "vote_bot": "🚀 Zagłosuj na bota"
@@ -460,11 +443,11 @@
       "vote": "Głosuj na bota i otrzymuj nagrody",
       "announcement": "Zobacz najnowsze aktualizacje i ogłoszenia MiauDex",
       "invite": "Dołącz do oficjalnego serwera MiauDex i odblokuj ekskluzywne korzyści!",
-      "serverinfo": "Pokaż informacje o serwerze",
       "rarity": "Poznaj rzadkości kotków",
       "help": "Poznaj centrum pomocy i wszystkie komendy",
       "trade": "Wymień się kotkami z innymi kolekcjonerami",
-      "favorites": "Przeglądaj swoją ulubioną kolekcję kotów"
+      "favorites": "Przeglądaj swoją ulubioną kolekcję kotów",
+      "treat": "Wesprzyj MiauDex i podaruj kotkom smakołyk!"
     }
   },
   "invite": {
@@ -726,9 +709,6 @@
     "invite": {
       "name": "zaproszenie"
     },
-    "serverinfo": {
-      "name": "serwerinfo"
-    },
     "rarity": {
       "name": "rzadkosc"
     },
@@ -746,6 +726,9 @@
           "description": "Zobacz ulubione koty innego użytkownika"
         }
       }
+    },
+    "treat": {
+      "name": "smakołyk"
     }
   },
   "profanity": {
@@ -782,6 +765,20 @@
       "subtitle": "Ulubione Koty",
       "count_singular": "🐾 {{count}} Ulubiony",
       "count_plural": "🐾 {{count}} Ulubionych"
+    }
+  },
+  "treat": {
+    "main": {
+      "title": " Pora na smakołyk!",
+      "description": "{{heart}} **Każdy grzeczny kotek zasługuje na smakołyk - MiauDex też!**\n\n{{paw}} Twoje wsparcie pomaga rozwijać kolekcję i organizować kolejne rozdania\n\n{{arrow}} [**Kup MiauDex smakołyk!**]({{tip_link}})"
+    },
+    "membership": {
+      "title": "🎀 Dołącz do Klubu Kociaków!",
+      "description": "{{crown}} **Chcesz regularnie fundować smakołyki?** Dołącz i odbierz dodatkowe korzyści!\n\n{{cat}} **Kitten Tier** - idealny na początek\n{{gem}} **+2 kolejne poziomy** z jeszcze większymi nagrodami\n\n{{arrow}} [**Zobacz poziomy członkostwa!**]({{tip_link}})"
+    },
+    "footer": "{{wink}} Dzięki, że traktujesz tego kota jak królewską mość!",
+    "buttons": {
+      "tip": "{{gift}} Podaruj smakołyk"
     }
   },
   "translations": {

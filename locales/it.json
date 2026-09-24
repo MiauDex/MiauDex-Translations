@@ -16,7 +16,7 @@
     },
     "errors": {
       "invalid_name_title": "Nome del gatto invalido",
-      "invalid_name": "Il nome del gatto deve essere di 1-32 caratteri e contenere caratteri validi.\n\n❌ **Non sono ammessi:** `<>@#&` ed nomi vuoti\n✅ **Permessi:** Lettere, numeri, spazi, ed quasi tutti i simboli",
+      "invalid_name": "Il nome del gatto deve essere di 1-20 caratteri e contenere caratteri validi.\n\n❌ **Non sono ammessi:** `<>@#&` ed nomi vuoti\n✅ **Permessi:** Lettere, numeri, spazi, ed quasi tutti i simboli",
       "reserved_pattern_title": "Nome riservato!",
       "reserved_pattern": "⚠️ Nomi tipo \"cat1\", \"cat30\", etc. sono riservati dal sistema.\n\n🐱 **Pattern bloccati:** \"cat\" seguito da numeri\n✨ Il tuo gatto merita un nome migliore!",
       "creative_alternatives": "🎨 **Alternative migliori:**",
@@ -37,7 +37,7 @@
     },
     "command": {
       "option_name": "nome",
-      "option_name_desc": "Dai al tuo nuovo gatto un nome personalizzato (1–32 caratteri, opzionale)"
+      "option_name_desc": "Dai al tuo nuovo gatto un nome personalizzato (1-20 caratteri, opzionale)"
     },
     "welcome": {
       "title": "🐾 Benvenuto su MiauDex!",
@@ -122,23 +122,6 @@
     }
   },
   "serverinfo": {
-    "dm_only": "Questo commando può essere usato solo in un server!",
-    "title": "🏰 {{server_name}} Informazioni Server",
-    "subtitle": "{{sparkles}} {{level}}",
-    "description": "Benvenuto su {{server_name}}! Un Community molto vivace.",
-    "members": "👥 Membri",
-    "members_value": "{{total}}",
-    "boosts": "{{boost_emoji}} Server Boosts",
-    "boosts_value": "{{count}}",
-    "timeline": "📅 Cronologia",
-    "timeline_value": "**Creato:** <t:{{created}}:R>",
-    "footer": "Server ID: {{id}} • Richiesto da {{username}}",
-    "level_mega": "🌟 SERVER MEGA",
-    "level_large": "🏆 SERVER GRANDISSIMO",
-    "level_big": "🚀 SERVER GRANDE",
-    "level_medium": "💎 SERVER MEDIO",
-    "level_growing": "✨ SERVER EMERGENTE",
-    "level_small": "🌱 SERVER PICCOLO",
     "join_miaudex": "💖 Entra su MiauDex",
     "leave_review": "⭐ Lascia una recensione",
     "vote_bot": "🚀 Vota per il Bot"
@@ -460,11 +443,11 @@
       "vote": "Vota per il bot e ottieni ricompense",
       "announcement": "Visualizza gli ultimi aggiornamenti e annunci di MiauDex",
       "invite": "Unisciti al server ufficiale di MiauDex e sblocca vantaggi esclusivi!",
-      "serverinfo": "Mostra informazioni sul server",
       "rarity": "Mostra tutte le rarità dei gatti e le loro probabilità",
       "help": "Esplora tutti i comandi e le funzionalità di MiauDex",
       "trade": "Scambia gatti con altri utenti",
-      "favorites": "Visita la tua lista di gatti preferiti"
+      "favorites": "Visita la tua lista di gatti preferiti",
+      "treat": "Premia i gatti e supporta MiauDex!"
     }
   },
   "invite": {
@@ -726,9 +709,6 @@
     "invite": {
       "name": "invita"
     },
-    "serverinfo": {
-      "name": "serverinfo"
-    },
     "rarity": {
       "name": "rarita"
     },
@@ -746,6 +726,9 @@
           "description": "Vedi il gatto di un'altro utente"
         }
       }
+    },
+    "treat": {
+      "name": "dona"
     }
   },
   "profanity": {
@@ -782,6 +765,20 @@
       "subtitle": "Gatti Preferiti",
       "count_singular": "🐾 {{count}} Preferito",
       "count_plural": "🐾 {{count}} Preferiti"
+    }
+  },
+  "treat": {
+    "main": {
+      "title": " Ora del Bocconcino!",
+      "description": "{{heart}} **Ogni buon micio si merita un premio - incluso MiauDex!**\n\n{{paw}} Il tuo supporto mantiene la collezione in crescita ed i giveaway in arrivo\n\n{{arrow}} [**Compra un bocconcino a MiauDex qui!**]({{tip_link}})"
+    },
+    "membership": {
+      "title": "🎀 Entra nel Kitten Club!",
+      "description": "{{crown}} **Vuoi continuare a premiare?** Entra per vantaggi continui!\n\n{{cat}} **Kitten Tier** - il punto di partenza perfetto\n{{gem}} **altri 2 livelli** con vantaggi migliori\n\n{{arrow}} [**Vedi i livelli di abbonamento!**]({{tip_link}})"
+    },
+    "footer": "{{wink}} Grazie per aver trattato questo gatto come nobiltà!",
+    "buttons": {
+      "tip": "{{gift}} Dai un bocconcino"
     }
   },
   "translations": {

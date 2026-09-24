@@ -16,7 +16,7 @@
     },
     "errors": {
       "invalid_name_title": "Nom de Chat Invalide",
-      "invalid_name": "Les noms de chats doivent faire 1-32 caractères et contenir des caractères valides.\n\n❌ **Non autorisé :** `<>@#&` et noms vides\n✅ **Autorisé :** Lettres, chiffres, espaces et la plupart des symboles",
+      "invalid_name": "Les noms de chats doivent faire 1-20 caractères et contenir des caractères valides.\n\n❌ **Non autorisé :** `<>@#&` et noms vides\n✅ **Autorisé :** Lettres, chiffres, espaces et la plupart des symboles",
       "reserved_pattern_title": "Modèle de Nom Réservé !",
       "reserved_pattern": "⚠️ Les noms comme \"cat1\", \"cat30\", etc. sont réservés par le système.\n\n🐱 **Modèle bloqué :** \"cat\" suivi de chiffres\n✨ Votre chat mérite un nom plus créatif et personnel !",
       "creative_alternatives": "🎨 **Alternatives Créatives :**",
@@ -37,7 +37,7 @@
     },
     "command": {
       "option_name": "nom",
-      "option_name_desc": "Donnez à votre nouveau chat un nom personnalisé (1–32 caractères, facultatif)"
+      "option_name_desc": "Donnez à votre nouveau chat un nom personnalisé (1-20 caractères, facultatif)"
     },
     "welcome": {
       "title": "🐾 Bienvenue sur MiauDex!",
@@ -122,23 +122,6 @@
     }
   },
   "serverinfo": {
-    "dm_only": "Cette commande ne peut être utilisée que dans un serveur !",
-    "title": "🏰 Informations sur le serveur {{server_name}}",
-    "subtitle": "{{sparkles}} {{level}}",
-    "description": "Bienvenue sur {{server_name}} ! Un serveur communautaire dynamique.",
-    "members": "👥 Membres",
-    "members_value": "{{total}}",
-    "boosts": "{{boost_emoji}} Boosts Serveur",
-    "boosts_value": "{{count}}",
-    "timeline": "📅 Chronologie",
-    "timeline_value": "**Créé :** <t:{{created}}:R>",
-    "footer": "ID Serveur : {{id}} • Demandé par {{username}}",
-    "level_mega": "🌟 MÉGA SERVEUR",
-    "level_large": "🏆 GRAND SERVEUR",
-    "level_big": "🚀 IMMENSE SERVEUR",
-    "level_medium": "💎 SERVEUR MOYEN",
-    "level_growing": "✨ SERVEUR EN CROISSANCE",
-    "level_small": "🌱 PETIT SERVEUR",
     "join_miaudex": "💖 Rejoindre MiauDex",
     "leave_review": "⭐ Laisser un Avis",
     "vote_bot": "🚀 Voter pour le Bot"
@@ -460,11 +443,11 @@
       "vote": "Votez pour le bot et obtenez des récompenses",
       "announcement": "Visualisez les dernières mises à jour et annonces MiauDex",
       "invite": "Rejoignez le serveur officiel MiauDex et débloquez des avantages exclusifs !",
-      "serverinfo": "Affichez les informations du serveur",
       "rarity": "Affiche toutes les raretés de chat ainsi que leurs chances de drop.",
       "help": "Explorez toutes les commandes et fonctionnalités de Miaudex",
       "trade": "Échangez des chats avec un autre utilisateur",
-      "favorites": "Parcourez votre collection de chats favoris"
+      "favorites": "Parcourez votre collection de chats favoris",
+      "treat": "Donne une friandise aux chats et soutient le MiauDex !"
     }
   },
   "invite": {
@@ -726,9 +709,6 @@
     "invite": {
       "name": "invitation"
     },
-    "serverinfo": {
-      "name": "infoserveur"
-    },
     "rarity": {
       "name": "rarete"
     },
@@ -746,6 +726,9 @@
           "description": "Voir les chats favoris d'un autre utilisateur"
         }
       }
+    },
+    "treat": {
+      "name": "friandise"
     }
   },
   "profanity": {
@@ -782,6 +765,20 @@
       "subtitle": "Chats favoris",
       "count_singular": "🐾 {{count}} Favori",
       "count_plural": "🐾 {{count}} Favoris"
+    }
+  },
+  "treat": {
+    "main": {
+      "title": "C'est l'heure des friandises!",
+      "description": "{{heart}} **Tous les chats ont le droit à une petite récompense! Et le MiauDex aussi!**\n\n{{paw}}Ton soutien permet de faire grandir la collection et d'organiser des concours à gagner!\n\n{{arrow}} [**Paye une friandise pour le MiauDex!**]({{tip_link}})"
+    },
+    "membership": {
+      "title": "🎀 Rejoins le club des chatons!",
+      "description": "{{crown}} **Tu veux régulièrement récompenser les petits chats?** Rejoins-nous et découvre de nombreux avantages!\n\n{{cat}} **Grade Chaton** - Le parfait Grrrr-ade pour débuter !\n{{gem}} **+2 grades supplémentaires** avec encore plus d'avantages\n\n{{arrow}} [**Viens voir la liste des grades!**]({{tip_link}})"
+    },
+    "footer": "{{wink}} Tu as royalement gâté ce chat! Merci à toi!",
+    "buttons": {
+      "tip": "{{gift}} Donne une friandise"
     }
   },
   "translations": {

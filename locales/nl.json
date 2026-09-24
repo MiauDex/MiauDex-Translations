@@ -16,7 +16,7 @@
     },
     "errors": {
       "invalid_name_title": "Ongeldige Kat Naam",
-      "invalid_name": "Kat namen moeten 1-32 tekens lang zijn en enkel geldige tekens bevatten.\n\n❌ **Niet toegestaan:** `<>@#&` en lege namen\n✅ **Toegestaan:** Letters, cijfers, spaties en de meeste symbolen",
+      "invalid_name": "Kat namen moeten 1-20 tekens lang zijn en enkel geldige tekens bevatten.\n\n❌ **Niet toegestaan:** `<>@#&` en lege namen\n✅ **Toegestaan:** Letters, cijfers, spaties en de meeste symbolen",
       "reserved_pattern_title": "Gereserveerd Naam Patroon!",
       "reserved_pattern": "⚠️ Namen zoals \"cat1\", \"cat30\", etc. zijn gereserveerd door het systeem.\n\n🐱 **Patroon geblokkeerd:** \"cat\" gevolgd door cijfers\n✨ Je kat verdient een iets creatievere en persoonlijkere naam!",
       "creative_alternatives": "🎨 **Creatieve Alternatieven:**",
@@ -37,7 +37,7 @@
     },
     "command": {
       "option_name": "naam",
-      "option_name_desc": "Geef je nieuwe kat een naam naar jouw keuze (1–32 karakters, optioneel)"
+      "option_name_desc": "Geef je nieuwe kat een naam naar jouw keuze (1-20 karakters, optioneel)"
     },
     "welcome": {
       "title": "🐾 Welkom bij MiauDex!",
@@ -122,23 +122,6 @@
     }
   },
   "serverinfo": {
-    "dm_only": "Dit commando kan enkel op een server gebruikt worden!",
-    "title": "🏰 {{server_name}} Server Info",
-    "subtitle": "{{sparkles}} {{level}}",
-    "description": "Welkom op {{server_name}}! Een levendige community server.",
-    "members": "👥 Leden",
-    "members_value": "{{total}}",
-    "boosts": "{{boost_emoji}} Server Boosts",
-    "boosts_value": "{{count}}",
-    "timeline": "📅 Tijdlijn",
-    "timeline_value": "**Gemaakt:** <t:{{created}}:R>",
-    "footer": "Server ID: {{id}} • Aangevraagd door {{username}}",
-    "level_mega": "🌟 MEGA SERVER",
-    "level_large": "🏆 GROTE SERVER",
-    "level_big": "🚀 GROTE SERVER",
-    "level_medium": "💎 MEDIUM SERVER",
-    "level_growing": "✨ GROEIENDE SERVER",
-    "level_small": "🌱 KLEINE SERVER",
     "join_miaudex": "💖 Word lid van MiauDex",
     "leave_review": "⭐ Laat een Beoordeling Achter",
     "vote_bot": "🚀 Stem op de Bot"
@@ -460,11 +443,11 @@
       "vote": "Stem op de bot om beloningen te krijgen",
       "announcement": "Bekijk de laatste MiauDex updates en mededelingen",
       "invite": "Word lid van de officiële MiauDex server voor exclusieve perks!",
-      "serverinfo": "Toon informatie over de server",
       "rarity": "Toon alle kat zeldzaamheden en hun kansen",
       "help": "Verken alle MiauDex commandp's en features",
       "trade": "Ruil katten met andere gebruikers",
-      "favorites": "Bekijk je favoriete katten collectie"
+      "favorites": "Bekijk je favoriete katten collectie",
+      "treat": "Verwen de katten en steun MiauDex!"
     }
   },
   "invite": {
@@ -726,9 +709,6 @@
     "invite": {
       "name": "uitnodiging"
     },
-    "serverinfo": {
-      "name": "serverinfo"
-    },
     "rarity": {
       "name": "zeldzaamheid"
     },
@@ -746,6 +726,9 @@
           "description": "Bekijk de favoriete katten van een andere gebruiker"
         }
       }
+    },
+    "treat": {
+      "name": "steun"
     }
   },
   "profanity": {
@@ -782,6 +765,20 @@
       "subtitle": "Favoriete katten",
       "count_singular": "🐾 {{count}} Favoriet",
       "count_plural": "🐾 {{count}} Favorieten"
+    }
+  },
+  "treat": {
+    "main": {
+      "title": " Steun ons!",
+      "description": "{{heart}} **Elk lief katje verdiend verwend te worden - MiauDex ook!**\n\n{{paw}} Jouw steun helpt de collectie groeien en de giveaways komen\n\n{{arrow}} [**Steun MiauDex hier!**]({{tip_link}})"
+    },
+    "membership": {
+      "title": "🎀 Sluit je aan bij de Kitten Club!",
+      "description": "{{crown}} **Wil je vaste steun geven?** Sluit je aan voor doorlopende voordelen!\n\n{{cat}} **Kitten Niveau** - het perfecte sta(a)rtpunt\n{{gem}} **+2 andere niveaus** met grotere voordelen\n\n{{arrow}} [**Bekijk de lidmaatschapsniveaus!**]({{tip_link}})"
+    },
+    "footer": "{{wink}} Bedankt om deze kat te verwennen!",
+    "buttons": {
+      "tip": "{{gift}} Steun Ons"
     }
   },
   "translations": {

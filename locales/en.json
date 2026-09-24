@@ -16,7 +16,7 @@
     },
     "errors": {
       "invalid_name_title": "Invalid Cat Name",
-      "invalid_name": "Cat names must be 1-32 characters long and contain valid characters.\n\n❌ **Not allowed:** `<>@#&` and empty names\n✅ **Allowed:** Letters, numbers, spaces, and most symbols",
+      "invalid_name": "Cat names must be 1-20 characters long and contain valid characters.\n\n❌ **Not allowed:** `<>@#&` and empty names\n✅ **Allowed:** Letters, numbers, spaces, and most symbols",
       "reserved_pattern_title": "Reserved Name Pattern!",
       "reserved_pattern": "⚠️ Names like \"cat1\", \"cat30\", etc. are reserved by the system.\n\n🐱 **Pattern blocked:** \"cat\" followed by numbers\n✨ Your cat deserves a more creative and personal name!",
       "creative_alternatives": "🎨 **Creative Alternatives:**",
@@ -37,7 +37,7 @@
     },
     "command": {
       "option_name": "name",
-      "option_name_desc": "Give your new cat a custom name (1–32 characters, optional)"
+      "option_name_desc": "Give your new cat a custom name (1-20 characters, optional)"
     },
     "welcome": {
       "title": "🐾 Welcome to MiauDex!",
@@ -122,23 +122,6 @@
     }
   },
   "serverinfo": {
-    "dm_only": "This command can only be used in a server!",
-    "title": "🏰 {{server_name}} Server Info",
-    "subtitle": "{{sparkles}} {{level}}",
-    "description": "Welcome to {{server_name}}! A vibrant community server.",
-    "members": "👥 Members",
-    "members_value": "{{total}}",
-    "boosts": "{{boost_emoji}} Server Boosts",
-    "boosts_value": "{{count}}",
-    "timeline": "📅 Timeline",
-    "timeline_value": "**Created:** <t:{{created}}:R>",
-    "footer": "Server ID: {{id}} • Requested by {{username}}",
-    "level_mega": "🌟 MEGA SERVER",
-    "level_large": "🏆 LARGE SERVER",
-    "level_big": "🚀 BIG SERVER",
-    "level_medium": "💎 MEDIUM SERVER",
-    "level_growing": "✨ GROWING SERVER",
-    "level_small": "🌱 SMALL SERVER",
     "join_miaudex": "💖 Join MiauDex",
     "leave_review": "⭐ Leave a Review",
     "vote_bot": "🚀 Vote for Bot"
@@ -460,11 +443,11 @@
       "vote": "Vote for the bot and get rewards",
       "announcement": "View the latest MiauDex updates and announcements",
       "invite": "Join the official MiauDex server and unlock exclusive perks!",
-      "serverinfo": "Show server information",
       "rarity": "Show all cat rarities and their chances",
       "help": "Explore all MiauDex commands and features",
       "trade": "Trade cats with other users",
-      "favorites": "Browse your favorite cats collection"
+      "favorites": "Browse your favorite cats collection",
+      "treat": "Treat the cats and support MiauDex!"
     }
   },
   "invite": {
@@ -726,9 +709,6 @@
     "invite": {
       "name": "invite"
     },
-    "serverinfo": {
-      "name": "serverinfo"
-    },
     "rarity": {
       "name": "rarity"
     },
@@ -746,6 +726,9 @@
           "description": "View another user's favorite cats"
         }
       }
+    },
+    "treat": {
+      "name": "treat"
     }
   },
   "profanity": {
@@ -782,6 +765,20 @@
       "subtitle": "Favorite Cats",
       "count_singular": "🐾 {{count}} Favorite",
       "count_plural": "🐾 {{count}} Favorites"
+    }
+  },
+  "treat": {
+    "main": {
+      "title": " Treat Time!",
+      "description": "{{heart}} **Every good kitty deserves a treat - and so does MiauDex!**\n\n{{paw}} Your support keeps the collection growing and the giveaways coming\n\n{{arrow}} [**Buy MiauDex a treat here!**]({{tip_link}})"
+    },
+    "membership": {
+      "title": "🎀 Join the Kitten Club!",
+      "description": "{{crown}} **Want to be a regular treat-giver?** Join for ongoing perks!\n\n{{cat}} **Kitten Tier** - the purr-fect starting point\n{{gem}} **+2 more tiers** with bigger rewards\n\n{{arrow}} [**See membership tiers!**]({{tip_link}})"
+    },
+    "footer": "{{wink}} Thanks for treating this cat like royalty!",
+    "buttons": {
+      "tip": "{{gift}} Give a Treat"
     }
   },
   "translations": {

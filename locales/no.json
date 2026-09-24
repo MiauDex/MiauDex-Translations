@@ -16,7 +16,7 @@
     },
     "errors": {
       "invalid_name_title": "Ugyldig kattenavn",
-      "invalid_name": "Kattenavn må være 1-32 tegn lange og inneholde gyldige tegn.\n\n❌ **Ikke tillatt:** `<>@#&` og tomme navn\n✅ **Tillatt:** Bokstaver, tall, mellomrom og de fleste symboler",
+      "invalid_name": "Kattenavn må være 1-20 tegn lange og inneholde gyldige tegn.\n\n❌ **Ikke tillatt:** `<>@#&` og tomme navn\n✅ **Tillatt:** Bokstaver, tall, mellomrom og de fleste symboler",
       "reserved_pattern_title": "Reservert navnemønster!",
       "reserved_pattern": "⚠️ Navn som \"cat1\", \"cat30\" osv. er reservert av systemet.\n\n🐱 **Mønster blokkert:** \"cat\" etterfulgt av tall\n✨ Katten din fortjener et mer kreativt og personlig navn!",
       "creative_alternatives": "🎨 **Kreative alternativer:**",
@@ -37,7 +37,7 @@
     },
     "command": {
       "option_name": "navn",
-      "option_name_desc": "Gi katten din et egendefinert navn (1–32 tegn, valgfritt)"
+      "option_name_desc": "Gi katten din et egendefinert navn (1-20 tegn, valgfritt)"
     },
     "welcome": {
       "title": "🐾 Velkommen til MiauDex!",
@@ -122,23 +122,6 @@
     }
   },
   "serverinfo": {
-    "dm_only": "Denne kommandoen kan kun brukes i en server!",
-    "title": "🏰 {{server_name}} Serverinfo",
-    "subtitle": "{{sparkles}} {{level}}",
-    "description": "Velkommen til {{server_name}}! Et levende fellesskap.",
-    "members": "👥 Medlemmer",
-    "members_value": "{{total}}",
-    "boosts": "{{boost_emoji}} Serverboosts",
-    "boosts_value": "{{count}}",
-    "timeline": "📅 Tidslinje",
-    "timeline_value": "**Opprettet:** <t:{{created}}:R>",
-    "footer": "Server-ID: {{id}} • Forespurt av {{username}}",
-    "level_mega": "🌟 MEGA SERVER",
-    "level_large": "🏆 STOR SERVER",
-    "level_big": "🚀 STOR SERVER",
-    "level_medium": "💎 MELLOMSTOR SERVER",
-    "level_growing": "✨ VOKSENDE SERVER",
-    "level_small": "🌱 LITEN SERVER",
     "join_miaudex": "💖 Bli med i MiauDex",
     "leave_review": "⭐ Legg igjen en anmeldelse",
     "vote_bot": "🚀 Stem på boten"
@@ -460,11 +443,11 @@
       "vote": "Stem på boten og få belønninger",
       "announcement": "Se de siste MiauDex-oppdateringene og kunngjøringene",
       "invite": "Bli med i den offisielle MiauDex-serveren og få eksklusive fordeler!",
-      "serverinfo": "Vis serverinformasjon",
       "rarity": "Vis alle kattens sjeldenheter og sjansene deres",
       "help": "Utforsk alle MiauDex-kommandoer og funksjoner",
       "trade": "Bytt katter med andre brukere",
-      "favorites": "Se samlingen av favorittkatter"
+      "favorites": "Se samlingen av favorittkatter",
+      "treat": "Kos med kattene og støtt MiauDex!"
     }
   },
   "invite": {
@@ -726,9 +709,6 @@
     "invite": {
       "name": "inviter"
     },
-    "serverinfo": {
-      "name": "serverinfo"
-    },
     "rarity": {
       "name": "sjeldenhet"
     },
@@ -746,6 +726,9 @@
           "description": "Se en annen brukers favorittkatter"
         }
       }
+    },
+    "treat": {
+      "name": "godbit"
     }
   },
   "profanity": {
@@ -782,6 +765,20 @@
       "subtitle": "Favorittkatter",
       "count_singular": "🐾 {{count}} favoritt",
       "count_plural": "🐾 {{count}} favoritter"
+    }
+  },
+  "treat": {
+    "main": {
+      "title": " Godbit-tid!",
+      "description": "{{heart}} **Alle snille katter fortjener en godbit - og det gjør MiauDex også!**\n\n{{paw}} Din støtte holder samlingen voksende og gaveutdelingene gående\n\n{{arrow}} [**Gi MiauDex en godbit her!**]({{tip_link}})"
+    },
+    "membership": {
+      "title": "🎀 Bli med i Kattunge-klubben!",
+      "description": "{{crown}} **Vil du bli en fast godbit-giver?** Bli med for løpende fordeler!\n\n{{cat}} **Kattunge-nivå** - det purr-fekte startpunktet\n{{gem}} **+2 flere nivåer** med større belønninger\n\n{{arrow}} [**Se medlemsnivåene!**]({{tip_link}})"
+    },
+    "footer": "{{wink}} Takk for at du behandler denne katten som kongelig!",
+    "buttons": {
+      "tip": "{{gift}} Gi en godbit"
     }
   },
   "translations": {
