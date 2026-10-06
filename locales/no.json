@@ -77,7 +77,8 @@
       "trading": "Bytting aktivert",
       "reminders": "Kattepåminnelser",
       "enabled": "aktivert",
-      "disabled": "deaktivert"
+      "disabled": "deaktivert",
+      "preset_placeholder": "Velg forhåndsinnstilling"
     },
     "premium": {
       "status": "✨ Premiumstatus",
@@ -118,7 +119,12 @@
       "cats_collected": "{{count}} katter samlet",
       "rarest": "Sjeldnest: {{name}}",
       "rarest_with_chance": "Sjeldnest: {{name}} ({{chance}})",
-      "no_cats": "Ingen katter samlet ennå"
+      "no_cats": "Ingen katter samlet ennå",
+      "next_rarest": "NEST SJELDNESTE"
+    },
+    "presets": {
+      "option": "Forhåndsinnstilling {{number}}",
+      "changed": "Profilens forhåndsinnstilling er satt til {{preset}}! Kjør /profil igjen for å se den."
     }
   },
   "serverinfo": {

@@ -77,7 +77,8 @@
       "trading": "Scambi Abilitati",
       "reminders": "Promemoria Felino",
       "enabled": "abilitato",
-      "disabled": "disabilitato"
+      "disabled": "disabilitato",
+      "preset_placeholder": "Selettore preset"
     },
     "premium": {
       "status": "✨ Status Premium",
@@ -118,7 +119,12 @@
       "cats_collected": "{{count}} gatti collezionati",
       "rarest": "Più raro: {{name}}",
       "rarest_with_chance": "Più raro: {{name}} ({{chance}})",
-      "no_cats": "Nessun gatto collezionato"
+      "no_cats": "Nessun gatto collezionato",
+      "next_rarest": "PROSSIMI PIÙ RARI"
+    },
+    "presets": {
+      "option": "Preset {{number}}",
+      "changed": "Profilo impostato sul {{preset}}! Esegui /profilo di nuovo per visualizzarlo."
     }
   },
   "serverinfo": {

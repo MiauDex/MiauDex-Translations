@@ -77,7 +77,8 @@
       "trading": "Échanges Activés",
       "reminders": "Rappels de Chat",
       "enabled": "activé",
-      "disabled": "désactivé"
+      "disabled": "désactivé",
+      "preset_placeholder": "Sélection du preset"
     },
     "premium": {
       "status": "✨ Statut Premium",
@@ -118,7 +119,12 @@
       "cats_collected": "{{count}} chats collectés",
       "rarest": "Chat le plus rare: {{name}}",
       "rarest_with_chance": "Chat le plus rare: {{name}} ({{chance}})",
-      "no_cats": "Aucun chat collecté pour le moment"
+      "no_cats": "Aucun chat collecté pour le moment",
+      "next_rarest": "SUIVI DE PRÈS PAR"
+    },
+    "presets": {
+      "option": "Preset {{number}}",
+      "changed": "Profil réglé sur {{preset}}! Faites /profil pour le voir à nouveau."
     }
   },
   "serverinfo": {

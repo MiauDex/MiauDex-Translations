@@ -77,7 +77,8 @@
       "trading": "Ruilen Ingeschakeld",
       "reminders": "Kat Herinneringen",
       "enabled": "ingeschakeld",
-      "disabled": "uitgeschakeld"
+      "disabled": "uitgeschakeld",
+      "preset_placeholder": "Preset selector"
     },
     "premium": {
       "status": "✨ Premium Status",
@@ -118,7 +119,12 @@
       "cats_collected": "{{count}} katten verzameld",
       "rarest": "Zeldzaamste: {{name}}",
       "rarest_with_chance": "Zeldzaamste: {{name}} ({{chance}})",
-      "no_cats": "Nog geen katten verzameld"
+      "no_cats": "Nog geen katten verzameld",
+      "next_rarest": "VOLGENDE ZELDZAAMSTE"
+    },
+    "presets": {
+      "option": "Preset {{number}}",
+      "changed": "Profiel preset naar {{preset}} veranderd! Voer /profiel opnieuw uit om deze te bekijken."
     }
   },
   "serverinfo": {

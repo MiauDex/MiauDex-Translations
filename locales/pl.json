@@ -77,7 +77,8 @@
       "trading": "Wymiany Włączone",
       "reminders": "Przypomnienia o Kotach",
       "enabled": "włączone",
-      "disabled": "wyłączone"
+      "disabled": "wyłączone",
+      "preset_placeholder": "Wybór presetu"
     },
     "premium": {
       "status": "✨ Status Premium",
@@ -118,7 +119,12 @@
       "cats_collected": "Zebrano kotków: {{count}}",
       "rarest": "Najrzadszy: {{name}}",
       "rarest_with_chance": "Najrzadszy: {{name}} ({{chance}})",
-      "no_cats": "Brak zebranych kotków"
+      "no_cats": "Brak zebranych kotków",
+      "next_rarest": "NASTĘPNE NAJRZADSZE"
+    },
+    "presets": {
+      "option": "Preset {{number}}",
+      "changed": "Zmieniono preset profilu na {{preset}}! Użyj ponownie /profil, aby go zobaczyć."
     }
   },
   "serverinfo": {

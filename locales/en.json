@@ -77,7 +77,8 @@
       "trading": "Trading Enabled",
       "reminders": "Cat Reminders",
       "enabled": "enabled",
-      "disabled": "disabled"
+      "disabled": "disabled",
+      "preset_placeholder": "Preset selector"
     },
     "premium": {
       "status": "✨ Premium Status",
@@ -118,7 +119,12 @@
       "cats_collected": "{{count}} cats collected",
       "rarest": "Rarest: {{name}}",
       "rarest_with_chance": "Rarest: {{name}} ({{chance}})",
-      "no_cats": "No cats collected yet"
+      "no_cats": "No cats collected yet",
+      "next_rarest": "NEXT RAREST"
+    },
+    "presets": {
+      "option": "Preset {{number}}",
+      "changed": "Profile preset set to {{preset}}! Run /profile again to see it."
     }
   },
   "serverinfo": {
